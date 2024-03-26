@@ -12,6 +12,15 @@ module.exports = {
     init: process.env.MONGO_INIT === 'true',
     mongourl: process.env.MONGO_URL
   },
+
+  postgres: {
+    init: process.env.POSTGRES_INIT === 'true',
+    host: process.env.POSTGRES_HOST,
+    port: process.env.POSTGRES_PORT,
+    user: process.env.POSTGRES_USER,
+    database: process.env.POSTGRES_DATABASE,
+    password: process.env.POSTGRES_PASSWORD
+  },
   redis_local: {
     init: process.env.REDIS_INIT === 'true',
     host: process.env.REDIS_HOST,
