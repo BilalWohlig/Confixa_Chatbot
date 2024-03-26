@@ -1,0 +1,30 @@
+{
+  response: {
+    candidates: [ [Object] ],
+    promptFeedback: { safetyRatings: [Array] },
+    text: [Function (anonymous)]
+  }
+}
+To find your slowest API, you should use the `.ds-metrics-apm.transaction` index. This index contains information about all recorded transactions, including their duration, name, and other metrics.
+
+You can use the following query to find the slowest API:
+
+```
+{
+  "size": 1,
+  "query": {
+    "term": {
+      "type": "transaction"
+    }
+  },
+  "sort": [
+    {
+      "duration": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+```
+
+This query will return the single slowest transaction that has been recorded. If you want to find multiple results, you can increase the size of the query.

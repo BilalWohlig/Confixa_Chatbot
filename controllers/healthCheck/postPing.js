@@ -17,8 +17,8 @@ const validationOfAPI = require('../../middlewares/validation')
  * @response {string} metadata.msg=Success  - Response got successfully.
  * @response {string} metadata.data - It will return the data.
  * @code {200} if the msg is success the api returns succcess message.
- * @author Vasim Gujrati, 14th December 2022
- * *** Last-Updated :- Vasim Gujrati, 20th March 2023 ***
+ * @author Vaishnavi Korgaonkar, 18th January 2024
+ * *** Last-Updated :- Vaishnavi Korgaonkar, 18th January 2024 ***
  */
 const validationSchema = { type: 'object', required: true, properties: { name: { type: 'string', required: true, minLength: 3 } } }
 const validation = (req, res, next) => {

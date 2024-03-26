@@ -1,0 +1,101 @@
+//save history function call
+
+async verifyuserprompt(data) {
+
+  const histories = await chat.getHistory()
+  await saveHistory(histories)
+
+  return 1
+}
+
+//save history
+
+const { Pool } = require('pg') 
+
+async function saveHistory(histories) {
+  const pool = new Pool({
+    user: 'your_username',
+    host: 'your_host',
+    database: 'your_database',
+    password: 'your_password',
+    port: 5432, // Default Postgres port
+  })
+
+  try {
+    const client = await pool.connect()
+
+    for (const message of histories) {
+      const text = message.text || '';
+      const timestamp = message.timestamp || new Date().toISOString();
+
+      // Insert each message into the database
+      const query = `INSERT INTO chat_history (text, timestamp) VALUES ($1, $2)`
+      await client.query(query, [text, timestamp])
+    }
+
+    await client.release()
+    console.log("Chat history saved successfully!")
+  } catch (error) {
+    console.error("Error saving chat history:", error)
+  } finally {
+    await pool.end() // Close the connection pool
+  }
+}
+
+
+// retrieve chat from db
+async verifyuserprompt(data) {
+  try {
+    const histories = await loadHistory()
+
+    const genAI = new GoogleGenerativeAI('AIzaSyBuFy2BC3Cl8n2O6dlaTWI7sJkKXMHk120')
+    const model = genAI.getGenerativeModel({ model: 'gemini-pro' })
+
+    const chat = model.startChat({
+      history: histories,
+      generationConfig: {
+        temperature: 0.9,
+        topK: 1,
+        topP: 1,
+        maxOutputTokens: 1000
+      }
+    })
+  } catch (error) {
+    console.log('22 ::', error)
+    return __constants.RESPONSE_MESSAGES.FAILED
+  }
+}
+
+
+// load history
+async function loadHistory() {
+  // Connection details (replace with your actual Postgres credentials)
+  const pool = new Pool({
+    user: 'your_username',
+    host: 'your_host',
+    database: 'your_database',
+    password: 'your_password',
+    port: 5432, // Default Postgres port
+  })
+
+  try {
+    const client = await pool.connect()
+
+    // Fetch all messages from chat_history table
+    const query = 'SELECT * FROM chat_history'
+    const result = await client.query(query)
+
+    const histories = result.rows.map(row => ({
+      text: row.text,
+      timestamp: row.timestamp,
+    }))
+
+    await client.release()
+    return histories
+  } catch (error) {
+    console.error("Error loading chat history:", error)
+    return [] // Return empty array on error
+  } finally {
+    await pool.end() // Close the connection pool
+  }
+}

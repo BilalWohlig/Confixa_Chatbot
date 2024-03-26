@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const __constants = require('../../config/constants')
 const validationOfAPI = require('../../middlewares/validation')
-// const cache = require('../../middlewares/requestCacheMiddleware') // uncomment the statement whenever the redis cache is in use.
+const { createfilesinfolder } = require('../../services/github/createfileinfolder')
 
 /**
  * @namespace -HEALTH-CHECK-MODULE-
@@ -21,17 +21,38 @@ const validationOfAPI = require('../../middlewares/validation')
  * *** Last-Updated :- Vaishnavi Korgaonkar, 18th January 2024 ***
  */
 const validationSchema = {
+  type: 'object',
+  required: true,
+  properties: {
+    message: { type: 'string', required: true },
+    // content: { type: 'string', required: true },
+    branch: { type: 'string', required: true },
+    username: { type: 'string', required: true },
+    reponame: { type: 'string', required: true },
+    filename: { type: 'string', required: true }
+  }
 }
 const validation = (req, res, next) => {
-  return validationOfAPI(req, res, next, validationSchema, 'query')
+  return validationOfAPI(req, res, next, validationSchema, 'body')
 }
-const ping = async (req, res) => {
+const createfileinfolder = async (req, res) => {
   try {
-    res.sendJson({ type: __constants.RESPONSE_MESSAGES.SUCCESS, data: true })
+    const result = await createfilesinfolder(req.headers.authorization, req.body)
+    console.log(result)
+    if (result.status_code) {
+      res.sendJson({
+        type: __constants.RESPONSE_MESSAGES.FAILED,
+        data: result
+      })
+    } else {
+      res.sendJson({
+        type: __constants.RESPONSE_MESSAGES.SUCCESS,
+        data: result
+      })
+    }
   } catch (err) {
     return res.sendJson({ type: err.type || __constants.RESPONSE_MESSAGES.SERVER_ERROR, err: err.err || err })
   }
 }
-router.get('/getPing', validation, ping)
-// router.get('/getPing', cache.route(100), validation, ping) // example for redis cache in routes
+router.put('/createfileinfolder', validation, createfileinfolder)
 module.exports = router

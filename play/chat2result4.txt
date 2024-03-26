@@ -1,0 +1,48 @@
+**Index**: `.ds-metrics-apm.transaction.*`
+
+**Query**:
+
+```json
+{
+  "query": {
+    "range": {
+      "duration.us": {
+        "gt": 1000000
+      }
+    }
+  },
+  "sort": {
+    "duration.us": {
+      "order": "desc"
+    }
+  }
+}
+``` 228
+
+
+
+**Index:**
+
+* `.ds-metrics-apm.transaction.*`
+
+**Query:**
+
+```
+{
+  "query": {
+    "range": {
+      "@timestamp": {
+        "gte": "2023-12-01T00:00:00.000Z",
+        "lt": "2023-12-31T23:59:59.999Z"
+      }
+    }
+  },
+  "sort": [
+    {
+      "duration.us": {
+        "order": "desc"
+      }
+    }
+  ],
+  "size": 1
+}

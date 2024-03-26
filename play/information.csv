@@ -1,0 +1,21 @@
+INDEX,EXPLANATION
+.ds-metrics-apm.service_destination.*,service destination metrics.
+.ds-metrics-apm.transaction.*,information about transactions to the API
+.ds-metrics-apm.internal-*,internal metrics data within an APM
+.ds-metrics-apm.service_summary.*,About service
+.ds-metrics-apm.service_transaction.*,Information about a service and transactions to that service
+.internal.alerts-observability.uptime.*,uptime alerts within an observability system.
+.elastic-connectors-sync-jobs-v1,synchronization jobs for Elastic connectors.
+.internal.alerts-stack.*,to stack alerts within an alerting system.
+.internal.alerts-ml.anomaly-detection.*,wildcard pattern for anomaly detection alerts within a machine learning system.
+.internal.alerts-security.,security alerts within an alerting system.
+.kibana-observability-ai-assistant-kb-000001,"Kibana index pattern for an observability AI assistant.
+
+AI assistant knowledge base within the Kibana observability system."
+kibana-observability-ai-assistant-conversations-000001,conversations or interactions with the AI assistant within the Kibana observability system.
+.elastic-connectors-v1,connectors within the Elastic ecosystem.
+.ds-logs-enterprise_search.*,"ogs related to the Enterprise Search component ex. Unified Search Interface, Full-Text Search, Analytics and Insights"
+.ds-logs-apm.error-*,error logs from the APM
+.internal.alerts-observability.slo,alerts for SLO
+.internal.alerts-observability.threshold.,alerts for threshold breaches within an observability system.
+.ds-metrics-apm.app.*,metrics related to applications monitored by the APM

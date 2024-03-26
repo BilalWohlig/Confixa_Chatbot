@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const __constants = require('../../config/constants')
 const validationOfAPI = require('../../middlewares/validation')
-// const cache = require('../../middlewares/requestCacheMiddleware') // uncomment the statement whenever the redis cache is in use.
+const { createreposinorgs } = require('../../services/github/createrepoinorg')
 
 /**
  * @namespace -HEALTH-CHECK-MODULE-
@@ -21,17 +21,40 @@ const validationOfAPI = require('../../middlewares/validation')
  * *** Last-Updated :- Vaishnavi Korgaonkar, 18th January 2024 ***
  */
 const validationSchema = {
-}
-const validation = (req, res, next) => {
-  return validationOfAPI(req, res, next, validationSchema, 'query')
-}
-const ping = async (req, res) => {
-  try {
-    res.sendJson({ type: __constants.RESPONSE_MESSAGES.SUCCESS, data: true })
-  } catch (err) {
-    return res.sendJson({ type: err.type || __constants.RESPONSE_MESSAGES.SERVER_ERROR, err: err.err || err })
+  type: 'object',
+  required: true,
+  properties: {
+    name: { type: 'string', required: true },
+    private: { type: 'boolean', required: true },
+    auto_init: { type: 'boolean', required: true },
+    org: { type: 'string', required: true }
   }
 }
-router.get('/getPing', validation, ping)
+const validation = (req, res, next) => {
+  return validationOfAPI(req, res, next, validationSchema, 'body')
+}
+const createrepoinorg = async (req, res) => {
+  try {
+    console.log(req.body)
+    const result = await createreposinorgs(req.headers.authorization, req.body)
+    if (result.status_code) {
+      res.sendJson({
+        type: __constants.RESPONSE_MESSAGES.FAILED,
+        data: result
+      })
+    } else {
+      res.sendJson({
+        type: __constants.RESPONSE_MESSAGES.SUCCESS,
+        data: result
+      })
+    }
+  } catch (err) {
+    return res.sendJson({
+      type: err.type || __constants.RESPONSE_MESSAGES.SERVER_ERROR,
+      err: err.err || err
+    })
+  }
+}
+router.post('/createrepoinorgs', validation, createrepoinorg)
 // router.get('/getPing', cache.route(100), validation, ping) // example for redis cache in routes
 module.exports = router

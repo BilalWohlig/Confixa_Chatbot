@@ -1,0 +1,21 @@
+You should use the `.ds-metrics-apm.transaction` index and query for transactions with the slowest response times. For example, you could use the following query:
+
+```
+{
+  "size": 10,
+  "query": {
+    "range": {
+      "duration.us": {
+        "gt": 1000000
+      }
+    }
+  },
+  "sort": [
+    {
+      "duration.us": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+``` 364

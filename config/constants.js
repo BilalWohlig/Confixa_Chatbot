@@ -47,7 +47,35 @@ const EXPIRY_OF_CACHE = 300
 const USER_ACTIVITY_LOGS = 'useractivitylogs'
 const V1 = 'v1'
 const ARRAY_OF_MEDIUM = ['body', 'params', 'query']
+const AUTH_URL = 'https://login.microsoftonline.com/'
+const OAUTH2_ENDPOINT = 'oauth2/v2.0/token'
+const EMBED_ENDPOINT = 'myorg/GenerateToken'
+const JWT_EXPIRY_TIME = 10800
 
+const GITHUB_BASE_URL = 'https://api.github.com'
+const GITHUB_USER = 'Vaishnavi20011225'
+const GITHUB_REPO = 'confixaaaa-backend'
+const GITHUB_FILENAME = 'file102'
+const GITHUB_ACTIONS_FILEPATH = '.github/workflows/github_actions.yaml'
+const GITHUB_FILE_TO_EDIT = 'ss.txt'
+const TOKEN = 'token'
+const GITHUB_ORG = 'confixa'
+const GITOPS_REPO = 'gitops'
+const GITOPS_BRANCH = 'gitops-branch'
+
+const ARGOCD_BASE_URL = 'https://argocd.'
+const ARGOCD_BASE2_URL = '/api/v1/'
+const ARGO_BEARER = 'Bearer'
+
+const ELASTICSEARCH_NODE = 'https://433e629050d947eeb3563b2663c35bfc.ap-south-1.aws.elastic-cloud.com'
+const ELASTICSEARCH_API_KEY = 'dnhFNzBJMEJfME1uVlRZSVM2NmM6dXlYYXBJZFZUVUd2b1Y1bkRrS0N3dw=='
+const ELASTICSEARCH_SIZE = 100
+const TOPIC_TITLE = 'New Chat'
+
+module.exports.JWT_EXPIRY_TIME = JWT_EXPIRY_TIME
+module.exports.EMBED_ENDPOINT = EMBED_ENDPOINT
+module.exports.OAUTH2_ENDPOINT = OAUTH2_ENDPOINT
+module.exports.AUTH_URL = AUTH_URL
 module.exports.RESPONSE_MESSAGES = require('../responses/api-responses')
 module.exports.CUSTOM_CONSTANT = CUSTOM_CONSTANT
 module.exports.PUBLIC_FOLDER_PATH = PUBLIC_FOLDER_PATH
@@ -63,3 +91,23 @@ module.exports.EXPIRY_OF_CACHE = EXPIRY_OF_CACHE
 module.exports.USER_ACTIVITY_LOGS = USER_ACTIVITY_LOGS
 module.exports.V1 = V1
 module.exports.ARRAY_OF_MEDIUM = ARRAY_OF_MEDIUM
+
+module.exports.GITHUB_BASE_URL = GITHUB_BASE_URL
+module.exports.GITHUB_USER = GITHUB_USER
+module.exports.GITHUB_REPO = GITHUB_REPO
+module.exports.GITHUB_FILENAME = GITHUB_FILENAME
+module.exports.GITHUB_ACTIONS_FILEPATH = GITHUB_ACTIONS_FILEPATH
+module.exports.GITHUB_FILE_TO_EDIT = GITHUB_FILE_TO_EDIT
+module.exports.TOKEN = TOKEN
+module.exports.GITHUB_ORG = GITHUB_ORG
+module.exports.GITOPS_REPO = GITOPS_REPO
+module.exports.GITOPS_BRANCH = GITOPS_BRANCH
+
+module.exports.ARGOCD_BASE_URL = ARGOCD_BASE_URL
+module.exports.ARGOCD_BASE2_URL = ARGOCD_BASE2_URL
+module.exports.ARGO_BEARER = ARGO_BEARER
+
+module.exports.ELASTICSEARCH_NODE = ELASTICSEARCH_NODE
+module.exports.ELASTICSEARCH_API_KEY = ELASTICSEARCH_API_KEY
+module.exports.ELASTICSEARCH_SIZE = ELASTICSEARCH_SIZE
+module.exports.TOPIC_TITLE = TOPIC_TITLE

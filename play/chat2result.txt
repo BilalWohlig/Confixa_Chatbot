@@ -1,0 +1,26 @@
+1 To find the slowest API, you should use an index that contains transaction data. The following indexes contain transaction data:
+
+* `.ds-metrics-apm.transaction.1m-default-YYYY.MM.DD-0000HH`
+* `.ds-metrics-apm.transaction.1m-default-YYYY.MM.DD-0000HH`
+
+The most recent index will have the most up-to-date data, so you should start by searching the most recent index. If you don't find the data you need in the most recent index, you can search older indices until you find the data you need.
+
+To search for the slowest API, you can use the following query:
+
+```
+{
+  "size": 1,
+  "query": {
+    "match_all": {}
+  },
+  "sort": [
+    {
+      "duration.us": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+```
+
+This query will return the single slowest API transaction in the index. You can change the `size` parameter to return more results. 836
