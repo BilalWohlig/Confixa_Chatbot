@@ -2,19 +2,6 @@
   {
     "health": "green",
     "status": "open",
-    "index": ".ds-metrics-apm.service_destination.1m-default-2024.03.13-000063",
-    "uuid": "EX5pTeApTq6WI58zEGD8UA",
-    "pri": "1",
-    "rep": "1",
-    "docs.count": "27670",
-    "docs.deleted": "0",
-    "store.size": "3mb",
-    "pri.store.size": "1.4mb",
-    "dataset.size": "1.4mb"
-  },
-  {
-    "health": "green",
-    "status": "open",
     "index": ".ds-metrics-apm.transaction.1m-default-2024.02.21-000056",
     "uuid": "AR5rtcdXQ7G8V5YfJSVZdw",
     "pri": "1",
@@ -175,11 +162,11 @@
     "uuid": "H9eA0gEMSLur_dVsGO-f_Q",
     "pri": "1",
     "rep": "1",
-    "docs.count": "41658",
+    "docs.count": "57471",
     "docs.deleted": "0",
-    "store.size": "2.3mb",
-    "pri.store.size": "1.1mb",
-    "dataset.size": "1.1mb"
+    "store.size": "3.1mb",
+    "pri.store.size": "1.5mb",
+    "dataset.size": "1.5mb"
   },
   {
     "health": "green",
@@ -227,11 +214,11 @@
     "uuid": "z6E1rlr7S8SB8iaoTj8zSQ",
     "pri": "1",
     "rep": "1",
-    "docs.count": "586651",
+    "docs.count": "586959",
     "docs.deleted": "0",
-    "store.size": "106.7mb",
-    "pri.store.size": "53.3mb",
-    "dataset.size": "53.3mb"
+    "store.size": "105.8mb",
+    "pri.store.size": "52.8mb",
+    "dataset.size": "52.8mb"
   },
   {
     "health": "green",
@@ -344,11 +331,11 @@
     "uuid": "P8s79arrTq631Tnh3yxVow",
     "pri": "1",
     "rep": "1",
-    "docs.count": "14592",
+    "docs.count": "43007",
     "docs.deleted": "0",
-    "store.size": "2.4mb",
-    "pri.store.size": "1.2mb",
-    "dataset.size": "1.2mb"
+    "store.size": "3.3mb",
+    "pri.store.size": "1.6mb",
+    "dataset.size": "1.6mb"
   },
   {
     "health": "green",
@@ -461,11 +448,11 @@
     "uuid": "ycEB8ZKLR2aF_xWW0_3d7Q",
     "pri": "1",
     "rep": "1",
-    "docs.count": "13886",
+    "docs.count": "19157",
     "docs.deleted": "0",
-    "store.size": "1.3mb",
-    "pri.store.size": "681.2kb",
-    "dataset.size": "681.2kb"
+    "store.size": "1.6mb",
+    "pri.store.size": "834.3kb",
+    "dataset.size": "834.3kb"
   },
   {
     "health": "green",
@@ -539,11 +526,11 @@
     "uuid": "mMLUoR_rS2CeogJkkPp7rA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "41817",
+    "docs.count": "65070",
     "docs.deleted": "0",
-    "store.size": "107.3mb",
-    "pri.store.size": "53.4mb",
-    "dataset.size": "53.4mb"
+    "store.size": "170.7mb",
+    "pri.store.size": "84.2mb",
+    "dataset.size": "84.2mb"
   },
   {
     "health": "green",
@@ -552,11 +539,11 @@
     "uuid": "_-KXn7dDTz6xgTTfOinwow",
     "pri": "1",
     "rep": "1",
-    "docs.count": "2081",
+    "docs.count": "6756",
     "docs.deleted": "0",
-    "store.size": "1mb",
-    "pri.store.size": "456.5kb",
-    "dataset.size": "456.5kb"
+    "store.size": "1.3mb",
+    "pri.store.size": "713.1kb",
+    "dataset.size": "713.1kb"
   },
   {
     "health": "green",
@@ -734,11 +721,11 @@
     "uuid": "BPH3ddjLSPmfcRxhdgNUhA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "1",
+    "docs.count": "4",
     "docs.deleted": "0",
-    "store.size": "109.5kb",
-    "pri.store.size": "54.7kb",
-    "dataset.size": "54.7kb"
+    "store.size": "386.3kb",
+    "pri.store.size": "193.1kb",
+    "dataset.size": "193.1kb"
   },
   {
     "health": "green",
@@ -838,11 +825,11 @@
     "uuid": "c_iLpdSuSei_o5pm7s1rjA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "5971",
+    "docs.count": "18864",
     "docs.deleted": "0",
-    "store.size": "1.9mb",
-    "pri.store.size": "963kb",
-    "dataset.size": "963kb"
+    "store.size": "2.3mb",
+    "pri.store.size": "1.1mb",
+    "dataset.size": "1.1mb"
   },
   {
     "health": "green",
@@ -1003,15 +990,28 @@
   {
     "health": "green",
     "status": "open",
+    "index": ".ds-metrics-apm.internal-default-2024.03.22-000017",
+    "uuid": "Cm-ro0ueS-ygvX5ZvUL2zQ",
+    "pri": "1",
+    "rep": "1",
+    "docs.count": "71868",
+    "docs.deleted": "0",
+    "store.size": "12.6mb",
+    "pri.store.size": "6.5mb",
+    "dataset.size": "6.5mb"
+  },
+  {
+    "health": "green",
+    "status": "open",
     "index": ".ds-metrics-apm.transaction.1m-default-2024.03.20-000065",
     "uuid": "e5uYX_zGQSS2JPFBGZf7HA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "2556",
+    "docs.count": "8600",
     "docs.deleted": "0",
-    "store.size": "2.5mb",
-    "pri.store.size": "1.4mb",
-    "dataset.size": "1.4mb"
+    "store.size": "1.9mb",
+    "pri.store.size": "869.7kb",
+    "dataset.size": "869.7kb"
   },
   {
     "health": "green",
@@ -1198,19 +1198,6 @@
   {
     "health": "green",
     "status": "open",
-    "index": ".ds-traces-apm-default-2024.02.14-000016",
-    "uuid": "B0DZhSqaTKWZk8wvdOIqMA",
-    "pri": "1",
-    "rep": "1",
-    "docs.count": "145770",
-    "docs.deleted": "0",
-    "store.size": "279.3mb",
-    "pri.store.size": "170.1mb",
-    "dataset.size": "170.1mb"
-  },
-  {
-    "health": "green",
-    "status": "open",
     "index": ".profiling-stacktraces-v001-000001",
     "uuid": "J_-enMIVReu_XK_FpWYG-w",
     "pri": "16",
@@ -1220,6 +1207,19 @@
     "store.size": "2.7mb",
     "pri.store.size": "1.3mb",
     "dataset.size": "1.3mb"
+  },
+  {
+    "health": "green",
+    "status": "open",
+    "index": ".ds-metrics-apm.app.apm_server-default-2024.03.22-000002",
+    "uuid": "vH64wzptS5qX0eKtlrZeOw",
+    "pri": "1",
+    "rep": "1",
+    "docs.count": "0",
+    "docs.deleted": "0",
+    "store.size": "499b",
+    "pri.store.size": "250b",
+    "dataset.size": "250b"
   },
   {
     "health": "green",
@@ -1484,15 +1484,15 @@
   {
     "health": "green",
     "status": "open",
-    "index": ".ds-logs-apm.error-default-2024.02.14-000016",
-    "uuid": "e8TYQGXXR22725_Z4eM4dA",
+    "index": ".ds-metrics-apm.service_destination.1m-default-2024.03.13-000063",
+    "uuid": "EX5pTeApTq6WI58zEGD8UA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "37",
+    "docs.count": "27670",
     "docs.deleted": "0",
-    "store.size": "847.3kb",
-    "pri.store.size": "423.6kb",
-    "dataset.size": "423.6kb"
+    "store.size": "3mb",
+    "pri.store.size": "1.4mb",
+    "dataset.size": "1.4mb"
   },
   {
     "health": "green",

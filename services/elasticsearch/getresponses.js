@@ -25,7 +25,7 @@ class GetResponse {
       // data.Index = removeSurroundingPeriods(data.Index)
       // const numDots = data.Index.split('.').length - 1
       // console.log("cleaned index", data.Index)
-      var dataStream = `${data.Index}-*`
+      var dataStream = `${data.Index}*`
       // if (numDots === 2) {
       //   var dataStream = `.${data.Index}.*`
       // } else {
@@ -34,7 +34,7 @@ class GetResponse {
 
       const startTime = parseInt(data.startTime)
       const endTime = Number(data.endTime)
-      const size = 100
+      const size = 5000
       console.log(dataStream, startTime, endTime)
 
       let convertedStartTime = moment.unix(startTime)
@@ -50,7 +50,7 @@ class GetResponse {
         query: {
           range: {
             '@timestamp': {
-              gte: 'now-1h',
+              gte: 'now-24h',
               lte: 'now'
               // format: "yyyy-MM-dd'T'HH:mm:ss",
               // time_zone: "+05:30"
@@ -77,20 +77,7 @@ class GetResponse {
       hits.forEach((hit) => {
         // console.log(hit._source.transaction)
         // return
-        const source = {
-
-        }
-        // const source = {
-        //   transactionData: hit._source.transaction,
-        //   spanData: hit._source.span
-        // }
-        if (hit._source.transaction.result) {
-          source.transactionData = hit._source.transaction
-        } else {
-          source.spanData = hit._source.span
-        }
-        source.id = hit._source.transaction.id
-        totalTxn.push(source)
+        totalTxn.push(hit._source.transaction)
       })
 
       fs.writeFileSync('services/elasticsearch/transactions.json', JSON.stringify(totalTxn, null, 2))

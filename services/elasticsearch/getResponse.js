@@ -6,7 +6,9 @@ const { getGPTResponse } = require('../elasticsearch/gpt')
 const { cleanResponse } = require('../elasticsearch/datacleanup')
 const { getresponse } = require('../elasticsearch/getresponses')
 const { getGeminiResponse2 } = require('../elasticsearch/gemini2')
+const { getGPTResponse2 } = require('../elasticsearch/gpt2')
 const { verify } = require('../elasticsearch/verifyGemini')
+const fs = require('fs')
 const moment = require('moment')
 class GetBotResponse {
   async getBotResponse (data) {
@@ -65,12 +67,37 @@ class GetBotResponse {
         // return [txns, resp]
         return txns
       }
-      // const GeminiResponse2 = await getGeminiResponse2(data)
-      // console.log("GeminiResponse2", GeminiResponse2)
-      // if (GeminiResponse2.status_code) {
-      //   return geminiResponse
-      // }
-      // return GeminiResponse2
+      const transactionData = JSON.parse(fs.readFileSync('services/elasticsearch/transactions.json', 'utf8'))
+      const groupedData = transactionData.reduce((acc, curr) => {
+        const { name } = curr;
+        const { sum, value_count } = curr.duration.summary;
+      
+        if (!acc[name]) {
+          acc[name] = { totalDuration: 0, totalRequests: 0 };
+        }
+      
+        acc[name].totalDuration += sum;
+        acc[name].totalRequests += value_count;
+      
+        return acc;
+      }, {});
+      
+      // Calculate the average sum per value_count for each name
+      const result = Object.entries(groupedData).reduce((acc, [name, { totalDuration, totalRequests }]) => {
+        acc[name] = {
+          totalDuration,
+          totalRequests,
+          averageLatency: totalRequests > 0 ? Math.round(totalDuration / (totalRequests * 1000)) : 0
+        };
+        return acc;
+      }, {});
+      fs.writeFileSync('services/elasticsearch/latencies.json', JSON.stringify(result, null, 2))
+      const GPTResponse2 = await getGPTResponse2(data)
+      console.log("GPTResponse2", GPTResponse2)
+      if (GPTResponse2.status_code) {
+        return gptResponse
+      }
+      return GPTResponse2
     } catch (error) {
       console.log(error)
       return __constants.RESPONSE_MESSAGES.ERROR_CALLING_PROVIDER

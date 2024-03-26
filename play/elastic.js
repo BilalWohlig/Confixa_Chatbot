@@ -41,7 +41,7 @@ const getTxn = async () => {
   //   totalTxn.push(source)
   // })
 
-  fs.writeFileSync('transactions.json', JSON.stringify(hits, null, 2))
+  fs.writeFileSync('transactionsSolo.json', JSON.stringify(hits, null, 2))
   // const transactions = fs.readFileSync('transactions.json', 'utf-8')
   // console.log(transactions)
 }

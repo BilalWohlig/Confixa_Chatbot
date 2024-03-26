@@ -12,7 +12,7 @@ class GPTModel {
         {
           role: 'system',
           content:
-            "You are a helpful assistant that helps in fetching the correct index from elastic search based on the index data that is provided to you. If the user's question is anything related to latency or average time/duration taken, choose .ds-traces-apm-default index"
+            "You are a helpful assistant that helps in fetching the correct index from elastic search based on the index data that is provided to you. If the user's question is anything related to latency or average time/duration taken, choose .ds-metrics-apm.transaction index"
         },
         {
           role: 'user',
@@ -31,7 +31,7 @@ class GPTModel {
             Index Name = .ds-metrics-apm.app.apm_server
             5. Index = .kibana-observability-ai-assistant-conversations-000001
             Index Name = .kibana-observability-ai-assistant-conversations
-            Also, provide me with a timestamp the end time is ${Date.now()} and start time is ${Date.now() - (2 * 60 * 60 * 1000)}. Also give me a short title for this response. Give me response as "{"Title":"short_title_for_the_context_of_the_topic", "Index": "just_the_name_of_the_index_without_time_ahead_of_it", "startTime": "start time timestamp", "endTime": "endTime"}".`
+            Also, provide me with a timestamp the end time is ${Date.now()} and start time is ${Date.now() - (1 * 60 * 60 * 1000)}. Also give me a short title for this response. Give me response as "{"Title":"short_title_for_the_context_of_the_topic", "Index": "just_the_name_of_the_index_without_time_ahead_of_it", "startTime": "start time timestamp", "endTime": "endTime"}".`
         }
       ],
       model: 'gpt-3.5-turbo',
