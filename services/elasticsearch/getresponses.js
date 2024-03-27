@@ -50,7 +50,7 @@ class GetResponse {
         query: {
           range: {
             '@timestamp': {
-              gte: 'now-24h',
+              gte: 'now-1h',
               lte: 'now'
               // format: "yyyy-MM-dd'T'HH:mm:ss",
               // time_zone: "+05:30"
@@ -77,11 +77,24 @@ class GetResponse {
       hits.forEach((hit) => {
         // console.log(hit._source.transaction)
         // return
-        totalTxn.push(hit._source.transaction)
+        if(hit._source.transaction.name) {
+          hit._source.transaction.transactionId = hit._source.transaction.id
+          hit._source.transaction.apiUrl = hit._source.transaction.name
+          totalTxn.push(hit._source.transaction)
+        }
+        if(hit._source.span && hit._source.span.name) {
+          hit._source.span.transactionId = hit._source.transaction.id
+          totalTxn.push(hit._source.span)
+        }
       })
-
-      fs.writeFileSync('services/elasticsearch/transactions.json', JSON.stringify(totalTxn, null, 2))
-      fs.writeFileSync('services/elasticsearch/fullTransactions.json', JSON.stringify(hits, null, 2))
+      if(data.category == 'latency') {
+        fs.writeFileSync('services/elasticsearch/transactions.json', JSON.stringify(totalTxn, null, 2))
+        fs.writeFileSync('services/elasticsearch/fullTransactions.json', JSON.stringify(hits, null, 2))
+      }
+      else if(data.category == 'traces') {
+        fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(totalTxn, null, 2))
+        fs.writeFileSync('services/elasticsearch/fullTraces.json', JSON.stringify(hits, null, 2))
+      }
       console.log('Writtennnnn')
       return true
     } catch (error) {

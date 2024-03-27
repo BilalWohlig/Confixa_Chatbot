@@ -1,113 +1,143 @@
 {
-  "POST /category/getAllCat": {
-    "totalDuration": 151706500,
-    "totalRequests": 35900,
-    "averageLatency": 4
-  },
-  "GET /news/getOneNewsForWeb/:id": {
-    "totalDuration": 68039000,
-    "totalRequests": 15720,
-    "averageLatency": 4
-  },
   "GET /news/getOneBlogForWeb/:id": {
-    "totalDuration": 49462080,
-    "totalRequests": 15120,
+    "totalDuration": 49032500,
+    "totalRequests": 14620,
     "averageLatency": 3
   },
+  "GET /news/getThreeBlogsForEachCategoryInWeb/:id": {
+    "totalDuration": 4556660,
+    "totalRequests": 140,
+    "averageLatency": 33
+  },
   "POST /news/sendAlgoliaEvents/:id": {
-    "totalDuration": 54178940,
-    "totalRequests": 4740,
+    "totalDuration": 49739140,
+    "totalRequests": 4220,
+    "averageLatency": 12
+  },
+  "POST /oneSignal/openAppV2": {
+    "totalDuration": 10824480,
+    "totalRequests": 1000,
     "averageLatency": 11
   },
-  "POST /askus/api/image/createS3ForReplicate": {
-    "totalDuration": 5978519960,
-    "totalRequests": 1640,
-    "averageLatency": 3645
-  },
-  "POST /askus/api/audio/createS3ForAudio": {
-    "totalDuration": 2229735960,
-    "totalRequests": 3560,
-    "averageLatency": 626
-  },
-  "POST /askus/api/gpt/getAdvancedClassificationGPT": {
-    "totalDuration": 2753246560,
-    "totalRequests": 2720,
-    "averageLatency": 1012
-  },
-  "POST /askus/api/gpt/getNewsFromGPT": {
-    "totalDuration": 50750420760,
-    "totalRequests": 2280,
-    "averageLatency": 22259
-  },
-  "POST /askus/api/algolia/algoliaSearchQuery": {
-    "totalDuration": 33722100,
-    "totalRequests": 780,
-    "averageLatency": 43
+  "GET /news/getOneNewsForWeb/:id": {
+    "totalDuration": 63611080,
+    "totalRequests": 14520,
+    "averageLatency": 4
   },
   "GET /user/userDetails": {
-    "totalDuration": 5709360,
+    "totalDuration": 5585200,
     "totalRequests": 720,
     "averageLatency": 8
   },
-  "GET /language/getLanguages": {
-    "totalDuration": 7593120,
-    "totalRequests": 1440,
-    "averageLatency": 5
+  "POST /category/getAllCat": {
+    "totalDuration": 144714960,
+    "totalRequests": 33840,
+    "averageLatency": 4
   },
-  "GET /chats/getChatsPerUser/:id": {
-    "totalDuration": 1075500,
-    "totalRequests": 340,
-    "averageLatency": 3
-  },
-  "POST /news/mynews/all": {
-    "totalDuration": 82075100,
-    "totalRequests": 1060,
-    "averageLatency": 77
-  },
-  "POST /askus/api/image/downloadImageCreateS3Url": {
-    "totalDuration": 8876848980,
-    "totalRequests": 2220,
-    "averageLatency": 3999
+  "POST /askus/api/audio/createS3ForAudio": {
+    "totalDuration": 2690576100,
+    "totalRequests": 4380,
+    "averageLatency": 614
   },
   "POST /api/sitemap/sitemap": {
-    "totalDuration": 177180600,
-    "totalRequests": 2120,
-    "averageLatency": 84
+    "totalDuration": 205995700,
+    "totalRequests": 2380,
+    "averageLatency": 87
   },
-  "POST /oneSignal/openAppV2": {
-    "totalDuration": 8301540,
-    "totalRequests": 740,
-    "averageLatency": 11
+  "POST /askus/api/gpt/getAdvancedClassificationGPT": {
+    "totalDuration": 3088790520,
+    "totalRequests": 3080,
+    "averageLatency": 1003
+  },
+  "POST /api/admin/updateAsReviewed/:id": {
+    "totalDuration": 16660560,
+    "totalRequests": 1200,
+    "averageLatency": 14
+  },
+  "GET /chats/questionLimit": {
+    "totalDuration": 1679460,
+    "totalRequests": 540,
+    "averageLatency": 3
+  },
+  "GET /astrology/checkThenGetPredictionToday": {
+    "totalDuration": 19583820,
+    "totalRequests": 180,
+    "averageLatency": 109
+  },
+  "POST /api/admin/unpublishNews/:id": {
+    "totalDuration": 17095320,
+    "totalRequests": 360,
+    "averageLatency": 47
+  },
+  "POST /askus/api/gpt/getNewsFromGPT": {
+    "totalDuration": 61672650220,
+    "totalRequests": 2580,
+    "averageLatency": 23904
+  },
+  "POST /askus/api/translate/getTranslation": {
+    "totalDuration": 309060,
+    "totalRequests": 60,
+    "averageLatency": 5
+  },
+  "POST /askus/api/image/downloadImageCreateS3Url": {
+    "totalDuration": 9512220220,
+    "totalRequests": 2500,
+    "averageLatency": 3805
+  },
+  "GET /language/getLanguages": {
+    "totalDuration": 7956600,
+    "totalRequests": 1480,
+    "averageLatency": 5
+  },
+  "POST /askus/api/image/createS3ForReplicate": {
+    "totalDuration": 6600456400,
+    "totalRequests": 1840,
+    "averageLatency": 3587
   },
   "GET /config/getConfig": {
-    "totalDuration": 1162260,
-    "totalRequests": 300,
+    "totalDuration": 1358040,
+    "totalRequests": 360,
     "averageLatency": 4
+  },
+  "GET unknown route": {
+    "totalDuration": 444180,
+    "totalRequests": 780,
+    "averageLatency": 1
+  },
+  "POST /news/mynews/all": {
+    "totalDuration": 61075600,
+    "totalRequests": 880,
+    "averageLatency": 69
+  },
+  "POST /askus/api/algolia/algoliaSearchQuery": {
+    "totalDuration": 25052740,
+    "totalRequests": 700,
+    "averageLatency": 36
+  },
+  "GET /chats/getChatsPerUser/:id": {
+    "totalDuration": 1181400,
+    "totalRequests": 360,
+    "averageLatency": 3
+  },
+  "POST /chats/chatsList": {
+    "totalDuration": 756360,
+    "totalRequests": 120,
+    "averageLatency": 6
+  },
+  "POST /chats/deleteChat/:id": {
+    "totalDuration": 698820,
+    "totalRequests": 60,
+    "averageLatency": 12
+  },
+  "POST /news/categoryNews/:id": {
+    "totalDuration": 5795560,
+    "totalRequests": 280,
+    "averageLatency": 21
   },
   "POST /askus/api/gpt/getFullContentGPT": {
     "totalDuration": 8123842260,
     "totalRequests": 300,
     "averageLatency": 27079
-  },
-  "POST /api/admin/updateAsReviewed/:id": {
-    "totalDuration": 10182900,
-    "totalRequests": 780,
-    "averageLatency": 13
-  },
-  "GET unknown route": {
-    "totalDuration": 438060,
-    "totalRequests": 780,
-    "averageLatency": 1
-  },
-  "POST /news/categoryNews/:id": {
-    "totalDuration": 3667000,
-    "totalRequests": 200,
-    "averageLatency": 18
-  },
-  "GET /astrology/checkThenGetPredictionToday": {
-    "totalDuration": 17587080,
-    "totalRequests": 120,
-    "averageLatency": 147
   },
   "POST /api/admin/editNewsByAdmin/:id": {
     "totalDuration": 1351620,
@@ -119,34 +149,24 @@
     "totalRequests": 240,
     "averageLatency": 11
   },
-  "GET /chats/questionLimit": {
-    "totalDuration": 1288860,
-    "totalRequests": 420,
-    "averageLatency": 3
-  },
   "POST /tags/getQuerySuggestions": {
     "totalDuration": 3843660,
     "totalRequests": 180,
     "averageLatency": 21
   },
   "POST /bookmark/addBookmark/:id": {
-    "totalDuration": 2276940,
-    "totalRequests": 180,
-    "averageLatency": 13
+    "totalDuration": 840900,
+    "totalRequests": 60,
+    "averageLatency": 14
   },
   "GET static file": {
     "totalDuration": 1136580,
     "totalRequests": 60,
     "averageLatency": 19
   },
-  "GET /news/getThreeBlogsForEachCategoryInWeb/:id": {
-    "totalDuration": 3763080,
-    "totalRequests": 120,
-    "averageLatency": 31
-  },
   "POST /news/getAllBlogsForWeb": {
-    "totalDuration": 769800,
-    "totalRequests": 120,
-    "averageLatency": 6
+    "totalDuration": 685980,
+    "totalRequests": 100,
+    "averageLatency": 7
   }
 }

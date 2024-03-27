@@ -1,0 +1,128 @@
+{
+  "POST /category/getAllCat": {
+    "apiUrl": "POST /category/getAllCat",
+    "span_count": {
+      "started": 2
+    },
+    "trace": []
+  },
+  "POST /askus/api/image/downloadImageCreateS3Url": {
+    "apiUrl": "POST /askus/api/image/downloadImageCreateS3Url",
+    "span_count": {
+      "started": 7
+    },
+    "trace": []
+  },
+  "GET /user/chooseLanguage/:id": {
+    "apiUrl": "GET /user/chooseLanguage/:id",
+    "span_count": {
+      "started": 0
+    },
+    "trace": []
+  },
+  "POST /api/admin/unpublishNews/:id": {
+    "apiUrl": "POST /api/admin/unpublishNews/:id",
+    "span_count": {
+      "started": 4
+    },
+    "trace": []
+  },
+  "GET /news/getOneBlogForWeb/:id": {
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "span_count": {
+      "started": 2
+    },
+    "trace": []
+  },
+  "GET /user/userDetails": {
+    "apiUrl": "GET /user/userDetails",
+    "span_count": {
+      "started": 5
+    },
+    "trace": []
+  },
+  "GET /news/getOneNewsForWeb/:id": {
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "span_count": {
+      "started": 2
+    },
+    "trace": []
+  },
+  "POST /askus/api/gpt/getAdvancedClassificationGPT": {
+    "apiUrl": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+    "span_count": {
+      "started": 1
+    },
+    "trace": []
+  },
+  "GET /language/getLanguages": {
+    "apiUrl": "GET /language/getLanguages",
+    "span_count": {
+      "started": 3
+    },
+    "trace": []
+  },
+  "POST /askus/api/audio/createS3ForAudio": {
+    "apiUrl": "POST /askus/api/audio/createS3ForAudio",
+    "span_count": {
+      "started": 3
+    },
+    "trace": []
+  },
+  "POST /news/sendAlgoliaEvents/:id": {
+    "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+    "span_count": {
+      "started": 4
+    },
+    "trace": []
+  },
+  "GET /config/getConfig": {
+    "apiUrl": "GET /config/getConfig",
+    "span_count": {
+      "started": 1
+    },
+    "trace": []
+  },
+  "POST /askus/api/image/createS3ForReplicate": {
+    "apiUrl": "POST /askus/api/image/createS3ForReplicate",
+    "span_count": {
+      "started": 6
+    },
+    "trace": []
+  },
+  "GET /chats/questionLimit": {
+    "apiUrl": "GET /chats/questionLimit",
+    "span_count": {
+      "started": 1
+    },
+    "trace": []
+  },
+  "POST /askus/api/gpt/getNewsFromGPT": {
+    "apiUrl": "POST /askus/api/gpt/getNewsFromGPT",
+    "span_count": {
+      "started": 1
+    },
+    "trace": []
+  },
+  "GET unknown route": {
+    "apiUrl": "GET unknown route",
+    "span_count": {
+      "started": 0
+    },
+    "trace": []
+  },
+  "POST /news/mynews/all": {
+    "apiUrl": "POST /news/mynews/all",
+    "span_count": {
+      "started": 8
+    },
+    "trace": []
+  },
+  "POST /api/sitemap/sitemap": {
+    "apiUrl": "POST /api/sitemap/sitemap",
+    "span_count": {
+      "started": 0
+    },
+    "trace": []
+  }
+}
