@@ -1,0 +1,316 @@
+{
+    "duration": {
+      "us": 143878
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "www.googleapis.com:443"
+      }
+    },
+    "name": "POST www.googleapis.com",
+    "action": "POST",
+    "id": "633efd54e6f8738d",
+    "type": "external",
+    "sync": false,
+    "transactionId": "50f001814673c7d8"
+  },
+
+{
+    "duration": {
+      "us": 46281
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "storage.googleapis.com:443"
+      }
+    },
+    "name": "POST storage.googleapis.com",
+    "action": "POST",
+    "id": "34a115958aa02415",
+    "type": "external",
+    "sync": false,
+    "transactionId": "50f001814673c7d8"
+  },
+
+{
+    "duration": {
+      "us": 54047
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "storage.googleapis.com:443"
+      }
+    },
+    "name": "PUT storage.googleapis.com",
+    "action": "PUT",
+    "id": "9b1171a2ebb92bad",
+    "type": "external",
+    "sync": false,
+    "transactionId": "50f001814673c7d8"
+  },
+
+{
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 687845
+    },
+    "representative_count": 20,
+    "name": "POST /askus/api/audio/createS3ForAudio",
+    "id": "50f001814673c7d8",
+    "span_count": {
+      "started": 3
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "50f001814673c7d8",
+    "apiUrl": "POST /askus/api/audio/createS3ForAudio"
+  },
+
+{
+    "duration": {
+      "us": 25184750
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "api.openai.com:443"
+      }
+    },
+    "name": "POST api.openai.com",
+    "action": "POST",
+    "id": "310569e0cb9f1f8d",
+    "type": "external",
+    "sync": false,
+    "transactionId": "020f0a7ed5e7654c"
+  },
+
+{
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 25186864
+    },
+    "representative_count": 20,
+    "name": "POST /askus/api/gpt/getNewsFromGPT",
+    "id": "020f0a7ed5e7654c",
+    "span_count": {
+      "started": 1
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "020f0a7ed5e7654c",
+    "apiUrl": "POST /askus/api/gpt/getNewsFromGPT"
+  },
+
+{
+    "duration": {
+      "us": 69305
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "www.googleapis.com:443"
+      }
+    },
+    "name": "POST www.googleapis.com",
+    "action": "POST",
+    "id": "a50f4fa5a2bdf4d6",
+    "type": "external",
+    "sync": false,
+    "transactionId": "31db78e69ceeb9a0"
+  },
+
+{
+    "duration": {
+      "us": 26441
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "storage.googleapis.com:443"
+      }
+    },
+    "name": "POST storage.googleapis.com",
+    "action": "POST",
+    "id": "d1979e2755a2b7d3",
+    "type": "external",
+    "sync": false,
+    "transactionId": "31db78e69ceeb9a0"
+  },
+
+{
+    "duration": {
+      "us": 56319
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "storage.googleapis.com:443"
+      }
+    },
+    "name": "PUT storage.googleapis.com",
+    "action": "PUT",
+    "id": "876cf9c1f47091ed",
+    "type": "external",
+    "sync": false,
+    "transactionId": "31db78e69ceeb9a0"
+  },
+
+{
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 442975
+    },
+    "representative_count": 20,
+    "name": "POST /askus/api/audio/createS3ForAudio",
+    "id": "31db78e69ceeb9a0",
+    "span_count": {
+      "started": 3
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "31db78e69ceeb9a0",
+    "apiUrl": "POST /askus/api/audio/createS3ForAudio"
+  },
+
+This is the trace data from elastic search. I want this data formatted in the following way.
+{
+  "POST /askus/api/audio/createS3ForAudio": [
+    {
+      transactionId: "50f001814673c7d8"
+      span_count: : {
+        started: 3
+      },
+      duration: {
+        us: 687845
+      }
+      trace: [
+        {
+          duration: {
+            us: 143878
+          },
+          destination: {
+            service: {
+              resource: www.googleapis.com:443
+            }
+          },
+          name: POST www.googleapis.com,
+          action: POST,
+          type: external
+        },
+        {
+          duration: {
+            us: 46281
+          },
+          destination: {
+            service: {
+              resource: storage.googleapis.com:443
+            }
+          },
+          name: POST storage.googleapis.com,
+          action: POST,
+          type: external
+        },
+        {
+          duration: {
+            us: 54047
+          },
+          destination: {
+            service: {
+              resource: storage.googleapis.com:443
+            }
+          },
+          name: PUT storage.googleapis.com,
+          action: PUT,
+          type: external
+        },
+      ]
+    },
+    {
+      transactionId: "31db78e69ceeb9a0"
+      span_count: : {
+        started: 3
+      },
+      duration: {
+        us: 442975
+      }
+      trace: [
+        {
+          duration: {
+            us: 69305
+          },
+          destination: {
+            service: {
+              resource: www.googleapis.com:443
+            }
+          },
+          name: POST www.googleapis.com,
+          action: POST,
+          type: external
+        },
+        {
+          duration: {
+            us: 26441
+          },
+          destination: {
+            service: {
+              resource: storage.googleapis.com:443
+            }
+          },
+          name: POST storage.googleapis.com,
+          action: POST,
+          type: external
+        },
+        {
+          duration: {
+            us: 56319
+          },
+          destination: {
+            service: {
+              resource: storage.googleapis.com:443
+            }
+          },
+          name: PUT storage.googleapis.com,
+          action: PUT,
+          type: external
+        },
+      ]
+    },
+  ],
+  "POST /askus/api/gpt/getNewsFromGPT": [
+    {
+      transactionId: "020f0a7ed5e7654c"
+      span_count: : {
+        started: 1
+      },
+      duration: {
+        us: 25186864
+      }
+      trace: [
+        {
+          duration: {
+            us: 25184750
+          },
+          destination: {
+            service: {
+              resource: api.openai.com:443
+            }
+          },
+          name: POST api.openai.com,
+          action: POST,
+          type: external
+        }
+      ]
+    }
+  ]
+}
+Do this in javascript

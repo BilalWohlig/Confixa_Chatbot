@@ -34,7 +34,7 @@ class GPTModel {
             Also, provide me with a timestamp the end time is ${Date.now()} and start time is ${Date.now() - (1 * 60 * 60 * 1000)}. Also give me a short title for this response. Also analyze the user question and categorize it from one of the following categories. ['latency', 'traces', 'latency & traces']. Give me response as "{"Title":"short_title_for_the_context_of_the_topic", "Index": "just_the_name_of_the_index_without_time_ahead_of_it", "startTime": "start time timestamp", "endTime": "endTime", "category": "category"}".`
         }
       ],
-      model: 'gpt-3.5-turbo',
+      model: 'gpt-4-0125-preview',
       temperature: 0,
       top_p: 1
     })

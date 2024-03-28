@@ -75,6 +75,9 @@ class GetBotResponse {
         const transactionData = JSON.parse(
           fs.readFileSync("services/elasticsearch/transactions.json", "utf8")
         );
+        const tracesData = JSON.parse(
+          fs.readFileSync("services/elasticsearch/traces.json", "utf8")
+        );
         const groupedData = transactionData.reduce((acc, curr) => {
           const { name } = curr;
           const { sum, value_count } = curr.duration.summary;
@@ -97,7 +100,7 @@ class GetBotResponse {
               totalRequests,
               averageLatency:
                 totalRequests > 0
-                  ? Math.round(totalDuration / (totalRequests * 1000))
+                  ? (totalDuration / (totalRequests * 1000)) > 10 ? Math.round(totalDuration / (totalRequests * 1000)) : (totalDuration / (totalRequests * 1000)).toFixed(2)
                   : 0,
             };
             return acc;
@@ -108,59 +111,59 @@ class GetBotResponse {
           "services/elasticsearch/latencies.json",
           JSON.stringify(result, null, 2)
         );
+        const formattedData = tracesData.reduce((acc, item) => {
+          if (item.apiUrl) {
+            const { transactionId, span_count, duration } = item;
+            const trace = tracesData.filter(t => t.transactionId === transactionId && !t.apiUrl).map(({ duration, composite, destination, name, action, type }) => ({
+              duration,
+              composite,
+              destination,
+              name,
+              action,
+              type,
+            }));
+            // console.log("This is traceeeeee", trace)
+            acc[item.apiUrl] = acc[item.apiUrl] || [];
+            acc[item.apiUrl].push({ transactionId, span_count, totalDuration: duration, trace });
+          }
+          return acc;
+        }, {});
+        fs.writeFileSync(
+          "services/elasticsearch/traceCleaned.json",
+          JSON.stringify(formattedData, null, 2)
+        );
       } else if (verifiedResponse.category == "traces") {
         console.log("Tracessssss");
         const tracesData = JSON.parse(
           fs.readFileSync("services/elasticsearch/traces.json", "utf8")
         );
-        const formattedData = {};
-
-        tracesData.forEach((item) => {
-          const { apiUrl, transactionId, span_count } = item;
-
-          if (apiUrl) {
-            // formattedData.apiUrl = apiUrl;
-            // console.log(formattedData);
-            // formattedData.apiUrl.span_count = span_count;
-            // formattedData.apiUrl.trace = []
-            formattedData[apiUrl] = {
-              apiUrl,
-              span_count,
-              trace: [],
-            };
-          } else {
-            const transactionssss = Object.values(formattedData)
-            const transaction = Object.values(formattedData).find(
-              (obj) =>
-                obj.trace &&
-                obj.trace.some((rel) => rel.transactionId === transactionId)
-            );
-            const finalObj = {
-              duration: item.duration,
-              destination: item.destination,
-              name: item.name,
-              action: item.action,
-              type: item.type
-            }
-            if(transaction) {
-              transaction.trace.push(finalObj);
-            }
-            else{
-              transaction.trace = [finalObj]
-            }
+        const formattedData = tracesData.reduce((acc, item) => {
+          if (item.apiUrl) {
+            const { transactionId, span_count, duration } = item;
+            const trace = tracesData.filter(t => t.transactionId === transactionId && !t.apiUrl).map(({ duration, destination, name, action, type }) => ({
+              duration,
+              destination,
+              name,
+              action,
+              type,
+            }));
+            // console.log("This is traceeeeee", trace)
+            acc[item.apiUrl] = acc[item.apiUrl] || [];
+            acc[item.apiUrl].push({ transactionId, span_count, totalDuration: duration, trace });
           }
-        });
+          return acc;
+        }, {});
         fs.writeFileSync(
           "services/elasticsearch/traceCleaned.json",
           JSON.stringify(formattedData, null, 2)
         );
       }
-      // const GPTResponse2 = await getGPTResponse2(data)
-      // console.log("GPTResponse2", GPTResponse2)
-      // if (GPTResponse2.status_code) {
-      //   return gptResponse
-      // }
-      // return GPTResponse2
+      const GPTResponse2 = await getGPTResponse2(data, verifiedResponse.category)
+      console.log("GPTResponse2", GPTResponse2)
+      if (GPTResponse2.status_code) {
+        return gptResponse
+      }
+      return GPTResponse2
     } catch (error) {
       console.log(error);
       return __constants.RESPONSE_MESSAGES.ERROR_CALLING_PROVIDER;

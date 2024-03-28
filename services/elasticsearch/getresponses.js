@@ -35,16 +35,16 @@ class GetResponse {
       const startTime = parseInt(data.startTime)
       const endTime = Number(data.endTime)
       const size = 5000
-      console.log(dataStream, startTime, endTime)
+      // console.log(dataStream, startTime, endTime)
 
       let convertedStartTime = moment.unix(startTime)
       let convertedEndTime = moment.unix(endTime)
-      console.log('*******', convertedStartTime, convertedEndTime)
+      // console.log('*******', convertedStartTime, convertedEndTime)
 
       convertedStartTime = convertedStartTime.format('YYYY-MM-DDTHH:mm:ss')
       convertedEndTime = convertedEndTime.format('YYYY-MM-DDTHH:mm:ss')
 
-      console.log(convertedStartTime, convertedEndTime)
+      // console.log(convertedStartTime, convertedEndTime)
       const query = {
         size,
         query: {
@@ -64,6 +64,34 @@ class GetResponse {
         index: dataStream,
         body: query
       })
+      if(data.category === 'latency') {
+        const traces = await client.search({
+          index: '.ds-traces-apm-default*',
+          body: query
+        })
+        var traceHits = traces?.hits?.hits
+        console.log(`Found ${traceHits.length} traces:`)
+        if (!traceHits) {
+          return geminiResponse
+        }
+        if (traceHits.length === 0) {
+          return `No Transactions Found Matching the User Request. Use ${JSON.stringify(geminiResponse)}`
+        }
+        var traceTxn = []
+        traceHits.forEach((hit) => {
+          // console.log(hit._source.transaction)
+          // return
+          if(hit._source.transaction.name) {
+            hit._source.transaction.transactionId = hit._source.transaction.id
+            hit._source.transaction.apiUrl = hit._source.transaction.name
+            traceTxn.push(hit._source.transaction)
+          }
+          if(hit._source.span && hit._source.span.name) {
+            hit._source.span.transactionId = hit._source.transaction.id
+            traceTxn.push(hit._source.span)
+          }
+        })
+      }
       // console.log(txn)
       const hits = txn?.hits?.hits
       console.log(`Found ${hits.length} transactions:`)
@@ -89,11 +117,10 @@ class GetResponse {
       })
       if(data.category == 'latency') {
         fs.writeFileSync('services/elasticsearch/transactions.json', JSON.stringify(totalTxn, null, 2))
-        fs.writeFileSync('services/elasticsearch/fullTransactions.json', JSON.stringify(hits, null, 2))
+        fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(traceTxn, null, 2))
       }
       else if(data.category == 'traces') {
         fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(totalTxn, null, 2))
-        fs.writeFileSync('services/elasticsearch/fullTraces.json', JSON.stringify(hits, null, 2))
       }
       console.log('Writtennnnn')
       return true
