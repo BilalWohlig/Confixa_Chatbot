@@ -1,0 +1,18 @@
+[
+  {
+    "service_name": "AskUs-Api",
+    "average latency in miliseconds": 5088.860465116279
+  },
+  {
+    "service_name": "AskUs-FileUpload",
+    "average latency in miliseconds": 2270821.4
+  },
+  {
+    "service_name": "AskUs-GPT",
+    "average latency in miliseconds": 27525119
+  },
+  {
+    "service_name": "AskUs-Sitemap",
+    "average latency in miliseconds": 113919
+  }
+]

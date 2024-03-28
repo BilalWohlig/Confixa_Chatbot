@@ -1,0 +1,9 @@
+[
+  {
+    "service_name": "AskUs-Api",
+    "average latency in miliseconds":  5.281285714289999
+  },
+  {
+    "service_name": "AskUs-FileUpload",
+    "average latency in miliseconds":  2525.86566667
+  }]
