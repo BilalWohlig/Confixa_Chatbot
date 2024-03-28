@@ -64,7 +64,7 @@ class GetResponse {
         index: dataStream,
         body: query
       })
-      if(data.category === 'latency') {
+      if (data.category === 'latency') {
         const traces = await client.search({
           index: '.ds-traces-apm-default*',
           body: query
@@ -81,12 +81,12 @@ class GetResponse {
         traceHits.forEach((hit) => {
           // console.log(hit._source.transaction)
           // return
-          if(hit._source.transaction.name) {
+          if (hit._source.transaction.name) {
             hit._source.transaction.transactionId = hit._source.transaction.id
             hit._source.transaction.apiUrl = hit._source.transaction.name
             traceTxn.push(hit._source.transaction)
           }
-          if(hit._source.span && hit._source.span.name) {
+          if (hit._source.span && hit._source.span.name) {
             hit._source.span.transactionId = hit._source.transaction.id
             traceTxn.push(hit._source.span)
           }
@@ -105,21 +105,20 @@ class GetResponse {
       hits.forEach((hit) => {
         // console.log(hit._source.transaction)
         // return
-        if(hit._source.transaction.name) {
+        if (hit._source.transaction.name) {
           hit._source.transaction.transactionId = hit._source.transaction.id
           hit._source.transaction.apiUrl = hit._source.transaction.name
           totalTxn.push(hit._source.transaction)
         }
-        if(hit._source.span && hit._source.span.name) {
+        if (hit._source.span && hit._source.span.name) {
           hit._source.span.transactionId = hit._source.transaction.id
           totalTxn.push(hit._source.span)
         }
       })
-      if(data.category == 'latency') {
+      if (data.category == 'latency') {
         fs.writeFileSync('services/elasticsearch/transactions.json', JSON.stringify(totalTxn, null, 2))
         fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(traceTxn, null, 2))
-      }
-      else if(data.category == 'traces') {
+      } else if (data.category == 'traces') {
         fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(totalTxn, null, 2))
       }
       console.log('Writtennnnn')
