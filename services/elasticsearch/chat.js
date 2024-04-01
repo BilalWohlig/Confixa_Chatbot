@@ -11,27 +11,27 @@ class Chat {
   async startChat (data) {
     try {
       // get UserId
-      const userId = await Pool.query(getUserId(data))
-      if (userId.rowCount === 0) {
-        return __constants.RESPONSE_MESSAGES.USER_ID_NOT_EXIST
-      }
-      data.user_id = userId.rows[0].user_id
-      // new chat - create topic
-      data.topic_title = __constants.TOPIC_TITLE
-      if (!data.topic_id) {
-        const createdTopic = await Pool.query(createTopic(data))
-        console.log(createdTopic)
-        data.topic_id = createdTopic.rows[0].topic_id
-        data.flag = true
-      } else {
-        // if not new chat - get topic title
-        const topicTitle = await Pool.query(getTopicTitle(data))
-        data.topic_title = topicTitle.rows[0].title
-      }
-      const saved = await savequestion(data)
-      if (saved.status_code) {
-        return saved
-      }
+      // const userId = await Pool.query(getUserId(data))
+      // if (userId.rowCount === 0) {
+      //   return __constants.RESPONSE_MESSAGES.USER_ID_NOT_EXIST
+      // }
+      // data.user_id = userId.rows[0].user_id
+      // // new chat - create topic
+      // data.topic_title = __constants.TOPIC_TITLE
+      // if (!data.topic_id) {
+      //   const createdTopic = await Pool.query(createTopic(data))
+      //   console.log(createdTopic)
+      //   data.topic_id = createdTopic.rows[0].topic_id
+      //   data.flag = true
+      // } else {
+      //   // if not new chat - get topic title
+      //   const topicTitle = await Pool.query(getTopicTitle(data))
+      //   data.topic_title = topicTitle.rows[0].title
+      // }
+      // const saved = await savequestion(data)
+      // if (saved.status_code) {
+      //   return saved
+      // }
       const botResponse = await getBotResponse(data)
       return botResponse
       // const bot_response = btoa(data.user_prompt)

@@ -1,7 +1,9 @@
 const OpenAI = require('openai')
 const fs = require('fs')
 
-const openai = new OpenAI()
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+})
 
 class GPTModel {
   async getGPTResponse (data) {

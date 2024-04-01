@@ -95,11 +95,20 @@ class GetBotResponse {
           fs.readFileSync('services/elasticsearch/traces.json', 'utf8')
         )
         const groupedData = transactionData.reduce((acc, curr) => {
-          const { name } = curr
-          const { sum, value_count } = curr.duration.summary
+          const { name } = curr;
+          const { sum, value_count } = curr.duration.summary;
+          const { environment, language, runtime, version} = curr.service
+          const serviceName = curr.service.name
+          const serviceObj = {
+            name: serviceName,
+            environment,
+            language,
+            runtime,
+            version
+          }
 
           if (!acc[name]) {
-            acc[name] = { totalDuration: 0, totalRequests: 0 }
+            acc[name] = { totalDuration: 0, totalRequests: 0, service: serviceObj};
           }
 
           acc[name].totalDuration += sum
@@ -116,10 +125,10 @@ class GetBotResponse {
               totalRequests,
               averageLatency:
                 totalRequests > 0
-                  ? Math.round(totalDuration / (totalRequests * 1000))
-                  : 0
-            }
-            return acc
+                  ? (totalDuration / (totalRequests * 1000)) > 10 ? Math.round(totalDuration / (totalRequests * 1000)) : Number((totalDuration / (totalRequests * 1000)).toFixed(2))
+                  : 0,
+            };
+            return acc;
           },
           {}
         )

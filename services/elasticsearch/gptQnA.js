@@ -1,7 +1,9 @@
 const OpenAI = require('openai')
 const fs = require('fs')
 
-const openai = new OpenAI()
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+})
 
 class GPTModel {
   async getGPTResponse2 (data, type) {
@@ -22,10 +24,10 @@ class GPTModel {
             Trace Data: ${traces}.
             Utilize the latency data from above and the appropriate trace data provided to you to answer the user's question.
             For providing the latency, look at the 'averageLatency' field only.
-            Also, while providing the latency of an api, provide its appropriate detailed trace breakdown as well from the trace data provided to you. If an api has multiple transactions in the trace data provided, list only the slowest one and mention it as the slowest one in your final answer.
+            Also, while providing the latency of an api, provide its appropriate detailed trace breakdown as well from the trace data provided to you. If an api has multiple transactions in the trace data provided, list only the slowest one and mention it as the slowest one in your final answer and list its breakdown as well.
             For trace data, include the 'totalDuration' field as well in your answer.
             If no trace data is available for the api then mention that as well but don't skip that api.
-            For any type of duration, provide it in milliseconds and seconds. If there is some sort of ranking in the answer then, sort them according to the user's question.
+            For any type of duration data, provide it in milliseconds and seconds. If there is some sort of ranking in the answer then, sort them according to the user's question.
             Question: ${data.user_prompt}
             Answer:`
           }
