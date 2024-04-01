@@ -6,10 +6,10 @@ const openai = new OpenAI({
 })
 
 class GPTModel {
-  async getGPTResponse2 (data, type) {
-    console.log(data, type)
-    if (type === 'latency') {
-      const latencies = fs.readFileSync('services/elasticsearch/latencies.json', 'utf8')
+  async getGPTResponse2 (data, apis, type) {
+    if(type == 'latency') {
+      console.log(apis)
+      // const latencies = fs.readFileSync('services/elasticsearch/latencies.json', 'utf8')
       const traces = fs.readFileSync('services/elasticsearch/traceCleaned.json', 'utf8')
       const completion = await openai.chat.completions.create({
         messages: [
@@ -20,13 +20,12 @@ class GPTModel {
           },
           {
             role: 'user',
-            content: `Latency Data: ${latencies}.
+            content: `Latency Data: ${apis}.
             Trace Data: ${traces}.
             Utilize the latency data from above and the appropriate trace data provided to you to answer the user's question.
-            For providing the latency, look at the 'averageLatency' field only.
-            Also, while providing the latency of an api, provide its appropriate detailed trace breakdown as well from the trace data provided to you. If an api has multiple transactions in the trace data provided, list only the slowest one and mention it as the slowest one in your final answer and list its breakdown as well.
+            Provide each api's appropriate detailed trace breakdown from the trace data provided to you. If an api has multiple transactions in the trace data provided, list only the slowest one and mention it as the slowest one in your final answer and list its breakdown as well.
             For trace data, include the 'totalDuration' field as well in your answer.
-            If no trace data is available for the api then mention that as well but don't skip that api.
+            If no trace data is available for an api then mention that and the latency of that api as well but don't skip that api from your final answer.
             For any type of duration data, provide it in milliseconds and seconds. If there is some sort of ranking in the answer then, sort them according to the user's question.
             Question: ${data.user_prompt}
             Answer:`

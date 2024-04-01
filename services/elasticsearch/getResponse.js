@@ -1,17 +1,16 @@
-const __constants = require('../../config/constants')
-const { getindex } = require('../../services/elasticsearch/getindexes')
-const { getGeminiResponse } = require('../elasticsearch/gemini')
-const { getClaudeResponse } = require('../elasticsearch/claude')
-const { getGPTResponse } = require('./gptIndex')
-const { cleanResponse } = require('../elasticsearch/datacleanup')
-const { getresponse } = require('../elasticsearch/getresponses')
-const { getGeminiResponse2 } = require('../elasticsearch/gemini2')
-const { getGPTResponse2 } = require('./gptQnA')
-const { verify } = require('../elasticsearch/verifyGemini')
-const { cleanSvcTraces } = require('../elasticsearch/cleanSvcTraces')
-const fs = require('fs')
-const moment = require('moment')
-const { cleanSvcTxn } = require('./cleanservicetxn')
+const __constants = require("../../config/constants");
+const { getindex } = require("../../services/elasticsearch/getindexes");
+const { getGeminiResponse } = require("../elasticsearch/gemini");
+const { getClaudeResponse } = require("../elasticsearch/claude");
+const { getGPTResponse } = require("./gptIndex");
+const { cleanResponse } = require("../elasticsearch/datacleanup");
+const { getresponse } = require("../elasticsearch/getresponses");
+const { getGeminiResponse2 } = require("../elasticsearch/gemini2");
+const { getGPTResponse2 } = require("./gptQnA");
+const { getGPTResponseForApi } = require("./gptForApi");
+const { verify } = require("../elasticsearch/verifyGemini");
+const fs = require("fs");
+const moment = require("moment");
 class GetBotResponse {
   async getBotResponse (data) {
     try {
@@ -119,7 +118,7 @@ class GetBotResponse {
 
         // Calculate the average sum per value_count for each name
         const result = Object.entries(groupedData).reduce(
-          (acc, [name, { totalDuration, totalRequests }]) => {
+          (acc, [name, { totalDuration, totalRequests, service }]) => {
             acc[name] = {
               totalDuration,
               totalRequests,
@@ -127,6 +126,7 @@ class GetBotResponse {
                 totalRequests > 0
                   ? (totalDuration / (totalRequests * 1000)) > 10 ? Math.round(totalDuration / (totalRequests * 1000)) : Number((totalDuration / (totalRequests * 1000)).toFixed(2))
                   : 0,
+              service
             };
             return acc;
           },
@@ -183,8 +183,12 @@ class GetBotResponse {
           JSON.stringify(formattedData, null, 2)
         )
       }
-      const GPTResponse2 = await getGPTResponse2(data, verifiedResponse.category)
-      console.log('GPTResponse2', GPTResponse2)
+      let apis = ''
+      if(verifiedResponse.category == "latency") {
+        apis = await getGPTResponseForApi(data)
+      }
+      const GPTResponse2 = await getGPTResponse2(data, apis, verifiedResponse.category)
+      console.log("GPTResponse2", GPTResponse2)
       if (GPTResponse2.status_code) {
         return gptResponse
       }
