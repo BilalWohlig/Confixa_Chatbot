@@ -214,11 +214,11 @@
     "uuid": "MiujkhffQaSzy0kI6OyyGA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "1139",
+    "docs.count": "6433",
     "docs.deleted": "0",
-    "store.size": "1mb",
-    "pri.store.size": "665.3kb",
-    "dataset.size": "665.3kb"
+    "store.size": "2.1mb",
+    "pri.store.size": "1mb",
+    "dataset.size": "1mb"
   },
   {
     "health": "green",
@@ -240,11 +240,11 @@
     "uuid": "H9eA0gEMSLur_dVsGO-f_Q",
     "pri": "1",
     "rep": "1",
-    "docs.count": "65151",
+    "docs.count": "81807",
     "docs.deleted": "0",
-    "store.size": "3.2mb",
-    "pri.store.size": "1.6mb",
-    "dataset.size": "1.6mb"
+    "store.size": "4mb",
+    "pri.store.size": "2mb",
+    "dataset.size": "2mb"
   },
   {
     "health": "green",
@@ -305,11 +305,11 @@
     "uuid": "ycEB8ZKLR2aF_xWW0_3d7Q",
     "pri": "1",
     "rep": "1",
-    "docs.count": "21717",
+    "docs.count": "27269",
     "docs.deleted": "0",
-    "store.size": "1.4mb",
-    "pri.store.size": "749.8kb",
-    "dataset.size": "749.8kb"
+    "store.size": "1.8mb",
+    "pri.store.size": "927.6kb",
+    "dataset.size": "927.6kb"
   },
   {
     "health": "green",
@@ -474,11 +474,11 @@
     "uuid": "XQ3IUzhMR0SZ93eoRaoaAw",
     "pri": "1",
     "rep": "1",
-    "docs.count": "4906",
+    "docs.count": "34989",
     "docs.deleted": "0",
-    "store.size": "575.8kb",
-    "pri.store.size": "329.2kb",
-    "dataset.size": "329.2kb"
+    "store.size": "2.8mb",
+    "pri.store.size": "1.5mb",
+    "dataset.size": "1.5mb"
   },
   {
     "health": "green",
@@ -682,11 +682,11 @@
     "uuid": "ABKk78nBTX6JuENYo6ZzHA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "869",
+    "docs.count": "5166",
     "docs.deleted": "0",
-    "store.size": "839.7kb",
-    "pri.store.size": "474.9kb",
-    "dataset.size": "474.9kb"
+    "store.size": "1.1mb",
+    "pri.store.size": "623.2kb",
+    "dataset.size": "623.2kb"
   },
   {
     "health": "green",
@@ -734,11 +734,11 @@
     "uuid": "mMLUoR_rS2CeogJkkPp7rA",
     "pri": "1",
     "rep": "1",
-    "docs.count": "74973",
+    "docs.count": "95698",
     "docs.deleted": "0",
-    "store.size": "201.7mb",
-    "pri.store.size": "100.8mb",
-    "dataset.size": "100.8mb"
+    "store.size": "253.6mb",
+    "pri.store.size": "127.4mb",
+    "dataset.size": "127.4mb"
   },
   {
     "health": "green",
@@ -968,11 +968,11 @@
     "uuid": "Ky9DXkjPTpKooS-JZkbA-g",
     "pri": "1",
     "rep": "1",
-    "docs.count": "2328",
+    "docs.count": "14380",
     "docs.deleted": "0",
-    "store.size": "593kb",
-    "pri.store.size": "306.9kb",
-    "dataset.size": "306.9kb"
+    "store.size": "1.7mb",
+    "pri.store.size": "834.7kb",
+    "dataset.size": "834.7kb"
   },
   {
     "health": "green",
@@ -1085,11 +1085,11 @@
     "uuid": "Cm-ro0ueS-ygvX5ZvUL2zQ",
     "pri": "1",
     "rep": "1",
-    "docs.count": "105561",
+    "docs.count": "178155",
     "docs.deleted": "0",
-    "store.size": "21.7mb",
-    "pri.store.size": "10.8mb",
-    "dataset.size": "10.8mb"
+    "store.size": "31mb",
+    "pri.store.size": "16.1mb",
+    "dataset.size": "16.1mb"
   },
   {
     "health": "green",

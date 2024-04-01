@@ -1,14 +1,20 @@
 [
   {
     "service_name": "AskUs-GPT",
-    "average latency in miliseconds": 6208.511
+    "average latency in miliseconds": 6208.511,
+    "totalDuration in miliseconds": 745021.32,
+    "totalRequests": 120
   },
   {
     "service_name": "AskUs-Api",
-    "average latency in miliseconds": 11.055516129032258
+    "average latency in miliseconds": 10.887484848484847,
+    "totalDuration in miliseconds": 14371.48,
+    "totalRequests": 1320
   },
   {
     "service_name": "AskUs-FileUpload",
-    "average latency in miliseconds": 1608.703
+    "average latency in miliseconds": 1980.415,
+    "totalDuration in miliseconds": 396083,
+    "totalRequests": 200
   }
 ]

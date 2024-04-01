@@ -1,0 +1,675 @@
+{
+  "AskUs-FileUpload": [
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 77987820,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 20275160,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 231997380,
+      "value_count": 60
+    },
+    {
+      "API url": "POST /askus/api/image/createS3ForReplicate",
+      "sum": 61931500,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 27607000,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 61603820,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/createS3ForReplicate",
+      "sum": 62259180,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 66846700,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/createS3ForReplicate",
+      "sum": 57999340,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 14581740,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 77987820,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 8396780,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 11878380,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 86507500,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 145489880,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 16629740,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/createS3ForReplicate",
+      "sum": 61931500,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/audio/createS3ForAudio",
+      "sum": 10977260,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+      "sum": 61603820,
+      "value_count": 20
+    }
+  ],
+  "AskUs-Sitemap": [
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 578500,
+      "value_count": 60
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 248300,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 172780,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 213740,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 198380,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 188140,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 191980,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 248300,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /api/sitemap/sitemap",
+      "sum": 172780,
+      "value_count": 20
+    }
+  ],
+  "AskUs-Api": [
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 202200,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 193240,
+      "value_count": 40
+    },
+    {
+      "API url": "GET /language/getLanguages",
+      "sum": 81580,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 72300,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 71660,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 527920,
+      "value_count": 80
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 98540,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /language/getLanguages",
+      "sum": 112620,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 271300,
+      "value_count": 60
+    },
+    {
+      "API url": "POST /news/sendAlgoliaEvents/:id",
+      "sum": 145260,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 818080,
+      "value_count": 160
+    },
+    {
+      "API url": "POST /oneSignal/openAppV2",
+      "sum": 18540,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /bookmark/addBookmark/:id",
+      "sum": 453100,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 73260,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 251780,
+      "value_count": 60
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 246660,
+      "value_count": 60
+    },
+    {
+      "API url": "POST /news/sendAlgoliaEvents/:id",
+      "sum": 287980,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 615220,
+      "value_count": 140
+    },
+    {
+      "API url": "GET /language/getLanguages",
+      "sum": 180460,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /chats/questionLimit",
+      "sum": 66860,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /oneSignal/openAppV2",
+      "sum": 295660,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 331460,
+      "value_count": 60
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 972600,
+      "value_count": 200
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 245700,
+      "value_count": 60
+    },
+    {
+      "API url": "GET unknown route",
+      "sum": 16460,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 248900,
+      "value_count": 60
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 291780,
+      "value_count": 60
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 157400,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 140140,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /user/userDetails",
+      "sum": 211180,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 78380,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 100460,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 122860,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 77420,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 82540,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 73580,
+      "value_count": 20
+    },
+    {
+      "API url": "GET unknown route",
+      "sum": 19740,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 150380,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 98540,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 143340,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 118380,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 202200,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 115820,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 71020,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 122220,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /language/getLanguages",
+      "sum": 81580,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 72300,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 71660,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 73260,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /language/getLanguages",
+      "sum": 112620,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 112620,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /news/sendAlgoliaEvents/:id",
+      "sum": 145260,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 87660,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /oneSignal/openAppV2",
+      "sum": 18540,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 100460,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 81580,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 176620,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 77100,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /bookmark/addBookmark/:id",
+      "sum": 453100,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 181080,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 272260,
+      "value_count": 60
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 98540,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 106860,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 106860,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /news/sendAlgoliaEvents/:id",
+      "sum": 287980,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 99820,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 68460,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 85740,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 86380,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 76460,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /language/getLanguages",
+      "sum": 180460,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 87020,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 73260,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /chats/questionLimit",
+      "sum": 66860,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /oneSignal/openAppV2",
+      "sum": 295660,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 79980,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 71340,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 72940,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 178520,
+      "value_count": 40
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 72620,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 213720,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 142060,
+      "value_count": 20
+    },
+    {
+      "API url": "GET unknown route",
+      "sum": 16460,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 103020,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 270020,
+      "value_count": 60
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 70060,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 92780,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 238680,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 80620,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 87660,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 78060,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 84460,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 82540,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 80620,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /category/getAllCat",
+      "sum": 81900,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 98540,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneNewsForWeb/:id",
+      "sum": 115180,
+      "value_count": 20
+    },
+    {
+      "API url": "GET /news/getOneBlogForWeb/:id",
+      "sum": 76780,
+      "value_count": 20
+    }
+  ],
+  "AskUs-GPT": [
+    {
+      "API url": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+      "sum": 30392280,
+      "value_count": 40
+    },
+    {
+      "API url": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+      "sum": 40632300,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/gpt/getNewsFromGPT",
+      "sum": 204472300,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+      "sum": 13025260,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+      "sum": 17367020,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+      "sum": 40632300,
+      "value_count": 20
+    },
+    {
+      "API url": "POST /askus/api/gpt/getNewsFromGPT",
+      "sum": 204472300,
+      "value_count": 20
+    }
+  ]
+}

@@ -1,210 +1,126 @@
 [
   {
-    "sum": 184401860,
+    "sum": 2689220,
     "value_count": 60
   },
   {
-    "sum": 1304380,
-    "value_count": 260
+    "sum": 13511640,
+    "value_count": 40
   },
   {
-    "sum": 63897580,
+    "sum": 24248280,
+    "value_count": 40
+  },
+  {
+    "sum": 5879560,
+    "value_count": 960
+  },
+  {
+    "sum": 57900,
     "value_count": 20
   },
   {
-    "sum": 1475260,
-    "value_count": 260
+    "sum": 151060440,
+    "value_count": 40
   },
   {
-    "sum": 42844100,
+    "sum": 1240040,
+    "value_count": 280
+  },
+  {
+    "sum": 295660,
+    "value_count": 20
+  },
+  {
+    "sum": 139100100,
     "value_count": 60
   },
   {
-    "sum": 133740,
+    "sum": 1884140,
     "value_count": 20
   },
   {
-    "sum": 185630680,
-    "value_count": 40
+    "sum": 3337420,
+    "value_count": 500
   },
   {
-    "sum": 85100,
+    "sum": 501740,
     "value_count": 20
   },
   {
-    "sum": 609484760,
-    "value_count": 40
-  },
-  {
-    "sum": 933220,
-    "value_count": 220
-  },
-  {
-    "sum": 1345600,
-    "value_count": 320
-  },
-  {
-    "sum": 27115480,
-    "value_count": 40
-  },
-  {
-    "sum": 739901400,
-    "value_count": 40
-  },
-  {
-    "sum": 1773780,
-    "value_count": 300
-  },
-  {
-    "sum": 200280,
-    "value_count": 40
-  },
-  {
-    "sum": 300760,
-    "value_count": 40
-  },
-  {
-    "sum": 14991340,
-    "value_count": 20
-  },
-  {
-    "sum": 67820,
-    "value_count": 20
-  },
-  {
-    "sum": 238680,
-    "value_count": 40
-  },
-  {
-    "sum": 146800620,
-    "value_count": 20
-  },
-  {
-    "sum": 294000,
-    "value_count": 80
-  },
-  {
-    "sum": 95340,
-    "value_count": 20
-  },
-  {
-    "sum": 22609900,
-    "value_count": 20
-  },
-  {
-    "sum": 63897580,
-    "value_count": 20
-  },
-  {
-    "sum": 107500,
-    "value_count": 20
-  },
-  {
-    "sum": 10895340,
-    "value_count": 20
-  },
-  {
-    "sum": 74220,
-    "value_count": 20
-  },
-  {
-    "sum": 105580,
-    "value_count": 20
-  },
-  {
-    "sum": 360280,
-    "value_count": 40
-  },
-  {
-    "sum": 171704300,
-    "value_count": 20
-  },
-  {
-    "sum": 90860,
-    "value_count": 20
-  },
-  {
-    "sum": 290540,
-    "value_count": 20
-  },
-  {
-    "sum": 69420,
-    "value_count": 20
-  },
-  {
-    "sum": 15810540,
-    "value_count": 20
-  },
-  {
-    "sum": 330480,
-    "value_count": 80
-  },
-  {
-    "sum": 153880,
-    "value_count": 40
-  },
-  {
-    "sum": 16138220,
-    "value_count": 20
-  },
-  {
-    "sum": 133740,
-    "value_count": 20
-  },
-  {
-    "sum": 13926380,
-    "value_count": 20
-  },
-  {
-    "sum": 85100,
-    "value_count": 20
-  },
-  {
-    "sum": 187480,
-    "value_count": 40
-  },
-  {
-    "sum": 181720,
-    "value_count": 40
-  },
-  {
-    "sum": 181720,
-    "value_count": 40
-  },
-  {
-    "sum": 148760,
-    "value_count": 40
-  },
-  {
-    "sum": 411566060,
-    "value_count": 20
-  },
-  {
-    "sum": 96620,
-    "value_count": 20
-  },
-  {
-    "sum": 136920,
-    "value_count": 40
-  },
-  {
-    "sum": 197918700,
-    "value_count": 20
-  },
-  {
-    "sum": 214340,
+    "sum": 1403781060,
     "value_count": 60
   },
   {
-    "sum": 93420,
+    "sum": 1936560,
+    "value_count": 400
+  },
+  {
+    "sum": 59965420,
     "value_count": 20
   },
   {
-    "sum": 141420,
+    "sum": 3437240,
+    "value_count": 520
+  },
+  {
+    "sum": 511458520,
+    "value_count": 40
+  },
+  {
+    "sum": 62914540,
     "value_count": 20
   },
   {
-    "sum": 151320,
+    "sum": 839660,
+    "value_count": 20
+  },
+  {
+    "sum": 1192900,
+    "value_count": 60
+  },
+  {
+    "sum": 111340,
+    "value_count": 20
+  },
+  {
+    "sum": 399340,
+    "value_count": 20
+  },
+  {
+    "sum": 218860,
+    "value_count": 20
+  },
+  {
+    "sum": 73260,
+    "value_count": 20
+  },
+  {
+    "sum": 8929260,
+    "value_count": 20
+  },
+  {
+    "sum": 294340,
+    "value_count": 60
+  },
+  {
+    "sum": 371180,
+    "value_count": 20
+  },
+  {
+    "sum": 550280,
+    "value_count": 120
+  },
+  {
+    "sum": 408200,
+    "value_count": 120
+  },
+  {
+    "sum": 2508680,
+    "value_count": 120
+  },
+  {
+    "sum": 13511640,
     "value_count": 40
   },
   {
@@ -212,47 +128,35 @@
     "value_count": 20
   },
   {
-    "sum": 63660,
+    "sum": 2099180,
     "value_count": 20
   },
   {
-    "sum": 88940,
+    "sum": 748680,
+    "value_count": 120
+  },
+  {
+    "sum": 85100,
     "value_count": 20
   },
   {
-    "sum": 156780,
-    "value_count": 20
-  },
-  {
-    "sum": 11796460,
-    "value_count": 20
-  },
-  {
-    "sum": 339740,
+    "sum": 294620,
     "value_count": 100
   },
   {
-    "sum": 95980,
+    "sum": 71020,
     "value_count": 20
   },
   {
-    "sum": 278680,
-    "value_count": 40
+    "sum": 370760,
+    "value_count": 120
   },
   {
-    "sum": 600309740,
-    "value_count": 20
+    "sum": 402640,
+    "value_count": 120
   },
   {
-    "sum": 653380,
-    "value_count": 60
-  },
-  {
-    "sum": 284400,
-    "value_count": 80
-  },
-  {
-    "sum": 57580,
+    "sum": 71980,
     "value_count": 20
   },
   {
@@ -260,51 +164,235 @@
     "value_count": 20
   },
   {
-    "sum": 80620,
-    "value_count": 20
-  },
-  {
-    "sum": 220440,
-    "value_count": 40
-  },
-  {
-    "sum": 139591660,
-    "value_count": 20
-  },
-  {
-    "sum": 140780,
-    "value_count": 20
-  },
-  {
-    "sum": 170520,
-    "value_count": 40
-  },
-  {
-    "sum": 79660,
-    "value_count": 20
-  },
-  {
-    "sum": 53420,
-    "value_count": 20
-  },
-  {
-    "sum": 140120,
-    "value_count": 40
-  },
-  {
-    "sum": 328260,
-    "value_count": 60
-  },
-  {
-    "sum": 319600,
+    "sum": 363120,
     "value_count": 80
   },
   {
-    "sum": 223320,
+    "sum": 57580,
+    "value_count": 20
+  },
+  {
+    "sum": 12779500,
+    "value_count": 20
+  },
+  {
+    "sum": 55340,
+    "value_count": 20
+  },
+  {
+    "sum": 155160,
     "value_count": 40
   },
   {
-    "sum": 88940,
+    "sum": 78060,
+    "value_count": 20
+  },
+  {
+    "sum": 460400,
+    "value_count": 80
+  },
+  {
+    "sum": 138280940,
+    "value_count": 20
+  },
+  {
+    "sum": 70380,
+    "value_count": 20
+  },
+  {
+    "sum": 100460,
+    "value_count": 20
+  },
+  {
+    "sum": 128620,
+    "value_count": 20
+  },
+  {
+    "sum": 70060,
+    "value_count": 20
+  },
+  {
+    "sum": 437320,
+    "value_count": 120
+  },
+  {
+    "sum": 195160,
+    "value_count": 40
+  },
+  {
+    "sum": 221380,
+    "value_count": 60
+  },
+  {
+    "sum": 124518360,
+    "value_count": 40
+  },
+  {
+    "sum": 1884140,
+    "value_count": 20
+  },
+  {
+    "sum": 14581740,
+    "value_count": 20
+  },
+  {
+    "sum": 1558620,
+    "value_count": 100
+  },
+  {
+    "sum": 295660,
+    "value_count": 20
+  },
+  {
+    "sum": 573020,
+    "value_count": 100
+  },
+  {
+    "sum": 52780,
+    "value_count": 20
+  },
+  {
+    "sum": 501740,
+    "value_count": 20
+  },
+  {
+    "sum": 707788780,
+    "value_count": 20
+  },
+  {
+    "sum": 59965420,
+    "value_count": 20
+  },
+  {
+    "sum": 108140,
+    "value_count": 20
+  },
+  {
+    "sum": 122860,
+    "value_count": 20
+  },
+  {
+    "sum": 584581100,
+    "value_count": 20
+  },
+  {
+    "sum": 195800,
+    "value_count": 40
+  },
+  {
+    "sum": 454320,
+    "value_count": 80
+  },
+  {
+    "sum": 466780,
+    "value_count": 100
+  },
+  {
+    "sum": 114540,
+    "value_count": 20
+  },
+  {
+    "sum": 310000,
+    "value_count": 80
+  },
+  {
+    "sum": 111411180,
+    "value_count": 20
+  },
+  {
+    "sum": 164120,
+    "value_count": 40
+  },
+  {
+    "sum": 277740,
+    "value_count": 20
+  },
+  {
+    "sum": 1511240,
+    "value_count": 120
+  },
+  {
+    "sum": 839660,
+    "value_count": 20
+  },
+  {
+    "sum": 76780,
+    "value_count": 20
+  },
+  {
+    "sum": 511180780,
+    "value_count": 20
+  },
+  {
+    "sum": 572060,
+    "value_count": 100
+  },
+  {
+    "sum": 965080,
+    "value_count": 40
+  },
+  {
+    "sum": 71340,
+    "value_count": 20
+  },
+  {
+    "sum": 62914540,
+    "value_count": 20
+  },
+  {
+    "sum": 201560,
+    "value_count": 40
+  },
+  {
+    "sum": 67180,
+    "value_count": 20
+  },
+  {
+    "sum": 94060,
+    "value_count": 20
+  },
+  {
+    "sum": 227820,
+    "value_count": 20
+  },
+  {
+    "sum": 259460,
+    "value_count": 60
+  },
+  {
+    "sum": 72620,
+    "value_count": 20
+  },
+  {
+    "sum": 288900,
+    "value_count": 60
+  },
+  {
+    "sum": 222040,
+    "value_count": 40
+  },
+  {
+    "sum": 82540,
+    "value_count": 20
+  },
+  {
+    "sum": 71980,
+    "value_count": 20
+  },
+  {
+    "sum": 221060,
+    "value_count": 60
+  },
+  {
+    "sum": 93420,
+    "value_count": 20
+  },
+  {
+    "sum": 345580,
+    "value_count": 20
+  },
+  {
+    "sum": 466616300,
     "value_count": 20
   }
 ]

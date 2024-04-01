@@ -47,7 +47,7 @@ const chats = async (req, res) => {
       })
     }
   } catch (error) {
-    console.log('22 :::', error)
+    console.log('chat contr', error)
     return __constants.RESPONSE_MESSAGES.FAILED
   }
 }

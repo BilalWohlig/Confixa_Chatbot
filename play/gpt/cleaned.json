@@ -1,0 +1,26 @@
+{
+    "AskUs-FileUpload": [
+        {
+            "API url": "POST /askus/api/image/downloadImageCreateS3Url",
+            "sum": 77987820,
+            "value_count": 20
+        },
+        {
+            "API url": "POST /askus/api/audio/createS3ForAudio",
+            "sum": 16629740,
+            "value_count": 20
+        }
+    ],
+    "AskUs-Sitemap": [
+        {
+            "API url": "POST /api/sitemap/sitemap",
+            "sum": 248300,
+            "value_count": 20
+        },
+        {
+            "API url": "POST /api/sitemap/sitemap",
+            "sum": 188140,
+            "value_count": 20
+        }
+    ]
+}

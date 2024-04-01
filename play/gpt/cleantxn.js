@@ -29,7 +29,9 @@ const output = Object.entries(results).map(([serviceName, values]) => {
     const averageLatency = values.durationSum / values.valueCount
     return {
         service_name: serviceName,
-        'average latency in miliseconds': (averageLatency/1000)
+        'average latency in miliseconds': (averageLatency/1000),
+        'totalDuration in miliseconds': (values.durationSum/1000),
+        totalRequests: values.valueCount
     }
 })
 

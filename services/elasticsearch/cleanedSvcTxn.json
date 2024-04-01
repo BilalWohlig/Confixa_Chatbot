@@ -1,0 +1,32 @@
+[
+  {
+    "service_name": "AskUs-Admin-Api",
+    "average latency in miliseconds": 30.556866666666664,
+    "totalDuration in miliseconds": 9167.06,
+    "totalRequests": 300
+  },
+  {
+    "service_name": "AskUs-GPT",
+    "average latency in miliseconds": 11016.264142857144,
+    "totalDuration in miliseconds": 4626830.94,
+    "totalRequests": 420
+  },
+  {
+    "service_name": "AskUs-FileUpload",
+    "average latency in miliseconds": 2044.488142857143,
+    "totalDuration in miliseconds": 572456.68,
+    "totalRequests": 280
+  },
+  {
+    "service_name": "AskUs-Api",
+    "average latency in miliseconds": 5.924521739130435,
+    "totalDuration in miliseconds": 32703.36,
+    "totalRequests": 5520
+  },
+  {
+    "service_name": "AskUs-Sitemap",
+    "average latency in miliseconds": 68.095,
+    "totalDuration in miliseconds": 5447.6,
+    "totalRequests": 80
+  }
+]
