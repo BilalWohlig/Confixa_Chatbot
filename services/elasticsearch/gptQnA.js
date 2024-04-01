@@ -14,7 +14,7 @@ class GPTModel {
           {
             role: 'system',
             content:
-              `You are a helpful chatbot that provides an accurate answer to the user's question using all possible resources.`
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
           },
           {
             role: 'user',
@@ -35,15 +35,14 @@ class GPTModel {
         top_p: 1
       })
       return completion.choices[0].message.content
-    }
-    else if (type === 'traces') {
+    } else if (type === 'traces') {
       const traces = fs.readFileSync('services/elasticsearch/traceCleaned.json', 'utf8')
       const completion = await openai.chat.completions.create({
         messages: [
           {
             role: 'system',
             content:
-              `You are a helpful chatbot that provides an accurate answer to the user's question using all possible resources.`
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
           },
           {
             role: 'user',
@@ -65,7 +64,7 @@ class GPTModel {
           {
             role: 'system',
             content:
-              `You are a helpful chatbot that provides an accurate answer to the user's question using all possible resources.`
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
           },
           {
             role: 'user',

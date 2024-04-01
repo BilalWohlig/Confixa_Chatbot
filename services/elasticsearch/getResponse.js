@@ -89,10 +89,10 @@ class GetBotResponse {
         }
       } else if (verifiedResponse.category === 'latency') {
         const transactionData = JSON.parse(
-          fs.readFileSync("services/elasticsearch/transactions.json", "utf8")
+          fs.readFileSync('services/elasticsearch/transactions.json', 'utf8')
         )
         const tracesData = JSON.parse(
-          fs.readFileSync("services/elasticsearch/traces.json", "utf8")
+          fs.readFileSync('services/elasticsearch/traces.json', 'utf8')
         )
         const groupedData = transactionData.reduce((acc, curr) => {
           const { name } = curr
@@ -136,7 +136,7 @@ class GetBotResponse {
               destination,
               name,
               action,
-              type,
+              type
             }))
             // console.log("This is traceeeeee", trace)
             acc[item.apiUrl] = acc[item.apiUrl] || []
@@ -145,13 +145,13 @@ class GetBotResponse {
           return acc
         }, {})
         fs.writeFileSync(
-          "services/elasticsearch/traceCleaned.json",
+          'services/elasticsearch/traceCleaned.json',
           JSON.stringify(formattedData, null, 2)
         )
-      } else if (verifiedResponse.category == "traces") {
-        console.log("Tracessssss")
+      } else if (verifiedResponse.category == 'traces') {
+        console.log('Tracessssss')
         const tracesData = JSON.parse(
-          fs.readFileSync("services/elasticsearch/traces.json", "utf8")
+          fs.readFileSync('services/elasticsearch/traces.json', 'utf8')
         )
         const formattedData = tracesData.reduce((acc, item) => {
           if (item.apiUrl) {
@@ -161,7 +161,7 @@ class GetBotResponse {
               destination,
               name,
               action,
-              type,
+              type
             }))
             // console.log("This is traceeeeee", trace)
             acc[item.apiUrl] = acc[item.apiUrl] || []
@@ -175,7 +175,7 @@ class GetBotResponse {
         )
       }
       const GPTResponse2 = await getGPTResponse2(data, verifiedResponse.category)
-      console.log("GPTResponse2", GPTResponse2)
+      console.log('GPTResponse2', GPTResponse2)
       if (GPTResponse2.status_code) {
         return gptResponse
       }

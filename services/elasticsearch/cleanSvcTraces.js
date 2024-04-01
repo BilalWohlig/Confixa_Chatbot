@@ -1,9 +1,9 @@
 const __constants = require('../../config/constants')
 const fs = require('fs')
 class CleanSvcTraces {
-  async cleanSvcTraces() {
+  async cleanSvcTraces () {
     try {
-      console.log("radhe")
+      console.log('radhe')
       var svcTxn = fs.readFileSync('services/elasticsearch/fullservicetxn.json', 'utf8')
       svcTxn = JSON.parse(svcTxn)
       const result = {}
