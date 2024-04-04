@@ -1,0 +1,291 @@
+{
+  "GET /news/getOneBlogForWeb/:id": {
+    "totalDuration": 1796540,
+    "totalRequests": 580,
+    "averageLatency": 3.1,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /news/getOneNewsForWeb/:id": {
+    "totalDuration": 3260680,
+    "totalRequests": 760,
+    "averageLatency": 4.29,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /category/getAllCat": {
+    "totalDuration": 5606220,
+    "totalRequests": 1460,
+    "averageLatency": 3.84,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /news/mynews/all": {
+    "totalDuration": 9231240,
+    "totalRequests": 120,
+    "averageLatency": 77,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /askus/api/gpt/getNewsFromGPT": {
+    "totalDuration": 1546649440,
+    "totalRequests": 160,
+    "averageLatency": 9667,
+    "service": {
+      "name": "AskUs-GPT",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /askus/api/gpt/getAdvancedClassificationGPT": {
+    "totalDuration": 166870820,
+    "totalRequests": 220,
+    "averageLatency": 759,
+    "service": {
+      "name": "AskUs-GPT",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /askus/api/algolia/algoliaSearchQuery": {
+    "totalDuration": 949680,
+    "totalRequests": 80,
+    "averageLatency": 12,
+    "service": {
+      "name": "AskUs-GPT",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /askus/api/image/downloadImageCreateS3Url": {
+    "totalDuration": 240517040,
+    "totalRequests": 80,
+    "averageLatency": 3006,
+    "service": {
+      "name": "AskUs-FileUpload",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /askus/api/audio/createS3ForAudio": {
+    "totalDuration": 200212160,
+    "totalRequests": 320,
+    "averageLatency": 626,
+    "service": {
+      "name": "AskUs-FileUpload",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /askus/api/image/createS3ForReplicate": {
+    "totalDuration": 760217380,
+    "totalRequests": 220,
+    "averageLatency": 3456,
+    "service": {
+      "name": "AskUs-FileUpload",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "GET /config/getConfig": {
+    "totalDuration": 183000,
+    "totalRequests": 40,
+    "averageLatency": 4.58,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /astrology/checkThenGetPredictionToday": {
+    "totalDuration": 2949080,
+    "totalRequests": 40,
+    "averageLatency": 74,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /api/sitemap/sitemap": {
+    "totalDuration": 4751320,
+    "totalRequests": 40,
+    "averageLatency": 119,
+    "service": {
+      "name": "AskUs-Sitemap",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "20.8.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /news/sendAlgoliaEvents/:id": {
+    "totalDuration": 1139120,
+    "totalRequests": 80,
+    "averageLatency": 14,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /chats/questionLimit": {
+    "totalDuration": 239280,
+    "totalRequests": 80,
+    "averageLatency": 2.99,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET unknown route": {
+    "totalDuration": 16280,
+    "totalRequests": 40,
+    "averageLatency": 0.41,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /oneSignal/openAppV2": {
+    "totalDuration": 511960,
+    "totalRequests": 40,
+    "averageLatency": 13,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  }
+}

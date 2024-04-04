@@ -1,0 +1,2316 @@
+[
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3631,
+          3855
+        ],
+        "counts": [
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 149720,
+        "value_count": 40
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3231
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 64620,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3295
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 65900,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4223,
+          4255,
+          4863
+        ],
+        "counts": [
+          20,
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 266820,
+        "value_count": 60
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3279,
+          3759,
+          4415,
+          6303
+        ],
+        "counts": [
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 355120,
+        "value_count": 80
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3855,
+          5695
+        ],
+        "counts": [
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 191000,
+        "value_count": 40
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3151
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 63020,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3487
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 69740,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3231,
+          3423,
+          3647,
+          4319,
+          4799,
+          5087,
+          5119
+        ],
+        "counts": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 592500,
+        "value_count": 140
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          759
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 15180,
+        "value_count": 20
+      }
+    },
+    "name": "POST /user/addPlayerIdToUser",
+    "result": "HTTP 4xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /user/addPlayerIdToUser",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          5055
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 101100,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3311
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 66220,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          14399
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 287980,
+        "value_count": 20
+      }
+    },
+    "name": "POST /askus/api/algolia/algoliaSearchQuery",
+    "result": "HTTP 2xx",
+    "type": "request",
+    "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-GPT",
+      "node": {
+        "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4319,
+          4863,
+          16639
+        ],
+        "counts": [
+          20,
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 516420,
+        "value_count": 60
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3791,
+          6495
+        ],
+        "counts": [
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 205720,
+        "value_count": 40
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          83455
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 1669100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /news/mynews/all",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /news/mynews/all",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          13055
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 261100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /news/sendAlgoliaEvents/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3775
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 75500,
+        "value_count": 20
+      }
+    },
+    "name": "GET /language/getLanguages",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /language/getLanguages",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          2879
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 57580,
+        "value_count": 20
+      }
+    },
+    "name": "GET /config/getConfig",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /config/getConfig",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4863
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 97260,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3343
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 66860,
+        "value_count": 20
+      }
+    },
+    "name": "GET /chats/getChatsPerUser/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /chats/getChatsPerUser/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3231
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 64620,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3295
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 65900,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3631
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 72620,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3855
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 77100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4255
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 85100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4415
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 88300,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4223
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 84460,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3279
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 65580,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3759
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 75180,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          6303
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 126060,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4863
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 97260,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          5695
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 113900,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3151
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 63020,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3855
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 77100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3487
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 69740,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          759
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 15180,
+        "value_count": 20
+      }
+    },
+    "name": "POST /user/addPlayerIdToUser",
+    "result": "HTTP 4xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /user/addPlayerIdToUser",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          5055
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 101100,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3311
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 66220,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3423
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 68460,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4799
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 95980,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3231,
+          4319,
+          5087
+        ],
+        "counts": [
+          20,
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 252740,
+        "value_count": 60
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3647
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 72940,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          5119
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 102380,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4863
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 97260,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          16639
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 332780,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3343
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 66860,
+        "value_count": 20
+      }
+    },
+    "name": "GET /chats/getChatsPerUser/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /chats/getChatsPerUser/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4319
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 86380,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          14399
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 287980,
+        "value_count": 20
+      }
+    },
+    "name": "POST /askus/api/algolia/algoliaSearchQuery",
+    "result": "HTTP 2xx",
+    "type": "request",
+    "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-GPT",
+      "node": {
+        "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.7.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3791
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 75820,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          83455
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 1669100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /news/mynews/all",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /news/mynews/all",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          13055
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 261100,
+        "value_count": 20
+      }
+    },
+    "name": "POST /news/sendAlgoliaEvents/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3775
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 75500,
+        "value_count": 20
+      }
+    },
+    "name": "GET /language/getLanguages",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /language/getLanguages",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          2879
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 57580,
+        "value_count": 20
+      }
+    },
+    "name": "GET /config/getConfig",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /config/getConfig",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4863
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 97260,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          6495
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 129900,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3327,
+          4511
+        ],
+        "counts": [
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 156760,
+        "value_count": 40
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3007
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 60140,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          3199,
+          7199,
+          7231,
+          7295,
+          7359,
+          7903
+        ],
+        "counts": [
+          20,
+          40,
+          20,
+          20,
+          20,
+          20
+        ]
+      },
+      "summary": {
+        "sum": 947700,
+        "value_count": 140
+      }
+    },
+    "name": "POST /bookmark/addBookmark/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /bookmark/addBookmark/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          2991
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 59820,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4575
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 91500,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4991
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 99820,
+        "value_count": 20
+      }
+    },
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  {
+    "duration": {
+      "histogram": {
+        "values": [
+          4015
+        ],
+        "counts": [
+          20
+        ]
+      },
+      "summary": {
+        "sum": 80300,
+        "value_count": 20
+      }
+    },
+    "name": "POST /category/getAllCat",
+    "result": "HTTP 2xx",
+    "root": true,
+    "type": "request",
+    "apiUrl": "POST /category/getAllCat",
+    "service": {
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "name": "AskUs-Api",
+      "node": {
+        "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  }
+]

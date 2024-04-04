@@ -1,0 +1,2663 @@
+[
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "U-91mY4BwY_hAmpvigFw",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:30:00.000Z",
+      "_doc_count": 80,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:40:01Z",
+        "success_count": {
+          "sum": 80,
+          "value_count": 80
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3279,
+              4095,
+              4127,
+              4671
+            ],
+            "counts": [
+              20,
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 323440,
+            "value_count": 80
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "Wu91mY4BwY_hAmpvigFw",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:40:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              638975
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 12779500,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "z-9smY4BwY_hAmpvYgDl",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:20:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:30:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              688127,
+              3457023
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 82903000,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "2u9smY4BwY_hAmpvYgDl",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:20:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:30:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13375,
+              14591
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 559320,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "5O9smY4BwY_hAmpvYgDl",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:20:00.000Z",
+      "_doc_count": 60,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:30:01Z",
+        "success_count": {
+          "sum": 60,
+          "value_count": 60
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              688127,
+              9109503,
+              13500415
+            ],
+            "counts": [
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 465960900,
+            "value_count": 60
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "E-9jmY4BwY_hAmpvOgD-",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:10:00.000Z",
+      "_doc_count": 100,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:20:01Z",
+        "success_count": {
+          "sum": 100,
+          "value_count": 100
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              520191,
+              651263,
+              659455,
+              2965503,
+              3653631
+            ],
+            "counts": [
+              20,
+              20,
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 169000860,
+            "value_count": 100
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "He9jmY4BwY_hAmpvOgD-",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:10:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:20:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13183,
+              13631
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 536280,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "K-9jmY4BwY_hAmpvOgD-",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:10:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:20:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              851967,
+              31195135
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 640942040,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "9Q1amY4BRC1UfXF8E50t",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:00:00.000Z",
+      "_doc_count": 60,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:10:01Z",
+        "success_count": {
+          "sum": 60,
+          "value_count": 60
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              460799,
+              3276799,
+              3325951
+            ],
+            "counts": [
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 141270980,
+            "value_count": 60
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "AQ1amY4BRC1UfXF8E54t",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:00:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:10:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              14527
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 290540,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "DQ1amY4BRC1UfXF8E54t",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:00:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:10:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3981311,
+              14221311
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 364052440,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "JQ1QmY4BRC1UfXF8652E",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T10:50:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:00:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              765951,
+              3031039
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 75939800,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.10m-default-2024.03.20-000027",
+    "_id": "MA1QmY4BRC1UfXF8652E",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T10:50:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:00:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4927
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 98540,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "bw1zmY4BRC1UfXF8tZ-q",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:37:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:38:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4095,
+              4127
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 164440,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "Vw1ymY4BRC1UfXF8y59K",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:36:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:37:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              638975
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 12779500,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "SA1xmY4BRC1UfXF84J_q",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:35:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:36:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4671
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 93420,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "Gg1umY4BRC1UfXF8N59r",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:31:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:32:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3279
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 65580,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "p-9rmY4BwY_hAmpveABv",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:28:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:29:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13500415
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 270008300,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "q-9rmY4BwY_hAmpveABv",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:28:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:29:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3457023
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 69140460,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "jO9pmY4BwY_hAmpvowCO",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:26:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:27:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              688127
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 13762540,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "le9pmY4BwY_hAmpvowCO",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:26:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:27:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              9109503
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 182190060,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "wu9smY4BwY_hAmpvYgDk",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:28:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:30:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              14591
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 291820,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "wQ1omY4BRC1UfXF8uZ4u",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:25:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:26:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13375
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 267500,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "Qu9kmY4BwY_hAmpvJQBP",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:20:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:21:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              688127
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 13762540,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "A-9jmY4BwY_hAmpvOgD-",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:19:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:20:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              520191
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 10403820,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "Ce9jmY4BwY_hAmpvOgD-",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:19:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:20:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13183
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 263660,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "7e5imY4BwY_hAmpvUP-N",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:18:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:19:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              31195135
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 623902700,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "5O5imY4BwY_hAmpvUP-N",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:17:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:19:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              2965503
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 59310060,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "su5fmY4BwY_hAmpvkf9u",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:15:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:16:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3653631
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 73072620,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "Tw1emY4BRC1UfXF8p54L",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:13:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:15:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              651263
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 13025260,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "lO5dmY4BwY_hAmpvvP-w",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:13:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:14:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              851967
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 17039340,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "mO5dmY4BwY_hAmpvvP-w",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:12:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:14:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              659455
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 13189100,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "JA1bmY4BRC1UfXF8557p",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:10:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:12:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13631
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 272620,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "xw1XmY4BRC1UfXF8VJ0J",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:06:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:07:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              460799
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 9215980,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "3g1YmY4BRC1UfXF8Pp1q",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:06:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:08:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              14221311
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 284426220,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "qw1WmY4BRC1UfXF8aZ2r",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:05:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:06:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3276799
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 65535980,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "CO5UmY4BwY_hAmpvlP_u",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:03:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:04:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3325951
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 66519020,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "6O5SmY4BwY_hAmpvwP4u",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:01:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:02:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3981311
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 79626220,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "7-5SmY4BwY_hAmpvwP4u",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T11:01:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T11:02:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              14527
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 290540,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "qu5PmY4BwY_hAmpvFv6s",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T10:57:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T10:58:01Z",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              765951,
+              3031039
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 75939800,
+            "value_count": 40
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "i-5OmY4BwY_hAmpvLP5N",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T10:56:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T10:57:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4927
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 98540,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "uQ1HmY4BRC1UfXF8w5ys",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T10:49:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T10:50:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              2943
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 58860,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.service_transaction.1m-default-2024.03.27-000067",
+    "_id": "lA1FmY4BRC1UfXF87pzs",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-01T10:46:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "data_stream": {
+        "dataset": "apm.service_transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-01T10:48:01Z",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "service_transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-FileUpload"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3162111
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 63242220,
+            "value_count": 20
+          }
+        },
+        "type": "request"
+      }
+    }
+  }
+]

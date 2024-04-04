@@ -1,0 +1,145 @@
+{
+  "AskUs-Api": {
+    "totalServiceDuration": 11397000,
+    "totalServiceRequests": 1720,
+    "averageServiceLatency": {
+      "value": 6626.16,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.1.0"
+    },
+    "version": "1.0.0",
+    "apiData": [
+      {
+        "apiUrl": "POST /category/getAllCat",
+        "totalApiDuration": 3604720,
+        "totalApiRequests": 720,
+        "averageApiLatency": {
+          "value": 5006.56,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "totalApiDuration": 1452120,
+        "totalApiRequests": 360,
+        "averageApiLatency": {
+          "value": 4033.67,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "totalApiDuration": 1101820,
+        "totalApiRequests": 260,
+        "averageApiLatency": {
+          "value": 4237.77,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /user/addPlayerIdToUser",
+        "totalApiDuration": 30360,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 759,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /news/mynews/all",
+        "totalApiDuration": 3338200,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 83455,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+        "totalApiDuration": 522200,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 13055,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /language/getLanguages",
+        "totalApiDuration": 151000,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 3775,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /config/getConfig",
+        "totalApiDuration": 115160,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 2879,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /chats/getChatsPerUser/:id",
+        "totalApiDuration": 133720,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 3343,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /bookmark/addBookmark/:id",
+        "totalApiDuration": 947700,
+        "totalApiRequests": 140,
+        "averageApiLatency": {
+          "value": 6769.285714285715,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  },
+  "AskUs-GPT": {
+    "totalServiceDuration": 575960,
+    "totalServiceRequests": 40,
+    "averageServiceLatency": {
+      "value": 14399,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.7.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery",
+        "totalApiDuration": 575960,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 14399,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  }
+}

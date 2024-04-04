@@ -20,7 +20,7 @@ class GPTModel {
             role: 'user',
             content: `Latency Data: ${latencies}.
             Based on the latency data provided to you, answer the user's question accurately.
-            For your answer, rely only on the 'averageLatency' field
+            For comparisons like fastest or slowest, etc, rely only on the 'averageLatency' field
             For any type of duration data, provide it in milliseconds and seconds. If there is some sort of ranking in the answer then, sort them according to the user's question.
             Question: ${data.user_prompt}
             Answer:`

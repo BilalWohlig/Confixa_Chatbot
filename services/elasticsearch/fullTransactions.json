@@ -1,0 +1,7230 @@
+[
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "Xe9Co44BwY_hAmpvFcH0",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:10:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:20:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3631,
+              3855
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 149720,
+            "value_count": 40
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "Xu9Co44BwY_hAmpvFcH0",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:10:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:20:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3231
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 64620,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "X-9Co44BwY_hAmpvFcH0",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:10:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:20:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3295
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 65900,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "1-84o44BwY_hAmpv7sAw",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:00:00.000Z",
+      "_doc_count": 60,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:10:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 60,
+          "value_count": 60
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4223,
+              4255,
+              4863
+            ],
+            "counts": [
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 266820,
+            "value_count": 60
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "2O84o44BwY_hAmpv7sAw",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:00:00.000Z",
+      "_doc_count": 80,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:10:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 80,
+          "value_count": 80
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3279,
+              3759,
+              4415,
+              6303
+            ],
+            "counts": [
+              20,
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 355120,
+            "value_count": 80
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "FO8vo44BwY_hAmpvxsCY",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:50:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:00:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3855,
+              5695
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 191000,
+            "value_count": 40
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "Fe8vo44BwY_hAmpvxsCY",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:50:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:00:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3151
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 63020,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "Fu8vo44BwY_hAmpvxsCY",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:50:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:00:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3487
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 69740,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "GA4mo44BRC1UfXF8nkKu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:40:00.000Z",
+      "_doc_count": 140,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:50:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 140,
+          "value_count": 140
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3231,
+              3423,
+              3647,
+              4319,
+              4799,
+              5087,
+              5119
+            ],
+            "counts": [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 592500,
+            "value_count": 140
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "GQ4mo44BRC1UfXF8nkKu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:40:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:50:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              759
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 15180,
+            "value_count": 20
+          }
+        },
+        "name": "POST /user/addPlayerIdToUser",
+        "result": "HTTP 4xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /user/addPlayerIdToUser",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "Gg4mo44BRC1UfXF8nkKu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:40:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:50:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              5055
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 101100,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "Gw4mo44BRC1UfXF8nkKu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:40:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:50:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3311
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 66220,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "dQ4do44BRC1UfXF8dkHt",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-gpt-5b645698cc-gspmk"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT",
+        "node": {
+          "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.7.1"
+        },
+        "version": "0.0.1"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              14399
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 287980,
+            "value_count": 20
+          }
+        },
+        "name": "POST /askus/api/algolia/algoliaSearchQuery",
+        "result": "HTTP 2xx",
+        "type": "request",
+        "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-GPT",
+          "node": {
+            "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.7.1"
+          },
+          "version": "0.0.1"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "fA4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 60,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 60,
+          "value_count": 60
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4319,
+              4863,
+              16639
+            ],
+            "counts": [
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 516420,
+            "value_count": 60
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "fQ4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3791,
+              6495
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 205720,
+            "value_count": 40
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "fg4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              83455
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 1669100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /news/mynews/all",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /news/mynews/all",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "fw4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13055
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 261100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /news/sendAlgoliaEvents/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "gA4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3775
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 75500,
+            "value_count": 20
+          }
+        },
+        "name": "GET /language/getLanguages",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /language/getLanguages",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "gQ4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              2879
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 57580,
+            "value_count": 20
+          }
+        },
+        "name": "GET /config/getConfig",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /config/getConfig",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "gg4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4863
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 97260,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.10m-default-2024.03.20-000027",
+    "_id": "gw4do44BRC1UfXF8dkHu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:30:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.10m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "10m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3343
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 66860,
+            "value_count": 20
+          }
+        },
+        "name": "GET /chats/getChatsPerUser/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /chats/getChatsPerUser/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "V-9Co44BwY_hAmpvFcH0",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:19:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:20:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3231
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 64620,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Wg5Bo44BRC1UfXF8K0OO",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:18:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:19:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3295
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 65900,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Kw48o44BRC1UfXF8l0Os",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:13:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:14:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3631
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 72620,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "GQ47o44BRC1UfXF8rUNM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:12:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:13:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3855
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 77100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "zu84o44BwY_hAmpv7sAw",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:09:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:10:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4255
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 85100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "7w44o44BRC1UfXF8A0LN",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:08:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:09:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4415
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 88300,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "zA42o44BRC1UfXF8L0IM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:06:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:07:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4223
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 84460,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "0Q42o44BRC1UfXF8L0IM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:05:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:07:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3279
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 65580,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "ne81o44BwY_hAmpvRMCt",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:05:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:06:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3759
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 75180,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "ge80o44BwY_hAmpvWsBM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:04:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:05:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              6303
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 126060,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "gu80o44BwY_hAmpvWsBM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T09:04:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T09:05:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4863
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 97260,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "_-8uo44BwY_hAmpv3L8N",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:58:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:59:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              5695
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 113900,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "1u8to44BwY_hAmpvB79M",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:56:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:57:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3151
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 63020,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Sg4po44BRC1UfXF8XULN",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:52:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:53:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3855
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 77100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "o-8oo44BwY_hAmpvc79t",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:51:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:52:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3487
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 69740,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Ew4mo44BRC1UfXF8nkKu",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:49:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:50:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              759
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 15180,
+            "value_count": 20
+          }
+        },
+        "name": "POST /user/addPlayerIdToUser",
+        "result": "HTTP 4xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /user/addPlayerIdToUser",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "gO8lo44BwY_hAmpvtL9N",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:48:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:49:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              5055
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 101100,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "9w4ko44BRC1UfXF8yUHs",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:47:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:48:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3311
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 66220,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "-A4ko44BRC1UfXF8yUHs",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:47:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:48:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3423
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 68460,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "1A4io44BRC1UfXF89UGP",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:45:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:46:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4799
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 95980,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Re8ho44BwY_hAmpvIL9t",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:43:00.000Z",
+      "_doc_count": 60,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:44:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 60,
+          "value_count": 60
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3231,
+              4319,
+              5087
+            ],
+            "counts": [
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 252740,
+            "value_count": 60
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "ww4io44BRC1UfXF8CkHM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:43:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:45:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3647
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 72940,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "KO8fo44BwY_hAmpvS7-s",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:41:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:42:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              5119
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 102380,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "cA4do44BRC1UfXF8dkHt",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:39:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:40:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4863
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 97260,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "TA4bo44BRC1UfXF8okEt",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:37:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:38:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              16639
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 332780,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "TQ4bo44BRC1UfXF8okEt",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:37:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:38:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3343
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 66860,
+            "value_count": 20
+          }
+        },
+        "name": "GET /chats/getChatsPerUser/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /chats/getChatsPerUser/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Og4ao44BRC1UfXF8t0HL",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:36:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:37:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4319
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 86380,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "y-8Zo44BwY_hAmpvzb5w",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:35:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:36:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-gpt-5b645698cc-gspmk"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-GPT",
+        "node": {
+          "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.7.1"
+        },
+        "version": "0.0.1"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              14399
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 287980,
+            "value_count": 20
+          }
+        },
+        "name": "POST /askus/api/algolia/algoliaSearchQuery",
+        "result": "HTTP 2xx",
+        "type": "request",
+        "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-GPT",
+          "node": {
+            "name": "494fdbabc6aac217b1742c14a8213909dbe63abf5e50e73f4610e659709e285f"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.7.1"
+          },
+          "version": "0.0.1"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "1u8Zo44BwY_hAmpvzb5w",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:35:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:36:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3791
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 75820,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "1-8Zo44BwY_hAmpvzb5w",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:35:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:36:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              83455
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 1669100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /news/mynews/all",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /news/mynews/all",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "z-8Zo44BwY_hAmpvzb5w",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:34:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:36:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              13055
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 261100,
+            "value_count": 20
+          }
+        },
+        "name": "POST /news/sendAlgoliaEvents/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "DA4Xo44BRC1UfXF8-EGs",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:33:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:34:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3775
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 75500,
+            "value_count": 20
+          }
+        },
+        "name": "GET /language/getLanguages",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /language/getLanguages",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "DQ4Xo44BRC1UfXF8-EGs",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:33:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:34:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              2879
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 57580,
+            "value_count": 20
+          }
+        },
+        "name": "GET /config/getConfig",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /config/getConfig",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "7Q4Xo44BRC1UfXF8DkBL",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:32:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:33:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4863
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 97260,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "iO8Wo44BwY_hAmpvI77t",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:31:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:32:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              6495
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 129900,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "yQ4To44BRC1UfXF8ZEDM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:28:00.000Z",
+      "_doc_count": 40,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:29:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 40,
+          "value_count": 40
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3327,
+              4511
+            ],
+            "counts": [
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 156760,
+            "value_count": 40
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "Pu8So44BwY_hAmpver5u",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:27:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:28:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3007
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 60140,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneNewsForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "IO8Qo44BwY_hAmpvpb6s",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:25:00.000Z",
+      "_doc_count": 140,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:26:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 140,
+          "value_count": 140
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              3199,
+              7199,
+              7231,
+              7295,
+              7359,
+              7903
+            ],
+            "counts": [
+              20,
+              40,
+              20,
+              20,
+              20,
+              20
+            ]
+          },
+          "summary": {
+            "sum": 947700,
+            "value_count": 140
+          }
+        },
+        "name": "POST /bookmark/addBookmark/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /bookmark/addBookmark/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "-e8Po44BwY_hAmpvu71M",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:24:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:25:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              2991
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 59820,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "4u8Oo44BwY_hAmpv0L3v",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:23:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:24:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4575
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 91500,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "4-8Oo44BwY_hAmpv0L3v",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:23:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:24:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4991
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 99820,
+            "value_count": 20
+          }
+        },
+        "name": "GET /news/getOneBlogForWeb/:id",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  },
+  {
+    "_index": ".ds-metrics-apm.transaction.1m-default-2024.03.27-000067",
+    "_id": "iA4No44BRC1UfXF85kCM",
+    "_score": 1,
+    "_source": {
+      "@timestamp": "2024-04-03T08:22:00.000Z",
+      "_doc_count": 20,
+      "agent": {
+        "name": "nodejs"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "id": "788434229488",
+          "name": "proj-newsshield-prod-infra"
+        },
+        "provider": "gcp",
+        "region": "asia-south1"
+      },
+      "container": {
+        "id": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+      },
+      "data_stream": {
+        "dataset": "apm.transaction.1m",
+        "namespace": "default",
+        "type": "metrics"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-03T08:23:01Z",
+        "outcome": "success",
+        "success_count": {
+          "sum": 20,
+          "value_count": 20
+        }
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        }
+      },
+      "kubernetes": {
+        "pod": {
+          "name": "sachai-api-6fdf9d7f89-bl999"
+        }
+      },
+      "metricset": {
+        "interval": "1m",
+        "name": "transaction"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "processor": {
+        "event": "metric"
+      },
+      "service": {
+        "environment": "production",
+        "language": {
+          "name": "javascript"
+        },
+        "name": "AskUs-Api",
+        "node": {
+          "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+        },
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "version": "1.0.0"
+      },
+      "transaction": {
+        "duration": {
+          "histogram": {
+            "values": [
+              4015
+            ],
+            "counts": [
+              20
+            ]
+          },
+          "summary": {
+            "sum": 80300,
+            "value_count": 20
+          }
+        },
+        "name": "POST /category/getAllCat",
+        "result": "HTTP 2xx",
+        "root": true,
+        "type": "request",
+        "apiUrl": "POST /category/getAllCat",
+        "service": {
+          "environment": "production",
+          "language": {
+            "name": "javascript"
+          },
+          "name": "AskUs-Api",
+          "node": {
+            "name": "5fddf0b8c2611851e171938a60128b0c05f5f82e78b5857528c4ec1557b8d5b3"
+          },
+          "runtime": {
+            "name": "node",
+            "version": "21.1.0"
+          },
+          "version": "1.0.0"
+        }
+      }
+    }
+  }
+]

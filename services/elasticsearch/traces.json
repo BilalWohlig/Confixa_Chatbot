@@ -1,0 +1,3180 @@
+[
+  {
+    "duration": {
+      "us": 291
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "30686e39a0677357",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "efd66e174da59138"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3886
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "efd66e174da59138",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "efd66e174da59138",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "d92bfc6c61de5989",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "efd66e174da59138"
+  },
+  {
+    "duration": {
+      "us": 243
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "f02bf18c6550384c",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "9bf0c11fdbcb8ab2"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3292
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "9bf0c11fdbcb8ab2",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "9bf0c11fdbcb8ab2",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "fcb7c98a5f009ad3",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "9bf0c11fdbcb8ab2"
+  },
+  {
+    "duration": {
+      "us": 643
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "f760fe9cacae4bfc",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "3a889f2986a97a7c"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3231
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "3a889f2986a97a7c",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "3a889f2986a97a7c",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "47734e1bd9459307",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "3a889f2986a97a7c"
+  },
+  {
+    "duration": {
+      "us": 237
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "cb61c5576bce5d96",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "e0983c508aa80bc0"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3624
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "e0983c508aa80bc0",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "e0983c508aa80bc0",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "08ba2f783a6aa224",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "e0983c508aa80bc0"
+  },
+  {
+    "duration": {
+      "us": 264
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "5e8f8a6152bf831b",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "ab0680116877e5c0"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3843
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "ab0680116877e5c0",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "ab0680116877e5c0",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "cbde8dcf07551d5e",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "ab0680116877e5c0"
+  },
+  {
+    "duration": {
+      "us": 813
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "4f98f2c2bc387f27",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "251fdaa943f3bc33"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4226
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "251fdaa943f3bc33",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "251fdaa943f3bc33",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "fb8619abcf79d41f",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "251fdaa943f3bc33"
+  },
+  {
+    "duration": {
+      "us": 754
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "8053b9c2b24e72fa",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "01ebb41d54f5589e"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3279
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "01ebb41d54f5589e",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "01ebb41d54f5589e",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "99bc9064d0087508",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "01ebb41d54f5589e"
+  },
+  {
+    "duration": {
+      "us": 319
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "abcd656f454b1962",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "b9a72a43c2fd3dbb"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4213
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "b9a72a43c2fd3dbb",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "b9a72a43c2fd3dbb",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "5e3afde2f722e645",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "b9a72a43c2fd3dbb"
+  },
+  {
+    "duration": {
+      "us": 288
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "547264c20f9e2677",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "27d1f645f2a19d3b"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4412
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "27d1f645f2a19d3b",
+    "span_count": {
+      "started": 3
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "27d1f645f2a19d3b",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2523
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "composite": {
+      "count": 2,
+      "sum": {
+        "us": 1000
+      },
+      "compression_strategy": "same_kind"
+    },
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "Calls to mongodb/askus-dev",
+    "action": "find",
+    "id": "6d3abd51b5aff608",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "27d1f645f2a19d3b"
+  },
+  {
+    "duration": {
+      "us": 919
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "4098e489ba2b63cb",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "e524c1e35a56ee22"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4855
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "e524c1e35a56ee22",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "e524c1e35a56ee22",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "a6ad7f19d390f84b",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "e524c1e35a56ee22"
+  },
+  {
+    "duration": {
+      "us": 843
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "477a7295b0ae6e5d",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "d1082ee25889b51f"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3756
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "d1082ee25889b51f",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "d1082ee25889b51f",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "bc2dd785228908b5",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "d1082ee25889b51f"
+  },
+  {
+    "duration": {
+      "us": 3627
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "d1244c4afda9bd38",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "36e6e164219af558"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 6280
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "36e6e164219af558",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "36e6e164219af558",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "9976d5119c571a2c",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "36e6e164219af558"
+  },
+  {
+    "duration": {
+      "us": 393
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "53cfa88c3fde2d76",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "ab78c104ea1506c5"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 5684
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "ab78c104ea1506c5",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "ab78c104ea1506c5",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "8566ccd1b52d7572",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "ab78c104ea1506c5"
+  },
+  {
+    "duration": {
+      "us": 704
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "b5d7054f5f13f204",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "4c94d28cd9e6d92a"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3150
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "4c94d28cd9e6d92a",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "4c94d28cd9e6d92a",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "d942e244c09e96c8",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "4c94d28cd9e6d92a"
+  },
+  {
+    "duration": {
+      "us": 250
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "3fbfd5cc7c60ae3a",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "a6898054a6e0ee49"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3851
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "a6898054a6e0ee49",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "a6898054a6e0ee49",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "1f41b1e90ad6861b",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "a6898054a6e0ee49"
+  },
+  {
+    "duration": {
+      "us": 288
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "6c98b771ac6c0828",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "65407c2bfa4117db"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3474
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "65407c2bfa4117db",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "65407c2bfa4117db",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "4bae0efb7f7ded76",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "65407c2bfa4117db"
+  },
+  {
+    "duration": {
+      "us": 618
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "531dbda6c1ec3fa5",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "5343d0a4905d510e"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3307
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "5343d0a4905d510e",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "5343d0a4905d510e",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "53269c9cebfd9aad",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "5343d0a4905d510e"
+  },
+  {
+    "duration": {
+      "us": 821
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "d3e269725dae9a11",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "72a3d71378176328"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 5031
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "72a3d71378176328",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "72a3d71378176328",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 3000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "7885d049b63579ae",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "72a3d71378176328"
+  },
+  {
+    "result": "HTTP 4xx",
+    "duration": {
+      "us": 758
+    },
+    "representative_count": 20,
+    "name": "POST /user/addPlayerIdToUser",
+    "id": "d02fdc31b9467f25",
+    "span_count": {
+      "started": 0
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "d02fdc31b9467f25",
+    "apiUrl": "POST /user/addPlayerIdToUser"
+  },
+  {
+    "duration": {
+      "us": 273
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "2c3f9341689403f6",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "8516f2dd43f8351f"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3413
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "8516f2dd43f8351f",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "8516f2dd43f8351f",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "11b6abcfd8c5808e",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "8516f2dd43f8351f"
+  },
+  {
+    "duration": {
+      "us": 275
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "f5f93f04a9a57988",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "564785d639123d30"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3634
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "564785d639123d30",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "564785d639123d30",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "a6e205e80d4977da",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "564785d639123d30"
+  },
+  {
+    "duration": {
+      "us": 249
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "451e669c1e492d7a",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "68d395728272b96f"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4788
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "68d395728272b96f",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "68d395728272b96f",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "6d172bb585022dcb",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "68d395728272b96f"
+  },
+  {
+    "duration": {
+      "us": 233
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "e664f518e5c2b960",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "f5c5b5de950554a6"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3229
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "f5c5b5de950554a6",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "f5c5b5de950554a6",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "d3d76f78cac62208",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "f5c5b5de950554a6"
+  },
+  {
+    "duration": {
+      "us": 796
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "2beba66741732d7f",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "88d5a6f3691775ab"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4299
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "88d5a6f3691775ab",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "88d5a6f3691775ab",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "97b6840719947cf5",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "88d5a6f3691775ab"
+  },
+  {
+    "duration": {
+      "us": 306
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "18e81361ef375a53",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "41aa081c943b678e"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 5061
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "41aa081c943b678e",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "41aa081c943b678e",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "e65c8c56ed77c692",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "41aa081c943b678e"
+  },
+  {
+    "duration": {
+      "us": 1546
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "c9d3e3cbc8f1f5a1",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "b0e2b11b2949c22d"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 5119
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "b0e2b11b2949c22d",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "b0e2b11b2949c22d",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "f7ac339d4383b3f9",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "b0e2b11b2949c22d"
+  },
+  {
+    "duration": {
+      "us": 664
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "ec8ce576db968376",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "27da37eb9ec62cbf"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4855
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "27da37eb9ec62cbf",
+    "span_count": {
+      "started": 3
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "27da37eb9ec62cbf",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2655
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "composite": {
+      "count": 2,
+      "sum": {
+        "us": 1000
+      },
+      "compression_strategy": "same_kind"
+    },
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "Calls to mongodb/askus-dev",
+    "action": "find",
+    "id": "770469581a77b820",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "27da37eb9ec62cbf"
+  },
+  {
+    "duration": {
+      "us": 955
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "ea03edbc0b920176",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "f9e437b98999a64c"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 16521
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "f9e437b98999a64c",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "f9e437b98999a64c",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "760275a3ff25ca59",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "f9e437b98999a64c"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3342
+    },
+    "representative_count": 20,
+    "name": "GET /chats/getChatsPerUser/:id",
+    "id": "68bc8d633334bbba",
+    "span_count": {
+      "started": 1
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "68bc8d633334bbba",
+    "apiUrl": "GET /chats/getChatsPerUser/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.chats.find",
+    "action": "find",
+    "id": "e6d46134ff88a8b1",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "68bc8d633334bbba"
+  },
+  {
+    "duration": {
+      "us": 1429
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "4f62871d51a477fd",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.users.find",
+    "action": "find",
+    "id": "06a5986188e9a2bc",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "acafc76fd358c03a",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "duration": {
+      "us": 23801
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "sachai-gpt.prod-sachai.svc.cluster.local:80"
+      }
+    },
+    "name": "POST sachai-gpt.prod-sachai.svc.cluster.local",
+    "action": "POST",
+    "id": "51fbbd558fcd669e",
+    "type": "external",
+    "sync": false,
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "7e7b5376fd3ac8d4",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "duration": {
+      "us": 8225
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "composite": {
+      "count": 2,
+      "sum": {
+        "us": 7000
+      },
+      "compression_strategy": "same_kind"
+    },
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "Calls to mongodb/askus-dev",
+    "action": "find",
+    "id": "80a3ad15eec5b054",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 82993
+    },
+    "representative_count": 20,
+    "name": "POST /news/mynews/all",
+    "id": "12bc0955b7bcd8d8",
+    "span_count": {
+      "started": 26
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "12bc0955b7bcd8d8",
+    "apiUrl": "POST /news/mynews/all"
+  },
+  {
+    "duration": {
+      "us": 36641
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "composite": {
+      "count": 19,
+      "sum": {
+        "us": 23000
+      },
+      "compression_strategy": "exact_match"
+    },
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.suggestedqnas.find",
+    "action": "find",
+    "id": "a4c44230c2f995b6",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "12bc0955b7bcd8d8"
+  },
+  {
+    "duration": {
+      "us": 9890
+    },
+    "representative_count": 20,
+    "subtype": "http",
+    "destination": {
+      "service": {
+        "resource": "730uqgh62p-dsn.algolia.net:443"
+      }
+    },
+    "name": "POST 730uqgh62p-dsn.algolia.net",
+    "action": "POST",
+    "id": "61dbb05a86a09825",
+    "type": "external",
+    "sync": false,
+    "transactionId": "16f987d7666493d4"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 14343
+    },
+    "representative_count": 20,
+    "name": "POST /askus/api/algolia/algoliaSearchQuery",
+    "id": "16f987d7666493d4",
+    "span_count": {
+      "started": 1
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "16f987d7666493d4",
+    "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery"
+  },
+  {
+    "duration": {
+      "us": 260
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "a4d35af44259936e",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "0d5e35bb2b1cbcef"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3779
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "0d5e35bb2b1cbcef",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "0d5e35bb2b1cbcef",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 3000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "84f34be3085fb2ad",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "0d5e35bb2b1cbcef"
+  },
+  {
+    "duration": {
+      "us": 331
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "4dce442b0cd54846",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "266953d1d4e20738"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4302
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "266953d1d4e20738",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "266953d1d4e20738",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 0
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "e66d3377fef7e120",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "266953d1d4e20738"
+  },
+  {
+    "duration": {
+      "us": 619
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "550e86c31ac4163a",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "ecb3f4c697de69d5"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.find",
+    "action": "find",
+    "id": "f2b192a7ad6cc86e",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "ecb3f4c697de69d5"
+  },
+  {
+    "duration": {
+      "us": 1954
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "composite": {
+      "count": 2,
+      "sum": {
+        "us": 1000
+      },
+      "compression_strategy": "same_kind"
+    },
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "Calls to mongodb/askus-dev",
+    "action": "find",
+    "id": "80c0c10cc4c35489",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "ecb3f4c697de69d5"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 13055
+    },
+    "representative_count": 20,
+    "name": "POST /news/sendAlgoliaEvents/:id",
+    "id": "ecb3f4c697de69d5",
+    "span_count": {
+      "started": 6
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "ecb3f4c697de69d5",
+    "apiUrl": "POST /news/sendAlgoliaEvents/:id"
+  },
+  {
+    "duration": {
+      "us": 4000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.algoliaevents.insert",
+    "action": "insert",
+    "id": "c45866c4d4f321b9",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "ecb3f4c697de69d5"
+  },
+  {
+    "duration": {
+      "us": 262
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "9070167599399050",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "77f1a6b11ab5066e"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4858
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "77f1a6b11ab5066e",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "77f1a6b11ab5066e",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "66d49b65c16353b3",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "77f1a6b11ab5066e"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 2872
+    },
+    "representative_count": 20,
+    "name": "GET /config/getConfig",
+    "id": "32c7177fd819549c",
+    "span_count": {
+      "started": 1
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "32c7177fd819549c",
+    "apiUrl": "GET /config/getConfig"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.configs.find",
+    "action": "find",
+    "id": "aa6590e69c16238d",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "32c7177fd819549c"
+  },
+  {
+    "duration": {
+      "us": 590
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "6febb874ac9b08da",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "4813e7b5587e438f"
+  },
+  {
+    "duration": {
+      "us": 0
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.languages.find",
+    "action": "find",
+    "id": "61d0d9c5c45c4aaa",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "4813e7b5587e438f"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3760
+    },
+    "representative_count": 20,
+    "name": "GET /language/getLanguages",
+    "id": "4813e7b5587e438f",
+    "span_count": {
+      "started": 3
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "4813e7b5587e438f",
+    "apiUrl": "GET /language/getLanguages"
+  },
+  {
+    "duration": {
+      "us": 1356
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "SET",
+    "action": "query",
+    "id": "3227f492877cd930",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "4813e7b5587e438f"
+  },
+  {
+    "duration": {
+      "us": 262
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "5ba5d3da4fd91b26",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "c95676dd71df6c8d"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 6465
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "c95676dd71df6c8d",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "c95676dd71df6c8d",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 4000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "52b277164a278ab2",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "c95676dd71df6c8d"
+  },
+  {
+    "duration": {
+      "us": 292
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "dd6d5358c5816e8e",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "b5d6c947195e628e"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4497
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "b5d6c947195e628e",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "b5d6c947195e628e",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 3000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "012b6cedabfabf78",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "b5d6c947195e628e"
+  },
+  {
+    "duration": {
+      "us": 231
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "0e4ea6682e3b6e9a",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "589749536491c964"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3313
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "589749536491c964",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "589749536491c964",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "c2dc48c18f16e8dd",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "589749536491c964"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "1189f9ca52f303ad",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "7a1e358a076c3941"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 7899
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "7a1e358a076c3941",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "7a1e358a076c3941",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 4000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.update",
+    "action": "update",
+    "id": "ad6406b5b440add8",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "7a1e358a076c3941"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "b5f3af7bf6a0facb",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "e300a18a20f8f732"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 7276
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "e300a18a20f8f732",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "e300a18a20f8f732",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 5000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.update",
+    "action": "update",
+    "id": "23a5c20b90e4183c",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "e300a18a20f8f732"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "68f91b0880c10d01",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "0271a1209ea7e9c8"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 7195
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "0271a1209ea7e9c8",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "0271a1209ea7e9c8",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 4000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.update",
+    "action": "update",
+    "id": "6cbb36cc9ef0e323",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "0271a1209ea7e9c8"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3184
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "c86eecdd3482dc1f",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "c86eecdd3482dc1f",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 1778
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "composite": {
+      "count": 2,
+      "sum": {
+        "us": 2000
+      },
+      "compression_strategy": "exact_match"
+    },
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "3b3ea124d16bfa8d",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "c86eecdd3482dc1f"
+  },
+  {
+    "duration": {
+      "us": 197
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "548426e14dbed33d",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "f9225d397edc917c"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 3007
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneNewsForWeb/:id",
+    "id": "f9225d397edc917c",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "f9225d397edc917c",
+    "apiUrl": "GET /news/getOneNewsForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.news.aggregate",
+    "action": "aggregate",
+    "id": "50f55a269933b778",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "f9225d397edc917c"
+  },
+  {
+    "duration": {
+      "us": 589
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "e538aba5f20a220d",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "fde04ba0d5bff7e4"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 2979
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "fde04ba0d5bff7e4",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "fde04ba0d5bff7e4",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "c88b99f2300aeccc",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "fde04ba0d5bff7e4"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "e45ac589a75a187b",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "d9e2035354f84b7a"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 7208
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "d9e2035354f84b7a",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "d9e2035354f84b7a",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 4000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.update",
+    "action": "update",
+    "id": "e7f3bbaaed28dfcc",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "d9e2035354f84b7a"
+  },
+  {
+    "duration": {
+      "us": 0
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "e5c540eac9c1a873",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "1f64d41b9d2e3b81"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 7192
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "1f64d41b9d2e3b81",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "1f64d41b9d2e3b81",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 4000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.update",
+    "action": "update",
+    "id": "143a90d5669f40e4",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "1f64d41b9d2e3b81"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.find",
+    "action": "find",
+    "id": "c9021ba7881e7a9a",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "02b846ac11509fca"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 7342
+    },
+    "representative_count": 20,
+    "name": "POST /bookmark/addBookmark/:id",
+    "id": "02b846ac11509fca",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "02b846ac11509fca",
+    "apiUrl": "POST /bookmark/addBookmark/:id"
+  },
+  {
+    "duration": {
+      "us": 5000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.bookmarks.update",
+    "action": "update",
+    "id": "16abf089da347e38",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "02b846ac11509fca"
+  },
+  {
+    "duration": {
+      "us": 546
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "2b8156436d0a11ad",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "452fec3a8001a980"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.blogs.find",
+    "action": "find",
+    "id": "f0a2b78c3a1b3a8b",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "452fec3a8001a980"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4972
+    },
+    "representative_count": 20,
+    "name": "GET /news/getOneBlogForWeb/:id",
+    "id": "452fec3a8001a980",
+    "span_count": {
+      "started": 3
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "452fec3a8001a980",
+    "apiUrl": "GET /news/getOneBlogForWeb/:id"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "882619eead717d89",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "452fec3a8001a980"
+  },
+  {
+    "duration": {
+      "us": 245
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "f1174a781a88c735",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "6fabab6cebcb3c08"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4573
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "6fabab6cebcb3c08",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "6fabab6cebcb3c08",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 1000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "0b12c66c118a55b8",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "6fabab6cebcb3c08"
+  },
+  {
+    "duration": {
+      "us": 272
+    },
+    "representative_count": 20,
+    "subtype": "redis",
+    "destination": {
+      "service": {
+        "resource": "redis"
+      }
+    },
+    "name": "GET",
+    "action": "query",
+    "id": "d0f0477d6df8eaab",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "type": "redis"
+    },
+    "transactionId": "d51f5f557610d3d6"
+  },
+  {
+    "result": "HTTP 2xx",
+    "duration": {
+      "us": 4006
+    },
+    "representative_count": 20,
+    "name": "POST /category/getAllCat",
+    "id": "d51f5f557610d3d6",
+    "span_count": {
+      "started": 2
+    },
+    "type": "request",
+    "sampled": true,
+    "transactionId": "d51f5f557610d3d6",
+    "apiUrl": "POST /category/getAllCat"
+  },
+  {
+    "duration": {
+      "us": 2000
+    },
+    "representative_count": 20,
+    "subtype": "mongodb",
+    "destination": {
+      "service": {
+        "resource": "mongodb/askus-dev"
+      }
+    },
+    "name": "askus-dev.categories.find",
+    "action": "find",
+    "id": "4f7f56c2e45d1f41",
+    "type": "db",
+    "sync": false,
+    "db": {
+      "instance": "askus-dev",
+      "type": "mongodb"
+    },
+    "transactionId": "d51f5f557610d3d6"
+  }
+]

@@ -64,7 +64,7 @@ class GetResponse {
         index: dataStream,
         body: query
       })
-      if (data.category === 'latency') {
+      if (data.category === 'latency' || data.category === 'services') {
         const traces = await client.search({
           index: '.ds-traces-apm-default*',
           body: query
@@ -103,6 +103,7 @@ class GetResponse {
       }
       // console.log(hits)
       var totalTxn = []
+      fs.writeFileSync('services/elasticsearch/fullTransactions.json', JSON.stringify(hits, null, 2))
       hits.forEach((hit) => {
         // return
         if(hit._source.transaction.name && !hit._source.service.target) {
@@ -114,14 +115,19 @@ class GetResponse {
         if (hit._source.span && hit._source.span.name) {
           hit._source.span.transactionId = hit._source.transaction.id
           totalTxn.push(hit._source.span)
-        } else {
-          console.log(hit._source.transaction.duration.summary)
-          totalTxn.push(hit._source.transaction.duration.summary)
+        } 
+        else {
+          // console.log(hit._source.transaction.duration.summary)
+          // const obj = {
+          //   service: hit._source.service.name,
+          //   transaction: hit._source.transaction.duration.summary
+          // }
+          // totalTxn.push(obj)
         }
 
       })
       // console.log('totalTxn,', totalTxn)
-      if (data.category === 'latency') {
+      if (data.category === 'latency' || data.category === 'services') {
         fs.writeFileSync('services/elasticsearch/transactions.json', JSON.stringify(totalTxn, null, 2))
         fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(traceTxn, null, 2))
         fs.writeFileSync('services/elasticsearch/fullTransactions.json', JSON.stringify(hits, null, 2))
@@ -131,8 +137,8 @@ class GetResponse {
         fs.writeFileSync('services/elasticsearch/traces.json', JSON.stringify(totalTxn, null, 2))
       } else if (data.category === 'services') {
         console.log("data.category === 'services'")
-        fs.writeFileSync('services/elasticsearch/servicetxn.json', JSON.stringify(totalTxn, null, 2))
-        fs.writeFileSync('services/elasticsearch/fullservicetxn.json', JSON.stringify(hits, null, 2))
+        // fs.writeFileSync('services/elasticsearch/serviceSummary.json', JSON.stringify(totalTxn, null, 2))
+        fs.writeFileSync('services/elasticsearch/fullServiceSummary.json', JSON.stringify(hits, null, 2))
       }
       console.log('Writtennnnn')
       return true
