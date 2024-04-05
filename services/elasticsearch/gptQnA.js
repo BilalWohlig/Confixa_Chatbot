@@ -16,7 +16,7 @@ class GPTModel {
           {
             role: 'system',
             content:
-              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources. Just keep in mind that "slowest" means high latency and "fastest" means low latency.'
           },
           {
             role: 'user',
@@ -43,7 +43,7 @@ class GPTModel {
           {
             role: 'system',
             content:
-              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources. Just keep in mind that "slowest" means high latency and "fastest" means low latency.'
           },
           {
             role: 'user',
