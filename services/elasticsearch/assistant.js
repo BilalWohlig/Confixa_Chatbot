@@ -7,8 +7,8 @@ const { Client } = require("@elastic/elasticsearch");
 const fs = require("fs");
 
 class Assistant {
-  static assistantId = "asst_NqPYCix6wbnftYGCyibxdiUk";
-  static threadId = "thread_1YQqWAjrioAH8MDAi05icCCK";
+  static assistantId = "";
+  static threadId = "";
   static runId = "";
 
   async retrieveElasticData() {
@@ -266,12 +266,15 @@ class Assistant {
     }
   }
 //   You are a helpful chatbot that answers user's questions accurately by checking the information provided to you throughly. The answers you provide will be detailed. For any question, provide the service name applicable, then the appropriate api based on the user's question and the api's appropriate trace breakdown. For trace breakdown, if an api has multiple transactions, then provide the breakdown of the slowest transaction of that api and always give a analysis and suggestion on how to improve the latency of that api.
+
+
+// You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question.
   async createAssistant() {
     try {
       const assistant = await openai.beta.assistants.create({
         name: "Elastic Search Assistant",
         description:
-          `You are a chatbot that retrieves and analyses service, transaction, and trace data from provided functions to answer user queries. Make sure to call all the functions to get complete information. You should provide the service name, relevant API latency data, trace breakdown (focusing on the slowest transaction for APIs with multiple transactions), and a brief analysis with performance improvement steps. The response format includes the service name, API latency, trace breakdown of those APIs, and analysis/recommendations based on the user's question.`,
+          `Call all the functions (getServiceData, getTransactionLatencyData and getTraceData) to get complete information and then use all that information to answer the user's question.`,
         model: "gpt-4-turbo-preview",
         tools: [
           {
