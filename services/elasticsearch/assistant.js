@@ -7,8 +7,8 @@ const { Client } = require("@elastic/elasticsearch");
 const fs = require("fs");
 
 class Assistant {
-  static assistantId = "";
-  static threadId = "";
+  static assistantId = "asst_Yrc8MioFlHnRWPXJsO40VLxI";
+  static threadId = "thread_DZKyYBY3hKkDm7ltc2j7Bh9z";
   static runId = "";
 
   async retrieveElasticData() {
@@ -224,6 +224,26 @@ class Assistant {
       JSON.stringify(services, null, 2)
     );
     console.log("Servicessss Doneeee");
+
+    const serviceData = JSON.parse(
+      fs.readFileSync("services/elasticsearch/servicesCleaned.json", "utf-8")
+    );
+    const tracesData = JSON.parse(
+      fs.readFileSync("services/elasticsearch/traceCleaned.json", "utf-8")
+    );
+    for (const [key, value] of Object.entries(serviceData)) {
+      for (let i = 0; i < value.apiData.length; i++) {
+        const api = value.apiData[i];
+        if (tracesData[api.apiUrl]) {
+          serviceData[key].apiData[i].traceBreakdown = tracesData[api.apiUrl];
+        }
+      }
+    }
+    fs.writeFileSync(
+      "services/elasticsearch/serviceLatencyTraceData.json",
+      JSON.stringify(serviceData, null, 2)
+    );
+    console.log("Service, Latency And Trace Combinedddd");
   }
 
   async askQna(userQuestion) {
@@ -247,7 +267,6 @@ class Assistant {
         Assistant.threadId != "" &&
         Assistant.runId == ""
       ) {
-        console.log("Heyyy");
         await this.createRun();
         console.log("Run Created");
       }
@@ -265,34 +284,38 @@ class Assistant {
       return __constants.RESPONSE_MESSAGES.ERROR_CALLING_PROVIDER;
     }
   }
-//   You are a helpful chatbot that answers user's questions accurately by checking the information provided to you throughly. The answers you provide will be detailed. For any question, provide the service name applicable, then the appropriate api based on the user's question and the api's appropriate trace breakdown. For trace breakdown, if an api has multiple transactions, then provide the breakdown of the slowest transaction of that api and always give a analysis and suggestion on how to improve the latency of that api.
 
+  // You are a chatbot that retrieves and analyses service, latency, and trace data to answer user queries. Always call getElasticData to get all the information you need. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions) of the relevant apis, and an analysis with performance improvement steps for the apis. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question.
 
-// You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question.
+  //   You are a helpful chatbot that answers user's questions accurately by checking the information provided to you throughly. The answers you provide will be detailed. For any question, provide the service name applicable, then the appropriate api based on the user's question and the api's appropriate trace breakdown. For trace breakdown, if an api has multiple transactions, then provide the breakdown of the slowest transaction of that api and always give a analysis and suggestion on how to improve the latency of that api.
+
+  // You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question.
+
+    
   async createAssistant() {
     try {
       const assistant = await openai.beta.assistants.create({
         name: "Elastic Search Assistant",
-        description:
-          `Call all the functions (getServiceData, getTransactionLatencyData and getTraceData) to get complete information and then use all that information to answer the user's question.`,
+        description: `You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question.`,
         model: "gpt-4-turbo-preview",
         tools: [
           {
             type: "function",
             function: {
               name: "getServiceData",
-              description: "Get the data like average latency of a service, the data of the apis associated with that service, etc.",
-            //   parameters: {
-            //     type: "object",
-            //     properties: {
-            //       location: {
-            //         type: "string",
-            //         description: "The city and state e.g. San Francisco, CA",
-            //       },
-            //       unit: { type: "string", enum: ["c", "f"] },
-            //     },
-            //     required: ["location"],
-            //   },
+              description:
+                "Get the data like average latency of a service, the data of the apis associated with that service, etc.",
+              //   parameters: {
+              //     type: "object",
+              //     properties: {
+              //       location: {
+              //         type: "string",
+              //         description: "The city and state e.g. San Francisco, CA",
+              //       },
+              //       unit: { type: "string", enum: ["c", "f"] },
+              //     },
+              //     required: ["location"],
+              //   },
             },
           },
           {
@@ -300,35 +323,36 @@ class Assistant {
             function: {
               name: "getTransactionLatencyData",
               description: "Get the data like average latency of an api.",
-            //   parameters: {
-            //     type: "object",
-            //     properties: {
-            //       location: {
-            //         type: "string",
-            //         description: "The city and state e.g. San Francisco, CA",
-            //       },
-            //       unit: { type: "string", enum: ["c", "f"] },
-            //     },
-            //     required: ["location"],
-            //   },
+              //   parameters: {
+              //     type: "object",
+              //     properties: {
+              //       location: {
+              //         type: "string",
+              //         description: "The city and state e.g. San Francisco, CA",
+              //       },
+              //       unit: { type: "string", enum: ["c", "f"] },
+              //     },
+              //     required: ["location"],
+              //   },
             },
           },
           {
             type: "function",
             function: {
               name: "getTraceData",
-              description: "Get the traces of an api which includes their internal working as well.",
-            //   parameters: {
-            //     type: "object",
-            //     properties: {
-            //       location: {
-            //         type: "string",
-            //         description: "The city and state e.g. San Francisco, CA",
-            //       },
-            //       unit: { type: "string", enum: ["c", "f"] },
-            //     },
-            //     required: ["location"],
-            //   },
+              description:
+                "Get the traces of an api which includes their internal working as well.",
+              //   parameters: {
+              //     type: "object",
+              //     properties: {
+              //       location: {
+              //         type: "string",
+              //         description: "The city and state e.g. San Francisco, CA",
+              //       },
+              //       unit: { type: "string", enum: ["c", "f"] },
+              //     },
+              //     required: ["location"],
+              //   },
             },
           },
         ],
@@ -340,32 +364,32 @@ class Assistant {
       return __constants.RESPONSE_MESSAGES.ERROR_CALLING_PROVIDER;
     }
   }
+  async getElasticData() {
+    const elasticData = JSON.parse(
+      fs.readFileSync(
+        "services/elasticsearch/serviceLatencyTraceData.json",
+        "utf8"
+      )
+    );
+    return elasticData;
+  }
   async getServiceData() {
     const serviceData = JSON.parse(
-        fs.readFileSync(
-          "services/elasticsearch/servicesCleaned.json",
-          "utf8"
-        )
-      );
-      return serviceData;
+      fs.readFileSync("services/elasticsearch/servicesCleaned.json", "utf8")
+    );
+    return serviceData;
   }
   async getTransactionLatencyData() {
     const transactionData = JSON.parse(
-        fs.readFileSync(
-          "services/elasticsearch/latencies.json",
-          "utf8"
-        )
-      );
-      return transactionData;
+      fs.readFileSync("services/elasticsearch/latencies.json", "utf8")
+    );
+    return transactionData;
   }
   async getTraceData() {
     const traceData = JSON.parse(
-        fs.readFileSync(
-          "services/elasticsearch/traceCleaned.json",
-          "utf8"
-        )
-      );
-      return traceData;
+      fs.readFileSync("services/elasticsearch/traceCleaned.json", "utf8")
+    );
+    return traceData;
   }
   async createThread() {
     try {
@@ -379,27 +403,27 @@ class Assistant {
   }
   async createMessage(userQuestion) {
     try {
-    //   const latencyFile = await openai.files.create({
-    //     file: fs.createReadStream("services/elasticsearch/latencies.json"),
-    //     purpose: "assistants",
-    //   });
-    //   const tracesFile = await openai.files.create({
-    //     file: fs.createReadStream("services/elasticsearch/traceCleaned.json"),
-    //     purpose: "assistants",
-    //   });
-    //   const servicesFile = await openai.files.create({
-    //     file: fs.createReadStream(
-    //       "services/elasticsearch/servicesCleaned.json"
-    //     ),
-    //     purpose: "assistants",
-    //   });
+      //   const latencyFile = await openai.files.create({
+      //     file: fs.createReadStream("services/elasticsearch/latencies.json"),
+      //     purpose: "assistants",
+      //   });
+      //   const tracesFile = await openai.files.create({
+      //     file: fs.createReadStream("services/elasticsearch/traceCleaned.json"),
+      //     purpose: "assistants",
+      //   });
+      //   const servicesFile = await openai.files.create({
+      //     file: fs.createReadStream(
+      //       "services/elasticsearch/servicesCleaned.json"
+      //     ),
+      //     purpose: "assistants",
+      //   });
       const message = await openai.beta.threads.messages.create(
         Assistant.threadId,
         {
           // thread_id: Assistant.threadId,
           role: "user",
           content: userQuestion,
-        //   file_ids: [latencyFile.id, tracesFile.id, servicesFile.id],
+          //   file_ids: [latencyFile.id, tracesFile.id, servicesFile.id],
         }
       );
     } catch (error) {
@@ -412,6 +436,7 @@ class Assistant {
       const run = await openai.beta.threads.runs.create(Assistant.threadId, {
         // thread_id: Assistant.threadId,
         assistant_id: Assistant.assistantId,
+        instructions: "You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question."
       });
       Assistant.runId = run.id;
     } catch (error) {
@@ -430,38 +455,48 @@ class Assistant {
           Assistant.runId
         );
         console.log(runStatus.status);
-        if(runStatus.status == "requires_action"){
-            const requiredActions = runStatus.required_action.submit_tool_outputs.tool_calls
-            console.log(requiredActions)
-            const toolsOutput = []
-            for(let action of requiredActions) {
-                const funcName = action.function.name
-                if(funcName === 'getServiceData') {
-                    const serviceData = await this.getServiceData()
-                    toolsOutput.push({
-                        tool_call_id: action.id,
-                        output: JSON.stringify(serviceData)
-                    })
-                }
-                else if(funcName === 'getTransactionLatencyData') {
-                    const transactionData = await this.getTransactionLatencyData()
-                    toolsOutput.push({
-                        tool_call_id: action.id,
-                        output: JSON.stringify(transactionData)
-                    })
-                }
-                else if(funcName === 'getTraceData') {
-                    const traceData = await this.getTraceData()
-                    toolsOutput.push({
-                        tool_call_id: action.id,
-                        output: JSON.stringify(traceData)
-                    })
-                }
-                else{
-                    console.log('Unknown Function')
-                }
+        if (runStatus.status == "requires_action") {
+          const requiredActions =
+            runStatus.required_action.submit_tool_outputs.tool_calls;
+          console.log(requiredActions);
+          const toolsOutput = [];
+          for (let action of requiredActions) {
+            const funcName = action.function.name;
+            // if (funcName == "getElasticData") {
+            //   const elasticData = await this.getElasticData();
+            //   toolsOutput.push({
+            //     tool_call_id: action.id,
+            //     output: JSON.stringify(elasticData),
+            //   });
+            // }
+            if (funcName === "getServiceData") {
+              const serviceData = await this.getServiceData();
+              toolsOutput.push({
+                tool_call_id: action.id,
+                output: JSON.stringify(serviceData),
+              });
+            } else if (funcName === "getTransactionLatencyData") {
+              const transactionData = await this.getTransactionLatencyData();
+              toolsOutput.push({
+                tool_call_id: action.id,
+                output: JSON.stringify(transactionData),
+              });
+            } else if (funcName === "getTraceData") {
+              const traceData = await this.getTraceData();
+              toolsOutput.push({
+                tool_call_id: action.id,
+                output: JSON.stringify(traceData),
+              });
             }
-            await openai.beta.threads.runs.submitToolOutputs(Assistant.threadId, Assistant.runId, {tool_outputs: toolsOutput})
+            else {
+              console.log("Unknown Function");
+            }
+          }
+          await openai.beta.threads.runs.submitToolOutputs(
+            Assistant.threadId,
+            Assistant.runId,
+            { tool_outputs: toolsOutput }
+          );
         }
         await this.sleep(1000);
       }

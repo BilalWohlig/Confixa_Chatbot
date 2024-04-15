@@ -1,0 +1,2251 @@
+{
+  "AskUs-FileUpload": {
+    "totalServiceDuration": 211845000,
+    "totalServiceRequests": 120,
+    "averageServiceLatency": {
+      "value": 1765375,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.7.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /askus/api/audio/createS3ForAudio",
+        "totalApiDuration": 66355120,
+        "totalApiRequests": 80,
+        "averageApiLatency": {
+          "value": 829439,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "e647931dca7b3562",
+            "span_count": {
+              "started": 3
+            },
+            "totalDuration": {
+              "us": 626126
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 68226
+                },
+                "destination": {
+                  "service": {
+                    "resource": "www.googleapis.com:443"
+                  }
+                },
+                "name": "POST www.googleapis.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 25212
+                },
+                "destination": {
+                  "service": {
+                    "resource": "storage.googleapis.com:443"
+                  }
+                },
+                "name": "POST storage.googleapis.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 55197
+                },
+                "destination": {
+                  "service": {
+                    "resource": "storage.googleapis.com:443"
+                  }
+                },
+                "name": "PUT storage.googleapis.com",
+                "action": "PUT",
+                "type": "external"
+              }
+            ]
+          },
+          {
+            "transactionId": "053cf40baa376e41",
+            "span_count": {
+              "started": 3
+            },
+            "totalDuration": {
+              "us": 1030790
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 150396
+                },
+                "destination": {
+                  "service": {
+                    "resource": "www.googleapis.com:443"
+                  }
+                },
+                "name": "POST www.googleapis.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 46076
+                },
+                "destination": {
+                  "service": {
+                    "resource": "storage.googleapis.com:443"
+                  }
+                },
+                "name": "POST storage.googleapis.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 56436
+                },
+                "destination": {
+                  "service": {
+                    "resource": "storage.googleapis.com:443"
+                  }
+                },
+                "name": "PUT storage.googleapis.com",
+                "action": "PUT",
+                "type": "external"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "POST /askus/api/image/downloadImageCreateS3Url",
+        "totalApiDuration": 145489880,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 3637247,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "4e499623e7d95583",
+            "span_count": {
+              "started": 7
+            },
+            "totalDuration": {
+              "us": 3628151
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 75702
+                },
+                "destination": {
+                  "service": {
+                    "resource": "images.bhaskarassets.com:443"
+                  }
+                },
+                "name": "GET images.bhaskarassets.com",
+                "action": "GET",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 136696
+                },
+                "destination": {
+                  "service": {
+                    "resource": "www.googleapis.com:443"
+                  }
+                },
+                "name": "POST www.googleapis.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 40671
+                },
+                "destination": {
+                  "service": {
+                    "resource": "storage.googleapis.com:443"
+                  }
+                },
+                "name": "POST storage.googleapis.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 71418
+                },
+                "destination": {
+                  "service": {
+                    "resource": "storage.googleapis.com:443"
+                  }
+                },
+                "name": "PUT storage.googleapis.com",
+                "action": "PUT",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 657575
+                },
+                "destination": {
+                  "service": {
+                    "resource": "api.replicate.com:443"
+                  }
+                },
+                "name": "POST api.replicate.com",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 456968
+                },
+                "destination": {
+                  "service": {
+                    "resource": "ik.imagekit.io:443"
+                  }
+                },
+                "name": "GET ik.imagekit.io",
+                "action": "GET",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 197931
+                },
+                "destination": {
+                  "service": {
+                    "resource": "ik.imagekit.io:443"
+                  }
+                },
+                "name": "GET ik.imagekit.io",
+                "action": "GET",
+                "type": "external"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "AskUs-Admin-Api": {
+    "totalServiceDuration": 3020600,
+    "totalServiceRequests": 200,
+    "averageServiceLatency": {
+      "value": 15103,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "ee6254b6482b5afa6e23a3e89d461943ced2c92526d911bef6bfac673e95c83a"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.6.2"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /api/admin/updateAsReviewed/:id",
+        "totalApiDuration": 1935200,
+        "totalApiRequests": 160,
+        "averageApiLatency": {
+          "value": 12095,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "9a8c29a67d659761",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 11591
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.admins.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 7000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 7000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 4000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.auditlogs.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "d1ac4b045b90bf06",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 12337
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.admins.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 7000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 7000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 4000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.auditlogs.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "9a9d09d641af5d56",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 12885
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.admins.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 8000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 8000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 5000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.auditlogs.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "a1cd9b3fdb43e657",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 11427
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.admins.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 7000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 7000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 5000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.auditlogs.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "POST /api/admin/unpublishNews/:id",
+        "totalApiDuration": 1085400,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 27135,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "8fc8ff8d48ead90d",
+            "span_count": {
+              "started": 4
+            },
+            "totalDuration": {
+              "us": 27030
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.admins.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 17000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.findAndModify",
+                "action": "findAndModify",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 4267
+                },
+                "destination": {
+                  "service": {
+                    "resource": "730uqgh62p.algolia.net:443"
+                  }
+                },
+                "name": "POST 730uqgh62p.algolia.net",
+                "action": "POST",
+                "type": "external"
+              },
+              {
+                "duration": {
+                  "us": 19000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.auditlogs.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "AskUs-Api": {
+    "totalServiceDuration": 6337900,
+    "totalServiceRequests": 1300,
+    "averageServiceLatency": {
+      "value": 4875.31,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "7c8640e2b595c1540a5adc99a72541d3e340fa79151a60571434484910896f5b"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.1.0"
+    },
+    "version": "1.0.0",
+    "apiData": [
+      {
+        "apiUrl": "POST /category/getAllCat",
+        "totalApiDuration": 4068840,
+        "totalApiRequests": 920,
+        "averageApiLatency": {
+          "value": 4422.65,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "8a0b0687c69f6110",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4086
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 336
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 2000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "354cb8f836c34dd4",
+            "span_count": {
+              "started": 3
+            },
+            "totalDuration": {
+              "us": 7215
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1535
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 2645
+                },
+                "composite": {
+                  "count": 2,
+                  "sum": {
+                    "us": 4000
+                  },
+                  "compression_strategy": "exact_match"
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "aec8e41686f21067",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3124
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 250
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "f0215a21a80df137",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 6341
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1370
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 0
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "a0664f16c9df7fcd",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4646
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 256
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "8852b101fcde5a4a",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4955
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 656
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "b023fa732fcd7eaf",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4170
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 344
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "7289984aceda776f",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 2872
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 222
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 0
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "820ab026c18df1d3",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 5084
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 665
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "3ff2cf80b9633927",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3600
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 225
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "09783bd96e13499c",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4461
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 622
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "03a0b70bd8d55619",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 5110
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 1464
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "8fa1c2777fe9c8b3",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4499
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 307
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "a05a691ce1ebe338",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 5818
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 2954
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "d416b6f97322492b",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4261
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 577
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "96ccabdc39219645",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3970
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 280
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "76a162465286ba19",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4330
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 547
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "251f42f2ecc54eb5",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3712
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 253
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "9005c706ce83ebd0",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3099
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 234
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "42ca490a5b59f67e",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4214
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 246
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "391be4edf249c986",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3113
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 282
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "5b4716bc8dfa274c",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3953
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 417
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 2000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "d65094e72a2c10f7",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 5133
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 628
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "6a8b848debed0cea",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3925
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 767
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "totalApiDuration": 770100,
+        "totalApiRequests": 140,
+        "averageApiLatency": {
+          "value": 5500.71,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "fe5c1a17312632a2",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3298
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 767
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.blogs.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "1a7465ef74780713",
+            "span_count": {
+              "started": 3
+            },
+            "totalDuration": {
+              "us": 5767
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 665
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 2000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.blogs.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "d04f82d26ea4cff0",
+            "span_count": {
+              "started": 3
+            },
+            "totalDuration": {
+              "us": 6282
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 711
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 4035
+                },
+                "composite": {
+                  "count": 2,
+                  "sum": {
+                    "us": 3000
+                  },
+                  "compression_strategy": "same_kind"
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "Calls to mongodb/askus-dev",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "b09b2951ce8a760b",
+            "span_count": {
+              "started": 3
+            },
+            "totalDuration": {
+              "us": 5487
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 583
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.blogs.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.categories.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "totalApiDuration": 305840,
+        "totalApiRequests": 80,
+        "averageApiLatency": {
+          "value": 3823,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "9afd911ffb1f9a38",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 3252
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 232
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 2000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.aggregate",
+                "action": "aggregate",
+                "type": "db"
+              }
+            ]
+          },
+          {
+            "transactionId": "5d7b03398b7c5371",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 4380
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 250
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 3000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.aggregate",
+                "action": "aggregate",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "GET unknown route",
+        "totalApiDuration": 22040,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 551,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "412c7b023ced62d7",
+            "span_count": {
+              "started": 0
+            },
+            "totalDuration": {
+              "us": 550
+            },
+            "trace": []
+          }
+        ]
+      },
+      {
+        "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+        "totalApiDuration": 570840,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 14271,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "f9525d96b4a2b692",
+            "span_count": {
+              "started": 6
+            },
+            "totalDuration": {
+              "us": 14265
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 621
+                },
+                "destination": {
+                  "service": {
+                    "resource": "redis"
+                  }
+                },
+                "name": "GET",
+                "action": "query",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 1000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.news.find",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 2313
+                },
+                "composite": {
+                  "count": 2,
+                  "sum": {
+                    "us": 1000
+                  },
+                  "compression_strategy": "same_kind"
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "Calls to mongodb/askus-dev",
+                "action": "find",
+                "type": "db"
+              },
+              {
+                "duration": {
+                  "us": 4000
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.algoliaevents.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "POST /oneSignal/openAppV2",
+        "totalApiDuration": 491480,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 12287,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "bcde6a93dc1743d3",
+            "span_count": {
+              "started": 2
+            },
+            "totalDuration": {
+              "us": 12273
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 9906
+                },
+                "composite": {
+                  "count": 2,
+                  "sum": {
+                    "us": 9000
+                  },
+                  "compression_strategy": "exact_match"
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.lastopens.insert",
+                "action": "insert",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "GET /config/getConfig",
+        "totalApiDuration": 108760,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 2719,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "253d4311afa94101",
+            "span_count": {
+              "started": 1
+            },
+            "totalDuration": {
+              "us": 2704
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 0
+                },
+                "destination": {
+                  "service": {
+                    "resource": "mongodb/askus-dev"
+                  }
+                },
+                "name": "askus-dev.configs.find",
+                "action": "find",
+                "type": "db"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "AskUs-GPT": {
+    "totalServiceDuration": 2782084960,
+    "totalServiceRequests": 160,
+    "averageServiceLatency": {
+      "value": 17388031,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "d6b31e2b804803c874306b19bee648b5b4b7fcfbf22deadce96b87803098cd93"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.7.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /askus/api/gpt/getNewsFromGPT",
+        "totalApiDuration": 2765619060,
+        "totalApiRequests": 140,
+        "averageApiLatency": {
+          "value": 19754421.86,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "1a371b95d542b51b",
+            "span_count": {
+              "started": 1
+            },
+            "totalDuration": {
+              "us": 27974660
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 27972826
+                },
+                "destination": {
+                  "service": {
+                    "resource": "api.openai.com:443"
+                  }
+                },
+                "name": "POST api.openai.com",
+                "action": "POST",
+                "type": "external"
+              }
+            ]
+          },
+          {
+            "transactionId": "243c813abb61c912",
+            "span_count": {
+              "started": 1
+            },
+            "totalDuration": {
+              "us": 16266810
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 16264719
+                },
+                "destination": {
+                  "service": {
+                    "resource": "api.openai.com:443"
+                  }
+                },
+                "name": "POST api.openai.com",
+                "action": "POST",
+                "type": "external"
+              }
+            ]
+          },
+          {
+            "transactionId": "82ac5ef6f5fc08ca",
+            "span_count": {
+              "started": 1
+            },
+            "totalDuration": {
+              "us": 13340148
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 13338153
+                },
+                "destination": {
+                  "service": {
+                    "resource": "api.openai.com:443"
+                  }
+                },
+                "name": "POST api.openai.com",
+                "action": "POST",
+                "type": "external"
+              }
+            ]
+          },
+          {
+            "transactionId": "009d1e7a2ea0e651",
+            "span_count": {
+              "started": 1
+            },
+            "totalDuration": {
+              "us": 25331861
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 25330061
+                },
+                "destination": {
+                  "service": {
+                    "resource": "api.openai.com:443"
+                  }
+                },
+                "name": "POST api.openai.com",
+                "action": "POST",
+                "type": "external"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "apiUrl": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+        "totalApiDuration": 16465900,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 823295,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "33f5ee80111cd828",
+            "span_count": {
+              "started": 1
+            },
+            "totalDuration": {
+              "us": 821152
+            },
+            "trace": [
+              {
+                "duration": {
+                  "us": 819591
+                },
+                "destination": {
+                  "service": {
+                    "resource": "api.openai.com:443"
+                  }
+                },
+                "name": "POST api.openai.com",
+                "action": "POST",
+                "type": "external"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "AskUs-Sitemap": {
+    "totalServiceDuration": 1741900,
+    "totalServiceRequests": 180,
+    "averageServiceLatency": {
+      "value": 9677.22,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "cfe66233fd045bbbd8faf5c326c3de2fe0df302c1e13a9ea013418733f283549"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "20.8.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /api/sitemap/sitemap",
+        "totalApiDuration": 1741900,
+        "totalApiRequests": 180,
+        "averageApiLatency": {
+          "value": 9677.22,
+          "unit": "microseconds"
+        },
+        "traceBreakdown": [
+          {
+            "transactionId": "df113e4e8a9f5c2a",
+            "span_count": {
+              "started": 0
+            },
+            "totalDuration": {
+              "us": 9779
+            },
+            "trace": []
+          },
+          {
+            "transactionId": "cb739e3c1558e481",
+            "span_count": {
+              "started": 0
+            },
+            "totalDuration": {
+              "us": 9723
+            },
+            "trace": []
+          },
+          {
+            "transactionId": "5c52a1df320ea67b",
+            "span_count": {
+              "started": 0
+            },
+            "totalDuration": {
+              "us": 9380
+            },
+            "trace": []
+          },
+          {
+            "transactionId": "e95f81feaee18945",
+            "span_count": {
+              "started": 0
+            },
+            "totalDuration": {
+              "us": 10004
+            },
+            "trace": []
+          },
+          {
+            "transactionId": "604471e0059b27dc",
+            "span_count": {
+              "started": 0
+            },
+            "totalDuration": {
+              "us": 9467
+            },
+            "trace": []
+          }
+        ]
+      }
+    ]
+  }
+}
