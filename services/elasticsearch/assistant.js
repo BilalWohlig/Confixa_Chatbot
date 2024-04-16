@@ -7,8 +7,8 @@ const { Client } = require("@elastic/elasticsearch");
 const fs = require("fs");
 
 class Assistant {
-  static assistantId = "asst_Yrc8MioFlHnRWPXJsO40VLxI";
-  static threadId = "thread_DZKyYBY3hKkDm7ltc2j7Bh9z";
+  static assistantId = "asst_2Vc2wr4V6J4u9UKsXSm0MHYm";
+  static threadId = "thread_BMNzPcNF6by6gWaC4tmUtZho";
   static runId = "";
 
   async retrieveElasticData() {
@@ -436,7 +436,7 @@ class Assistant {
       const run = await openai.beta.threads.runs.create(Assistant.threadId, {
         // thread_id: Assistant.threadId,
         assistant_id: Assistant.assistantId,
-        instructions: "You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question."
+        instructions: "You are a chatbot that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getTransactionLatencyData and getTraceData to get all the information. Provide the service name, relevant API latency, trace breakdown, and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question."
       });
       Assistant.runId = run.id;
     } catch (error) {
