@@ -1,0 +1,5372 @@
+[
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "dvMJ0Y4BwY_hAmpvEWFn",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "92a33ea3600e10fc"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "2274a75d490322916380e93a3a08cc6c",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "78e906a5201dee50a9893f28228da7da"
+      },
+      "@timestamp": "2024-04-12T06:40:06.560Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:40:06 GMT"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:40:16Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "1b91d748efbb8474",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "1b91d748efbb8474"
+      },
+      "timestamp": {
+        "us": 1712904006560000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "axEK0Y4BRC1UfXF8KVKr",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "c14773328b535c72"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "eb8dcf6aa0d5fcdea1bdc82ca2f77eab",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "bc7ba9fa95afa3a1bceff3b9145af9e6"
+      },
+      "@timestamp": "2024-04-12T06:41:16.904Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:41:16 GMT"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:41:27Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "a8dc362390ff3d7c",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "a8dc362390ff3d7c"
+      },
+      "timestamp": {
+        "us": 1712904076904000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "BBEI0Y4BRC1UfXF8m1K_",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "81cd6e7afceb364f"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "dbc020260a49a71aca3c676ee462e9b6",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "11dcf1face60aa87b484e9a33dcac72b"
+      },
+      "@timestamp": "2024-04-12T06:39:35.031Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:39:35 GMT"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:39:46Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "6beffd3e785e8590",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "6beffd3e785e8590"
+      },
+      "timestamp": {
+        "us": 1712903975031000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "ZvP-0I4BwY_hAmpv02DM",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "165fd89da1333b9c"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "5413576435c1d2508dff025e449f8ecd",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "fa31d7bb1be8d12e5354c94cbbfde8eb"
+      },
+      "@timestamp": "2024-04-12T06:28:53.993Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:28:53 GMT"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:29:05Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "ccc71890e8507335",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "ccc71890e8507335"
+      },
+      "timestamp": {
+        "us": 1712903333993000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "0PP20I4BwY_hAmpvTF6G",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "c670061cfc0b8a62"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "2e4120f030e6a3d40be2ee0bec1d680a",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "d76d021dcf52be3486fe22e8e1a83e49"
+      },
+      "@timestamp": "2024-04-12T06:19:40.055Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:19:40 GMT"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:19:46Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "aab6d3d9d5055535",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "aab6d3d9d5055535"
+      },
+      "timestamp": {
+        "us": 1712902780055000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "dRH40I4BRC1UfXF8BVCV",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "4748ca22e90c2903"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "084a1e30b0b3ba5a06f607837cd57028",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "f5eacc263c21f0333a6e198d739f6af6"
+      },
+      "@timestamp": "2024-04-12T06:21:28.007Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:21:28 GMT"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:21:39Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "13c118ccd500e2cf",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "13c118ccd500e2cf"
+      },
+      "timestamp": {
+        "us": 1712902888007000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "lfP10I4BwY_hAmpvYl40",
+    "_score": 1,
+    "_source": {
+      "parent": {
+        "id": "259acce2be093cfa"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.47.0"
+      },
+      "process": {
+        "args": [
+          "/opt/homebrew/Cellar/node/21.7.3/bin/node",
+          "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 48599
+        },
+        "pid": 48601,
+        "title": "/opt/homebrew/Cellar/node/21.7.3/bin/node"
+      },
+      "error": {
+        "exception": [
+          {
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/index.js",
+                "filename": "node_modules/redis/index.js",
+                "line": {
+                  "number": 849,
+                  "context": "            var undefinedArgError = new Error("
+                },
+                "function": "RedisClient.internal_send_command",
+                "context": {
+                  "pre": [
+                    "            }",
+                    "        } else if (typeof args[i] === 'undefined') {"
+                  ],
+                  "post": [
+                    "                'node_redis: The ' + command.toUpperCase() + ' command contains a invalid argument type of \"undefined\".\\n' +",
+                    "                'Only strings, dates and buffers are accepted. Please update your code to use valid argument types.'"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args)"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with (runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg)"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/index.js",
+                "line": {
+                  "number": 667,
+                  "context": "  return this._runCtxMgr.with(runContext, fn, thisArg, ...args)"
+                },
+                "function": "Instrumentation.withRunContext",
+                "context": {
+                  "pre": [
+                    "    return fn.call(thisArg, ...args)",
+                    "  }"
+                  ],
+                  "post": [
+                    "}",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/modules/redis.js",
+                "line": {
+                  "number": 94,
+                  "context": "      return ins.withRunContext(spanRunContext, original, this, ...arguments)"
+                },
+                "function": "wrappedInternalSendCommand",
+                "context": {
+                  "pre": [
+                    "      const spanRunContext = ins.currRunContext().enterSpan(span)",
+                    "      commandObj.callback = makeWrappedCallback(spanRunContext, span, commandObj.callback)"
+                  ],
+                  "post": [
+                    "    }",
+                    "  }"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/node_modules/redis/lib/commands.js",
+                "filename": "node_modules/redis/lib/commands.js",
+                "line": {
+                  "number": 46,
+                  "context": "            return this.internal_send_command(new Command(command, arr, callback));"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "                }",
+                    "            }"
+                  ],
+                  "post": [
+                    "        };",
+                    "        // Alias special function names (e.g. NR.RUN becomes NR_RUN and nr_run)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 81,
+                  "context": "                this.connection.set("
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "        return new Promise((resolve, reject) => {",
+                    "            if (this.connection) {"
+                  ],
+                  "post": [
+                    "                    key,",
+                    "                    value,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "line": {
+                  "number": 0
+                },
+                "function": "Promise"
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/lib/util/redis_lib.js",
+                "filename": "lib/util/redis_lib.js",
+                "line": {
+                  "number": 79,
+                  "context": "        return new Promise((resolve, reject) => {"
+                },
+                "function": "setex",
+                "context": {
+                  "pre": [
+                    "",
+                    "    setex(key, value, expiry_sec) {"
+                  ],
+                  "post": [
+                    "            if (this.connection) {",
+                    "                this.connection.set("
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 5,
+                  "context": "        await redis.setex(key, value, expirySec)"
+                },
+                "function": "set",
+                "context": {
+                  "pre": [
+                    "const set = async (key, value, expirySec) => {",
+                    "    try {"
+                  ],
+                  "post": [
+                    "    } catch (err) {",
+                    "        console.log(\"Error in setting the redis key for cache:: \", err)"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/config/requestCacheMiddleware.js",
+                "filename": "config/requestCacheMiddleware.js",
+                "line": {
+                  "number": 31,
+                  "context": "        await set(key, body, (req.expiryOfCache = env.EXPIRY_OF_CACHE))"
+                },
+                "function": "setValue",
+                "context": {
+                  "pre": [
+                    "                : \"\")",
+                    "        let body = JSON.stringify(data)"
+                  ],
+                  "post": [
+                    "    }",
+                    "}"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "abs_path": "/Users/sanketgada/Desktop/Sachai/Sachai repo/AskUs-api/controllers/LanguageController.js",
+                "filename": "controllers/LanguageController.js",
+                "line": {
+                  "number": 7,
+                  "context": "        await cache.process(req, res, data)"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    try {",
+                    "        const data = await LanguageModel.getLanguages()"
+                  ],
+                  "post": [
+                    "        res.json(data)",
+                    "    } catch (error) {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/process/task_queues",
+                "filename": "node:internal/process/task_queues",
+                "line": {
+                  "number": 95
+                },
+                "function": "processTicksAndRejections"
+              }
+            ],
+            "module": "redis",
+            "handled": true,
+            "attributes": {
+              "command": "SET"
+            },
+            "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+            "type": "Error"
+          }
+        ],
+        "culprit": "<anonymous> (lib/util/redis_lib.js)",
+        "id": "6f0f3b6419b90c73024bac9b1ab4dd60",
+        "grouping_key": "a92a8da872bf3bfb73cc96c5e84e8ece",
+        "grouping_name": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types."
+      },
+      "message": "node_redis: The SET command contains a invalid argument type of \"undefined\".\nOnly strings, dates and buffers are accepted. Please update your code to use valid argument types.",
+      "url": {
+        "path": "/language/getLanguages",
+        "original": "/language/getLanguages",
+        "scheme": "http",
+        "port": 3006,
+        "domain": "127.0.0.1",
+        "full": "http://127.0.0.1:3006/language/getLanguages"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "63a38d275e39a09453e23a9071009130"
+      },
+      "@timestamp": "2024-04-12T06:18:35.408Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "Sanket.lan"
+        },
+        "environment": "development",
+        "framework": {
+          "name": "express",
+          "version": "4.18.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.3"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "Sanket.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.125"
+        ],
+        "name": "Sanket.lan",
+        "architecture": "arm64"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Accept": [
+              "application/json"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "Host": [
+              "127.0.0.1:3006"
+            ],
+            "Accept-Encoding": [
+              "gzip"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "GET"
+        },
+        "response": {
+          "headers": {
+            "Keep-Alive": [
+              "timeout=5"
+            ],
+            "Etag": [
+              "W/\"c5-QBX6tNWpGf5AaPlsyASGO9jvVbs\""
+            ],
+            "Access-Control-Allow-Origin": [
+              "*"
+            ],
+            "Connection": [
+              "keep-alive"
+            ],
+            "Content-Length": [
+              "197"
+            ],
+            "Date": [
+              "Fri, 12 Apr 2024 06:18:35 GMT"
+            ],
+            "X-Powered-By": [
+              "Express"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "status_code": 500,
+          "finished": true,
+          "headers_sent": true
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-12T06:18:46Z"
+      },
+      "transaction": {
+        "name": "GET /language/getLanguages",
+        "id": "66fdfdc636f62274",
+        "type": "request",
+        "sampled": true
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "66fdfdc636f62274"
+      },
+      "timestamp": {
+        "us": 1712902715408000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "XxDqvY4BRC1UfXF8XgPP",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "227b3f8187d450ded5bfc28a625d048547e4dd0a51969026fa673eff9b655444"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "7e252ec0-d0f1-4a1d-8b62-96be94985b1e",
+          "name": "sachai-api-6f7d8858d9-frjp2"
+        }
+      },
+      "parent": {
+        "id": "c4824bd67b15a733"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 24
+        },
+        "pid": 40,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "49.36.101.62"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 35,
+              "length": 35,
+              "received": 0,
+              "message": "request aborted",
+              "type": "request.aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "84895fc3ded89987eee39784ccfdb24d",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/news/sendAlgoliaEvents/6613cb03449d9eaedfb4482e",
+        "original": "/news/sendAlgoliaEvents/6613cb03449d9eaedfb4482e",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/news/sendAlgoliaEvents/6613cb03449d9eaedfb4482e"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "d2513e14ceb98673ce06e257bc5f06a9"
+      },
+      "@timestamp": "2024-04-08T13:33:55.986Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "227b3f8187d450ded5bfc28a625d048547e4dd0a51969026fa673eff9b655444"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.19.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-MH",
+          "continent_name": "Asia",
+          "city_name": "Mumbai",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 72.8856,
+            "lat": 19.0748
+          },
+          "region_name": "Maharashtra"
+        },
+        "ip": "49.36.101.62"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "be357c09-860c-4283-93a2-39500acd7cb0"
+            ],
+            "Cf-Ray": [
+              "8712a1c79e089e63-CDG"
+            ],
+            "User-Agent": [
+              "Dart/3.2 (dart:io)"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "X-Request-Start": [
+              "t=1712583235.984"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Authorization": [
+              "[REDACTED]"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "49.36.101.62,172.71.131.149"
+            ],
+            "Content-Length": [
+              "35"
+            ],
+            "Cf-Connecting-Ip": [
+              "49.36.101.62"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.131.149"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-08T13:33:57Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "c4824bd67b15a733",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.2 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "c4824bd67b15a733"
+      },
+      "timestamp": {
+        "us": 1712583235986000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "eA_ZsY4BRC1UfXF8OjeN",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "227b3f8187d450ded5bfc28a625d048547e4dd0a51969026fa673eff9b655444"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "7e252ec0-d0f1-4a1d-8b62-96be94985b1e",
+          "name": "sachai-api-6f7d8858d9-frjp2"
+        }
+      },
+      "parent": {
+        "id": "b3561af5d0ff70e6"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 24
+        },
+        "pid": 40,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "152.58.20.253"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 17,
+              "length": 17,
+              "received": 0,
+              "message": "request aborted",
+              "type": "request.aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "1eded63930c51154a3191abdc9eb7b64",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/oneSignal/openAppV2",
+        "original": "/oneSignal/openAppV2",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/oneSignal/openAppV2"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "3bbd0510b7448ff22895407c561c9345"
+      },
+      "@timestamp": "2024-04-06T05:19:34.924Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "227b3f8187d450ded5bfc28a625d048547e4dd0a51969026fa673eff9b655444"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.19.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-MH",
+          "continent_name": "Asia",
+          "city_name": "Pune",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 73.7286,
+            "lat": 18.6161
+          },
+          "region_name": "Maharashtra"
+        },
+        "ip": "152.58.20.253"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "1904399e-d07e-4f4c-b804-de3b4ca5bbf8"
+            ],
+            "Cf-Ray": [
+              "86ff52e1fa91f160-CDG"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "User-Agent": [
+              "Dart/3.2 (dart:io)"
+            ],
+            "X-Request-Start": [
+              "t=1712380774.922"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Authorization": [
+              "[REDACTED]"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "152.58.20.253,172.71.134.94"
+            ],
+            "Content-Length": [
+              "17"
+            ],
+            "Cf-Connecting-Ip": [
+              "152.58.20.253"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.134.94"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-06T05:19:47Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "b3561af5d0ff70e6",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.2 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "b3561af5d0ff70e6"
+      },
+      "timestamp": {
+        "us": 1712380774924000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "Tu15go4BwY_hAmpvjEt7",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "717e2607d90dca1680d8704f2b469d3f8ef294d9090ec9958250675915845ee9"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "11668a38-ce4e-4a90-8380-c4a9074bd3c1",
+          "name": "sachai-api-5458984459-mr5mw"
+        }
+      },
+      "parent": {
+        "id": "87fe92903d672751"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 23
+        },
+        "pid": 39,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "203.110.242.42"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 39,
+              "length": 39,
+              "received": 0,
+              "message": "request aborted",
+              "type": "request.aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "76312bceb76857d7d750777cc06a9ab7",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/category/getAllCat",
+        "original": "/category/getAllCat",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/category/getAllCat"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "afbfe7082e1d1de10815d7d8002ea14d"
+      },
+      "@timestamp": "2024-03-28T00:32:56.707Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "717e2607d90dca1680d8704f2b469d3f8ef294d9090ec9958250675915845ee9"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.19.1"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-MH",
+          "continent_name": "Asia",
+          "city_name": "Pune",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 73.7286,
+            "lat": 18.6161
+          },
+          "region_name": "Maharashtra"
+        },
+        "ip": "203.110.242.42"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "d3cde38c-508c-431f-bfae-cea516cbacad"
+            ],
+            "Cf-Ray": [
+              "86b386a11cc87829-CDG"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "User-Agent": [
+              "Dart/3.2 (dart:io)"
+            ],
+            "X-Request-Start": [
+              "t=1711585976.705"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "203.110.242.42,172.71.126.132"
+            ],
+            "Content-Length": [
+              "39"
+            ],
+            "Cf-Connecting-Ip": [
+              "203.110.242.42"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.126.132"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-03-28T00:33:07Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "87fe92903d672751",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.2 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "87fe92903d672751"
+      },
+      "timestamp": {
+        "us": 1711585976707000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "RgvQeY4BRC1UfXF8CKib",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "835a8ce7-1581-4606-bf2d-827d96d40e00",
+          "name": "sachai-fileupload-769c98b8b9-dwx6h"
+        }
+      },
+      "parent": {
+        "id": "72ce9984bc8a903d"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/server.js"
+        ],
+        "parent": {
+          "pid": 1
+        },
+        "pid": 19,
+        "title": "node"
+      },
+      "source": {
+        "ip": "143.110.191.195"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "UND_ERR_CONNECT_TIMEOUT",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8285
+                },
+                "function": "onConnectTimeout"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8237
+                },
+                "function": "<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8269
+                },
+                "function": "Immediate.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/timers",
+                "filename": "node:internal/timers",
+                "line": {
+                  "number": 478
+                },
+                "function": "processImmediate"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "handled": true,
+            "attributes": {
+              "name": "ConnectTimeoutError"
+            },
+            "message": "Connect Timeout Error",
+            "type": "ConnectTimeoutError"
+          }
+        ],
+        "culprit": "onConnectTimeout (node:internal/deps/undici/undici)",
+        "id": "bcd62456ec8ae7f6436f2c7894de18ef",
+        "grouping_key": "c649861500a18d45b5eaebb6a3869775",
+        "grouping_name": "Connect Timeout Error"
+      },
+      "message": "Connect Timeout Error",
+      "url": {
+        "path": "/askus/api/image/downloadImageCreateS3Url",
+        "original": "/askus/api/image/downloadImageCreateS3Url",
+        "scheme": "http",
+        "domain": "fileupload.sachai.io",
+        "full": "http://fileupload.sachai.io/askus/api/image/downloadImageCreateS3Url"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "e93b14ff35c19aba0f955002e5f049a1"
+      },
+      "@timestamp": "2024-03-26T08:10:49.592Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.18.3"
+        },
+        "name": "AskUs-FileUpload",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.1"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "0.0.1"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-KA",
+          "continent_name": "Asia",
+          "city_name": "Bengaluru",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 77.5855,
+            "lat": 12.9634
+          },
+          "region_name": "Karnataka"
+        },
+        "ip": "143.110.191.195"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json, text/plain, */*"
+            ],
+            "X-Request-Id": [
+              "c2e475cc-8221-4268-93a6-6f35ddcb71fe"
+            ],
+            "Cf-Ray": [
+              "86a5aa4988ee049a-CDG"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "User-Agent": [
+              "axios/0.21.4"
+            ],
+            "X-Request-Start": [
+              "t=1711440636.618"
+            ],
+            "Host": [
+              "fileupload.sachai.io"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "143.110.191.195,172.71.135.58"
+            ],
+            "Content-Length": [
+              "61"
+            ],
+            "Cf-Connecting-Ip": [
+              "143.110.191.195"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.135.58"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 200,
+          "finished": false,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-03-26T08:11:00Z"
+      },
+      "transaction": {
+        "name": "POST unknown route (unnamed)",
+        "id": "72ce9984bc8a903d",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "axios/0.21.4",
+        "name": "axios",
+        "device": {
+          "name": "Other"
+        },
+        "version": "0.21.4"
+      },
+      "span": {
+        "id": "72ce9984bc8a903d"
+      },
+      "timestamp": {
+        "us": 1711440649592000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "2-y-eY4BwY_hAmpv7aXd",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "835a8ce7-1581-4606-bf2d-827d96d40e00",
+          "name": "sachai-fileupload-769c98b8b9-dwx6h"
+        }
+      },
+      "parent": {
+        "id": "7850c28cc523f55e"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/server.js"
+        ],
+        "parent": {
+          "pid": 1
+        },
+        "pid": 19,
+        "title": "node"
+      },
+      "source": {
+        "ip": "143.110.191.195"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "UND_ERR_CONNECT_TIMEOUT",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8285
+                },
+                "function": "onConnectTimeout"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8237
+                },
+                "function": "<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8269
+                },
+                "function": "Immediate.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/timers",
+                "filename": "node:internal/timers",
+                "line": {
+                  "number": 478
+                },
+                "function": "processImmediate"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "handled": true,
+            "attributes": {
+              "name": "ConnectTimeoutError"
+            },
+            "message": "Connect Timeout Error",
+            "type": "ConnectTimeoutError"
+          }
+        ],
+        "culprit": "onConnectTimeout (node:internal/deps/undici/undici)",
+        "id": "90b854cf38ccd6650213f43a33fadc01",
+        "grouping_key": "c649861500a18d45b5eaebb6a3869775",
+        "grouping_name": "Connect Timeout Error"
+      },
+      "message": "Connect Timeout Error",
+      "url": {
+        "path": "/askus/api/image/downloadImageCreateS3Url",
+        "original": "/askus/api/image/downloadImageCreateS3Url",
+        "scheme": "http",
+        "domain": "fileupload.sachai.io",
+        "full": "http://fileupload.sachai.io/askus/api/image/downloadImageCreateS3Url"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "2fa2f401df5b5ac28a3bac1539ad92b1"
+      },
+      "@timestamp": "2024-03-26T07:52:17.661Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.18.3"
+        },
+        "name": "AskUs-FileUpload",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.1"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "0.0.1"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-KA",
+          "continent_name": "Asia",
+          "city_name": "Bengaluru",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 77.5855,
+            "lat": 12.9634
+          },
+          "region_name": "Karnataka"
+        },
+        "ip": "143.110.191.195"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json, text/plain, */*"
+            ],
+            "X-Request-Id": [
+              "2d362705-4260-4a33-85cd-e7f3be7cdb95"
+            ],
+            "Cf-Ray": [
+              "86a58f27f9490daa-MRS"
+            ],
+            "User-Agent": [
+              "axios/0.21.4"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "X-Request-Start": [
+              "t=1711439525.308"
+            ],
+            "Host": [
+              "fileupload.sachai.io"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "143.110.191.195,172.71.186.213"
+            ],
+            "Content-Length": [
+              "108"
+            ],
+            "Cf-Connecting-Ip": [
+              "143.110.191.195"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.186.213"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 200,
+          "finished": false,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-03-26T07:52:19Z"
+      },
+      "transaction": {
+        "name": "POST unknown route (unnamed)",
+        "id": "7850c28cc523f55e",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "axios/0.21.4",
+        "name": "axios",
+        "device": {
+          "name": "Other"
+        },
+        "version": "0.21.4"
+      },
+      "span": {
+        "id": "7850c28cc523f55e"
+      },
+      "timestamp": {
+        "us": 1711439537661000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "qwtFcI4BRC1UfXF8MgZc",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "835a8ce7-1581-4606-bf2d-827d96d40e00",
+          "name": "sachai-fileupload-769c98b8b9-dwx6h"
+        }
+      },
+      "parent": {
+        "id": "5e4c8b78539046c1"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/server.js"
+        ],
+        "parent": {
+          "pid": 1
+        },
+        "pid": 19,
+        "title": "node"
+      },
+      "source": {
+        "ip": "143.110.191.195"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "UND_ERR_CONNECT_TIMEOUT",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8285
+                },
+                "function": "onConnectTimeout"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8237
+                },
+                "function": "<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 8269
+                },
+                "function": "Immediate.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/timers",
+                "filename": "node:internal/timers",
+                "line": {
+                  "number": 478
+                },
+                "function": "processImmediate"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "handled": true,
+            "attributes": {
+              "name": "ConnectTimeoutError"
+            },
+            "message": "Connect Timeout Error",
+            "type": "ConnectTimeoutError"
+          }
+        ],
+        "culprit": "onConnectTimeout (node:internal/deps/undici/undici)",
+        "id": "b377b0c21c1438a0264a36d624f7c18c",
+        "grouping_key": "c649861500a18d45b5eaebb6a3869775",
+        "grouping_name": "Connect Timeout Error"
+      },
+      "message": "Connect Timeout Error",
+      "url": {
+        "path": "/askus/api/image/downloadImageCreateS3Url",
+        "original": "/askus/api/image/downloadImageCreateS3Url",
+        "scheme": "http",
+        "domain": "fileupload.sachai.io",
+        "full": "http://fileupload.sachai.io/askus/api/image/downloadImageCreateS3Url"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "60f1e08bee7316f22fda5c62231f0dfd"
+      },
+      "@timestamp": "2024-03-24T11:42:35.844Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "07f212cfc8c42113d6002daa35444b596208fce3c82cab34288afb46ab830b1d"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.18.3"
+        },
+        "name": "AskUs-FileUpload",
+        "runtime": {
+          "name": "node",
+          "version": "21.7.1"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "0.0.1"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-KA",
+          "continent_name": "Asia",
+          "city_name": "Bengaluru",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 77.5855,
+            "lat": 12.9634
+          },
+          "region_name": "Karnataka"
+        },
+        "ip": "143.110.191.195"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json, text/plain, */*"
+            ],
+            "X-Request-Id": [
+              "4675fcc8-f96d-43ff-adc0-a07ec9f7939e"
+            ],
+            "Cf-Ray": [
+              "869665c49cbe3e19-SIN"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "User-Agent": [
+              "axios/0.21.4"
+            ],
+            "X-Request-Start": [
+              "t=1711280543.560"
+            ],
+            "Host": [
+              "fileupload.sachai.io"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "143.110.191.195,108.162.226.158"
+            ],
+            "Content-Length": [
+              "122"
+            ],
+            "Cf-Connecting-Ip": [
+              "143.110.191.195"
+            ],
+            "X-Envoy-External-Address": [
+              "108.162.226.158"
+            ],
+            "Content-Type": [
+              "application/json"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 200,
+          "finished": false,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-03-24T11:42:46Z"
+      },
+      "transaction": {
+        "name": "POST unknown route (unnamed)",
+        "id": "5e4c8b78539046c1",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "axios/0.21.4",
+        "name": "axios",
+        "device": {
+          "name": "Other"
+        },
+        "version": "0.21.4"
+      },
+      "span": {
+        "id": "5e4c8b78539046c1"
+      },
+      "timestamp": {
+        "us": 1711280555844000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.03.15-000018",
+    "_id": "Ewn0Vo4BRC1UfXF8ASkq",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "267674cf51716897ab2e86c7df48e6eab121bfe36c073b9e5ba96e222846529e"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "9c2fda48-dd70-46a5-9513-ad824b42670b",
+          "name": "sachai-api-86dc88dbb-424z8"
+        }
+      },
+      "parent": {
+        "id": "393c4f4763af0b6a"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 24
+        },
+        "pid": 40,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "152.58.23.114"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 31,
+              "length": 31,
+              "received": 0,
+              "message": "request aborted",
+              "type": "request.aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "0a589b27d996ee18f71287956cfea612",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/news/mynews/all",
+        "original": "/news/mynews/all",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/news/mynews/all"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "bc2038d1cc0654845e69b34f63d615f9"
+      },
+      "@timestamp": "2024-03-19T13:43:31.746Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "267674cf51716897ab2e86c7df48e6eab121bfe36c073b9e5ba96e222846529e"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.18.3"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-MH",
+          "continent_name": "Asia",
+          "city_name": "Nagpur",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 79.0706,
+            "lat": 21.1161
+          },
+          "region_name": "Maharashtra"
+        },
+        "ip": "152.58.23.114"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "3db6c111-14a9-4c21-a2d3-6462f4ef4dfd"
+            ],
+            "Cf-Ray": [
+              "866de4561d6d0767-MRS"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "User-Agent": [
+              "Dart/3.2 (dart:io)"
+            ],
+            "X-Request-Start": [
+              "t=1710855811.743"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Authorization": [
+              "[REDACTED]"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "152.58.23.114,172.71.186.119"
+            ],
+            "Content-Length": [
+              "31"
+            ],
+            "Cf-Connecting-Ip": [
+              "152.58.23.114"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.186.119"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-03-19T13:43:35Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "393c4f4763af0b6a",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.2 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "393c4f4763af0b6a"
+      },
+      "timestamp": {
+        "us": 1710855811746000
+      }
+    }
+  }
+]

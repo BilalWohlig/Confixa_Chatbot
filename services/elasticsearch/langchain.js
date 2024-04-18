@@ -11,6 +11,7 @@ const fs = require("fs");
 const { ChatMessageHistory } = require("langchain/stores/message/in_memory");
 const { RunnableWithMessageHistory } = require("@langchain/core/runnables");
 const { Document } = require("langchain/document");
+const { BufferMemory } = require("langchain/memory");
 
 // const { ChatPromptTemplate } = require("@langchain/core/prompts");
 // const hub = require("langchain/hub");
@@ -33,6 +34,12 @@ class Langchain {
   static actualAgent = ''
   /** @type {Array<BaseMessage>} */
   static chatHistory = [];
+  // static memory = new BufferMemory({
+  //   returnMessages: true,
+  //   inputKey: "input",
+  //   outputKey: "output",
+  //   memoryKey: "history",
+  // });
   async retrieveElasticData() {
     const size = 5000;
     const client = new Client({
@@ -314,54 +321,50 @@ class Langchain {
 
 
   async createTools() {
-    // const customTool = new DynamicTool({
-    //   name: "get_word_length",
-    //   description: "Returns the length of a word.",
-    //   func: async (input) => {
-    //     console.log("In Functionnnn", input)
-    //     return input.length.toString()
-    //   }
-    // });
-    // const customTool2 = new DynamicTool({
-    //   name: "getFirstCharacterOfWord",
-    //   description: "Returns the first character of a word.",
-    //   func: async () => {
-    //     console.log("helloooooo")
-    //     return 'Hellooooooooo'
-    //   }
-    // });
     const latencyTransactionTool = new DynamicTool({
       name: "getLatencyTransactionData",
       description: "Returns the data like average latency of an api. Input should be an empty string.",
       func: async (input) => {
-        console.log('Input', input);
-        console.log('Hehehehhehe')
-        const transactionData = JSON.parse(
-          fs.readFileSync("services/elasticsearch/latencies.json", "utf8")
-        );
-        return transactionData;
+        try{
+          console.log('Latencyyyy', input);
+          // console.log('Hehehehhehe')
+          const transactionData = 
+            fs.readFileSync("services/elasticsearch/latencies.json", "utf8")
+          ;
+          return transactionData;
+        } catch (error) {
+          return error.message
+        }
       },
     });
     const traceTool = new DynamicTool({
       name: "getTraceData",
       description: "Returns the traces of an api which includes their internal working as well. Input should be an empty string.",
       func: async (input) => {
-        console.log('Heeeeeee', input)
-        const traceData = JSON.parse(
-          fs.readFileSync("services/elasticsearch/traceCleaned.json", "utf8")
-        );
-        return traceData;
+        try {
+          console.log('Traceeee', input)
+          const traceData = 
+            fs.readFileSync("services/elasticsearch/traceCleaned.json", "utf8")
+          ;
+          return traceData;
+        } catch (error) {
+          return error.message
+        }
       },
     });
     const serviceTool = new DynamicTool({
       name: "getServiceData",
       description: "Returns the data like average latency of a service, the data of the apis associated with that service, etc. Input should be an empty string.",
       func: async (input) => {
-        console.log("Heyyyyyyy", input)
-        const serviceData = JSON.parse(
-          fs.readFileSync("services/elasticsearch/servicesCleaned.json", "utf8")
-        );
-        return serviceData;
+        try {
+          console.log("Serviceeee", input)
+          const serviceData = 
+            fs.readFileSync("services/elasticsearch/servicesCleaned.json", "utf8")
+          ;
+          return serviceData;
+        } catch (error) {
+          return error.message
+        }
       },
     });
 
@@ -380,26 +383,30 @@ class Langchain {
     });
     // console.log("MODELLLLLL", modelWithFunctions.kwargs.functions[0].parameters)
     const MEMORY_KEY = "chat_history"
+    // const prompt = ChatPromptTemplate.fromMessages([
+    //   ["system", "You are a very powerful chatbot assistant that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getLatencyTransactionData and getTraceData to get all the information."],
+    //   new MessagesPlaceholder(MEMORY_KEY),
+    //   ["user", "{input}. Use the information you receive to provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question."],
+    //   new MessagesPlaceholder("agent_scratchpad"),
+    // ]);
     const prompt = ChatPromptTemplate.fromMessages([
       ["system", "You are a very powerful chatbot assistant that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getLatencyTransactionData and getTraceData to get all the information."],
       new MessagesPlaceholder(MEMORY_KEY),
-      ["user", "{input}. Use the information you receive to provide the service name, relevant API latency, trace breakdown (slowest transaction for APIs with multiple transactions), and an analysis with performance improvement steps. Format the response with the service name, API latency, trace breakdown, and analysis/recommendations based on the user's question."],
+      ["user", "{input}. Use the information you receive to provide an appropriate response to the user's questions. Also in the end, provide an analysis with performance improvement steps. "],
       new MessagesPlaceholder("agent_scratchpad"),
     ]);
-    // const prompt = ChatPromptTemplate.fromMessages([
-    //   ["system", "You are very powerful assistant, but bad at calculating lengths of words and bad at getting the first character of a word."],
-    //   new MessagesPlaceholder(MEMORY_KEY),
-    //   ["user", "{input}"],
-    //   new MessagesPlaceholder("agent_scratchpad"),
-    // ]);
-
-    // console.log("This is", prompt);
+    
     const agentWithMemory = RunnableSequence.from([
       {
         input: (i) => i.input,
         agent_scratchpad: (i) => formatToOpenAIFunctionMessages(i.steps),
         chat_history: (i) => i.chat_history,
+        // memory: () => Langchain.memory.loadMemoryVariables({}),
       },
+      // {
+      //   input: (previousOutput) => previousOutput.input,
+      //   history: (previousOutput) => previousOutput.memory.history,
+      // },
       prompt,
       modelWithFunctions,
       new OpenAIFunctionsAgentOutputParser(),
@@ -409,29 +416,9 @@ class Langchain {
     const executorWithMemory = AgentExecutor.fromAgentAndTools({
       agent: agentWithMemory,
       tools,
+      // returnIntermediateSteps: true,
+      // maxIterations: 1,
     });
-    // const agent = await openaiAgent.createOpenAIFunctionsAgent({
-    //   llm,
-    //   tools,
-    //   prompt,
-    // });
-
-    // const agentExecutor = new openaiAgent.AgentExecutor({
-    //   agent,
-    //   tools,
-    // });
-    // const messageHistory = new ChatMessageHistory();
-    // const agentWithChatHistory = new RunnableWithMessageHistory({
-    //   runnable: agentExecutor,
-    //   // This is needed because in most real world scenarios, a session id is needed per user.
-    //   // It isn't really used here because we are using a simple in memory ChatMessageHistory.
-    //   getMessageHistory: (_sessionId) => messageHistory,
-    //   inputMessagesKey: "input",
-    //   historyMessagesKey: "chat_history",
-    // });
-    // if(Langchain.actualAgent == '') {
-    //   Langchain.actualAgent = agentWithChatHistory
-    // }
     if(Langchain.actualAgent == '') {
 
         Langchain.actualAgent = executorWithMemory
@@ -440,14 +427,25 @@ class Langchain {
   }
   async runAgent(agent, userQuestion) {
     try {
-      const result = await agent.invoke(
-        {
-          input: userQuestion,
-          chat_history: Langchain.chatHistory,
-        },
-      );
+      const inputs = {
+        input: userQuestion,
+        chat_history: Langchain.chatHistory,
+      }
+      const result = await agent.invoke(inputs);
+      // console.log("Resulttttt", result)
+      // console.log("Actionnnn", result.intermediateSteps[0].action)
+      // console.log("Observationnnn", result.intermediateSteps[0].observation)
+      // const result = await agent.invoke(
+      //   {
+      //     input: userQuestion,
+      //     chat_history: Langchain.chatHistory,
+      //   },
+      // );
       Langchain.chatHistory.push(new HumanMessage(userQuestion));
       Langchain.chatHistory.push(new AIMessage(result.output));
+      // await Langchain.memory.saveContext(inputs, {
+      //   output: result.content,
+      // })
       return result;
 
     } catch (error) {
@@ -464,7 +462,7 @@ class Langchain {
         const toolsData = await this.createTools()
         console.log("Tools Createddd");
         const agent = await this.createAgent(toolsData);
-        console.log("Agent Createddddd", agent);
+        console.log("Agent Createddddd");
       }
       const runningAgent = await this.runAgent(Langchain.actualAgent, userQuestion);
       console.log(runningAgent.output)

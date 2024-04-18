@@ -7,8 +7,8 @@ const { Client } = require("@elastic/elasticsearch");
 const fs = require("fs");
 
 class Assistant {
-  static assistantId = "asst_2Vc2wr4V6J4u9UKsXSm0MHYm";
-  static threadId = "thread_BMNzPcNF6by6gWaC4tmUtZho";
+  static assistantId = "asst_q8zK0d1tQ3pLZPjywd2BjzhC";
+  static threadId = "thread_Bl7GwbN3J7h4oRdLUOgU6aIn";
   static runId = "";
 
   async retrieveElasticData() {
@@ -23,12 +23,14 @@ class Assistant {
     });
     const latencyIndex = ".ds-metrics-apm.transaction*";
     const traceIndex = ".ds-traces-apm-default*";
+    // const profilingIndex = ".ds-profiling-events*";
+    const alertIndex = ".internal.alerts-observability.*";
     const query = {
       size,
       query: {
         range: {
           "@timestamp": {
-            gte: "now-1h",
+            gte: "now-1y",
             lte: "now",
           },
         },
@@ -42,11 +44,33 @@ class Assistant {
       index: traceIndex,
       body: query,
     });
+    // const profilingData = await client.search({
+    //   index: profilingIndex,
+    //   body: query,
+    // });
+    const alerts = await client.search({
+      index: alertIndex,
+      body: query,
+    });
 
     const traceHits = traces?.hits?.hits;
     const transactionsHits = transactions?.hits?.hits;
+    // const profilingDataHits = profilingData?.hits?.hits
+    const alertHits = alerts?.hits?.hits;
+
     console.log(`Found ${transactionsHits.length} transactions:`);
     console.log(`Found ${traceHits.length} traces:`);
+    console.log(`Found ${alertHits.length} alerts:`);
+    // console.log(`Found ${profilingDataHits.length} profilingData:`);
+
+    fs.writeFileSync(
+      "services/elasticsearch/alerts.json",
+      JSON.stringify(alerts, null, 2)
+    );
+    // fs.writeFileSync(
+    //   "services/elasticsearch/profiles.json",
+    //   JSON.stringify(profilingData, null, 2)
+    // );
 
     const transactionData = [];
     transactionsHits.forEach((hit) => {
@@ -250,35 +274,35 @@ class Assistant {
     try {
       await this.retrieveElasticData();
       console.log("Elastic Data Doneee");
-      if (Assistant.assistantId == "") {
-        await this.createAssistant();
-        console.log("Assistant Created");
-      }
-      if (Assistant.assistantId != "" && Assistant.threadId == "") {
-        await this.createThread();
-        console.log("Thread Created");
-      }
-      if (Assistant.assistantId != "" && Assistant.threadId != "") {
-        await this.createMessage(userQuestion);
-        console.log("Message Added to Thread");
-      }
-      if (
-        Assistant.assistantId != "" &&
-        Assistant.threadId != "" &&
-        Assistant.runId == ""
-      ) {
-        await this.createRun();
-        console.log("Run Created");
-      }
-      if (Assistant.runId != "") {
-        const status = await this.waitForRunCompletion();
-        if (status == "completed") {
-          Assistant.runId == "";
-          return await this.retrieveResponse();
-        }
-        return "Run Not Yet Complete";
-      }
-      return "Error";
+      // if (Assistant.assistantId == "") {
+      //   await this.createAssistant();
+      //   console.log("Assistant Created");
+      // }
+      // if (Assistant.assistantId != "" && Assistant.threadId == "") {
+      //   await this.createThread();
+      //   console.log("Thread Created");
+      // }
+      // if (Assistant.assistantId != "" && Assistant.threadId != "") {
+      //   await this.createMessage(userQuestion);
+      //   console.log("Message Added to Thread");
+      // }
+      // if (
+      //   Assistant.assistantId != "" &&
+      //   Assistant.threadId != "" &&
+      //   Assistant.runId == ""
+      // ) {
+      //   await this.createRun();
+      //   console.log("Run Created");
+      // }
+      // if (Assistant.runId != "") {
+      //   const status = await this.waitForRunCompletion();
+      //   if (status == "completed") {
+      //     Assistant.runId == "";
+      //     return await this.retrieveResponse();
+      //   }
+      //   return "Run Not Yet Complete";
+      // }
+      // return "Error";
     } catch (error) {
       console.log(error);
       return __constants.RESPONSE_MESSAGES.ERROR_CALLING_PROVIDER;
