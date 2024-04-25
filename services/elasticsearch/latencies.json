@@ -1,280 +1,8 @@
 {
-  "POST /askus/api/gpt/getNewsFromGPT": {
-    "totalDuration": 4040949540,
+  "GET /api/healthCheck/getPing": {
+    "totalDuration": 162580,
     "totalRequests": 220,
-    "averageLatency": 18368,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.7.3"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/gpt/removeCombinedNews": {
-    "totalDuration": 165314260,
-    "totalRequests": 300,
-    "averageLatency": 551,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.7.3"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/gpt/getAdvancedClassificationGPT": {
-    "totalDuration": 129351540,
-    "totalRequests": 140,
-    "averageLatency": 924,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.7.3"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/image/downloadImageCreateS3Url": {
-    "totalDuration": 1172438760,
-    "totalRequests": 280,
-    "averageLatency": 4187,
-    "service": {
-      "name": "AskUs-FileUpload",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.7.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/audio/createS3ForAudio": {
-    "totalDuration": 289996400,
-    "totalRequests": 400,
-    "averageLatency": 725,
-    "service": {
-      "name": "AskUs-FileUpload",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.7.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /api/sitemap/sitemap": {
-    "totalDuration": 6292360,
-    "totalRequests": 120,
-    "averageLatency": 52,
-    "service": {
-      "name": "AskUs-Sitemap",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /news/getAllBlogsForWeb": {
-    "totalDuration": 868340,
-    "totalRequests": 140,
-    "averageLatency": 6.2,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /": {
-    "totalDuration": 79280,
-    "totalRequests": 80,
-    "averageLatency": 0.99,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /news/getOneBlogForWeb/:id": {
-    "totalDuration": 2321920,
-    "totalRequests": 640,
-    "averageLatency": 3.63,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /news/getOneNewsForWeb/:id": {
-    "totalDuration": 3726600,
-    "totalRequests": 760,
-    "averageLatency": 4.9,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /category/getAllCat": {
-    "totalDuration": 9397160,
-    "totalRequests": 1560,
-    "averageLatency": 6.02,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /user/userDetails": {
-    "totalDuration": 272600,
-    "totalRequests": 40,
-    "averageLatency": 6.82,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /chats/getChatsPerUser/:id": {
-    "totalDuration": 123480,
-    "totalRequests": 40,
-    "averageLatency": 3.09,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /news/mynews/:id([\\dA-Fa-f]+)": {
-    "totalDuration": 248280,
-    "totalRequests": 40,
-    "averageLatency": 6.21,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET unknown route": {
-    "totalDuration": 20280,
-    "totalRequests": 40,
-    "averageLatency": 0.51,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.1.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /askus/api/image/createS3ForReplicate": {
-    "totalDuration": 983039740,
-    "totalRequests": 260,
-    "averageLatency": 3781,
-    "service": {
-      "name": "AskUs-FileUpload",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.7.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /api/admin/updateAsReviewed/:id": {
-    "totalDuration": 478680,
-    "totalRequests": 40,
-    "averageLatency": 12,
+    "averageLatency": 0.74,
     "service": {
       "name": "AskUs-Admin-Api",
       "environment": "production",
@@ -288,10 +16,44 @@
       "version": "0.0.1"
     }
   },
-  "GET /language/getLanguages": {
-    "totalDuration": 206040,
+  "GET /news/getOneNewsForWeb/:id": {
+    "totalDuration": 211160,
     "totalRequests": 40,
-    "averageLatency": 5.15,
+    "averageLatency": 5.28,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /api/admin/unpublishNews/:id": {
+    "totalDuration": 5140400,
+    "totalRequests": 80,
+    "averageLatency": 64,
+    "service": {
+      "name": "AskUs-Admin-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.6.2"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /category/getAllCat": {
+    "totalDuration": 2451200,
+    "totalRequests": 640,
+    "averageLatency": 3.83,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",
@@ -306,9 +68,9 @@
     }
   },
   "GET /news/getThreeBlogsForEachCategoryInWeb/:id": {
-    "totalDuration": 2575280,
-    "totalRequests": 80,
-    "averageLatency": 32,
+    "totalDuration": 10997480,
+    "totalRequests": 280,
+    "averageLatency": 39,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",
@@ -322,10 +84,44 @@
       "version": "1.0.0"
     }
   },
-  "GET /api/healthCheck/getPing": {
-    "totalDuration": 15900,
-    "totalRequests": 20,
-    "averageLatency": 0.8,
+  "POST /news/getAllBlogsForWeb": {
+    "totalDuration": 1602280,
+    "totalRequests": 280,
+    "averageLatency": 5.72,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /": {
+    "totalDuration": 80240,
+    "totalRequests": 80,
+    "averageLatency": 1,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /api/admin/updateAsReviewed/:id": {
+    "totalDuration": 506840,
+    "totalRequests": 40,
+    "averageLatency": 13,
     "service": {
       "name": "AskUs-Admin-Api",
       "environment": "production",
@@ -339,10 +135,61 @@
       "version": "0.0.1"
     }
   },
-  "POST /news/sendAlgoliaEvents/:id": {
-    "totalDuration": 801240,
+  "GET /news/getOneBlogForWeb/:id": {
+    "totalDuration": 1058340,
+    "totalRequests": 220,
+    "averageLatency": 4.81,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /user/userDetails": {
+    "totalDuration": 308440,
     "totalRequests": 40,
-    "averageLatency": 20,
+    "averageLatency": 7.71,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /language/getLanguages": {
+    "totalDuration": 584900,
+    "totalRequests": 60,
+    "averageLatency": 9.75,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /news/getCategoryWiseNewsForWeb": {
+    "totalDuration": 155500,
+    "totalRequests": 20,
+    "averageLatency": 7.78,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",

@@ -392,7 +392,7 @@ class Langchain {
     const prompt = ChatPromptTemplate.fromMessages([
       ["system", "You are a very powerful chatbot assistant that retrieves and analyses service, transaction, and trace data to answer user queries. Always call getServiceData, getLatencyTransactionData and getTraceData to get all the information."],
       new MessagesPlaceholder(MEMORY_KEY),
-      ["user", "{input}. Use the information you receive to provide an appropriate response to the user's questions. Also in the end, provide an analysis with performance improvement steps. "],
+      ["user", "{input}. Use the information you receive to provide an appropriate response to the user's questions. Also in the end, provide an analysis with performance improvement steps."],
       new MessagesPlaceholder("agent_scratchpad"),
     ]);
     

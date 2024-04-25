@@ -7,8 +7,8 @@ const { Client } = require("@elastic/elasticsearch");
 const fs = require("fs");
 
 class Assistant {
-  static assistantId = "asst_q8zK0d1tQ3pLZPjywd2BjzhC";
-  static threadId = "thread_Bl7GwbN3J7h4oRdLUOgU6aIn";
+  static assistantId = "";
+  static threadId = "";
   static runId = "";
 
   async retrieveElasticData() {
@@ -30,7 +30,7 @@ class Assistant {
       query: {
         range: {
           "@timestamp": {
-            gte: "now-1y",
+            gte: "now-1h",
             lte: "now",
           },
         },
@@ -274,35 +274,35 @@ class Assistant {
     try {
       await this.retrieveElasticData();
       console.log("Elastic Data Doneee");
-      // if (Assistant.assistantId == "") {
-      //   await this.createAssistant();
-      //   console.log("Assistant Created");
-      // }
-      // if (Assistant.assistantId != "" && Assistant.threadId == "") {
-      //   await this.createThread();
-      //   console.log("Thread Created");
-      // }
-      // if (Assistant.assistantId != "" && Assistant.threadId != "") {
-      //   await this.createMessage(userQuestion);
-      //   console.log("Message Added to Thread");
-      // }
-      // if (
-      //   Assistant.assistantId != "" &&
-      //   Assistant.threadId != "" &&
-      //   Assistant.runId == ""
-      // ) {
-      //   await this.createRun();
-      //   console.log("Run Created");
-      // }
-      // if (Assistant.runId != "") {
-      //   const status = await this.waitForRunCompletion();
-      //   if (status == "completed") {
-      //     Assistant.runId == "";
-      //     return await this.retrieveResponse();
-      //   }
-      //   return "Run Not Yet Complete";
-      // }
-      // return "Error";
+      if (Assistant.assistantId == "") {
+        await this.createAssistant();
+        console.log("Assistant Created");
+      }
+      if (Assistant.assistantId != "" && Assistant.threadId == "") {
+        await this.createThread();
+        console.log("Thread Created");
+      }
+      if (Assistant.assistantId != "" && Assistant.threadId != "") {
+        await this.createMessage(userQuestion);
+        console.log("Message Added to Thread");
+      }
+      if (
+        Assistant.assistantId != "" &&
+        Assistant.threadId != "" &&
+        Assistant.runId == ""
+      ) {
+        await this.createRun();
+        console.log("Run Created");
+      }
+      if (Assistant.runId != "") {
+        const status = await this.waitForRunCompletion();
+        if (status == "completed") {
+          Assistant.runId == "";
+          return await this.retrieveResponse();
+        }
+        return "Run Not Yet Complete";
+      }
+      return "Error";
     } catch (error) {
       console.log(error);
       return __constants.RESPONSE_MESSAGES.ERROR_CALLING_PROVIDER;
