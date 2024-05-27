@@ -1,0 +1,539 @@
+{
+  "AskUs-Api": {
+    "totalServiceDuration": 2075481277,
+    "totalServiceRequests": 105595,
+    "averageServiceLatency": {
+      "value": 19655.11,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "9e7da867d3d81fc154b2360361a81ac49d2450bda948f2cb06504f6441f11bc6"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "16.20.2"
+    },
+    "version": "1.0.0",
+    "apiData": [
+      {
+        "apiUrl": "GET /news/getOneBlogForWeb/:id",
+        "totalApiDuration": 583149420,
+        "totalApiRequests": 46980,
+        "averageApiLatency": {
+          "value": 12412.72,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /news/getOneNewsForWeb/:id",
+        "totalApiDuration": 643961720,
+        "totalApiRequests": 45960,
+        "averageApiLatency": {
+          "value": 14011.35,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /category/getAllCat",
+        "totalApiDuration": 65492600,
+        "totalApiRequests": 2440,
+        "averageApiLatency": {
+          "value": 26841.23,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /oneSignal/openApp",
+        "totalApiDuration": 6947300,
+        "totalApiRequests": 380,
+        "averageApiLatency": {
+          "value": 18282.37,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /news/getAllBlogsForWeb",
+        "totalApiDuration": 56721640,
+        "totalApiRequests": 1560,
+        "averageApiLatency": {
+          "value": 36360.03,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /language/getLanguages",
+        "totalApiDuration": 140378000,
+        "totalApiRequests": 4400,
+        "averageApiLatency": {
+          "value": 31904.09,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /news/getThreeBlogsForEachCategoryInWeb/:id",
+        "totalApiDuration": 295606840,
+        "totalApiRequests": 1480,
+        "averageApiLatency": {
+          "value": 199734.35,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /topic/getEnabledTopics",
+        "totalApiDuration": 1611920,
+        "totalApiRequests": 240,
+        "averageApiLatency": {
+          "value": 6716.33,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /user/userDetails",
+        "totalApiDuration": 6605580,
+        "totalApiRequests": 500,
+        "averageApiLatency": {
+          "value": 13211.16,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /news/mynews/all",
+        "totalApiDuration": 44231120,
+        "totalApiRequests": 560,
+        "averageApiLatency": {
+          "value": 78984.14,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /user/chooseLanguage/:id",
+        "totalApiDuration": 2491960,
+        "totalApiRequests": 200,
+        "averageApiLatency": {
+          "value": 12459.8,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /user/addPlayerIdToUser",
+        "totalApiDuration": 73380,
+        "totalApiRequests": 60,
+        "averageApiLatency": {
+          "value": 1223,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /news/categoryNews/:id",
+        "totalApiDuration": 3688900,
+        "totalApiRequests": 60,
+        "averageApiLatency": {
+          "value": 61481.67,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /bookmark/addBookmark/:id",
+        "totalApiDuration": 264940,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 13247,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /bookmark/getBookmarkData",
+        "totalApiDuration": 412140,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 20607,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /news/sendAlgoliaEvents/:id",
+        "totalApiDuration": 10902800,
+        "totalApiRequests": 240,
+        "averageApiLatency": {
+          "value": 45428.33,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /chats/questionLimit",
+        "totalApiDuration": 2604920,
+        "totalApiRequests": 200,
+        "averageApiLatency": {
+          "value": 13024.6,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /chats/getChatsPerUser/:id",
+        "totalApiDuration": 634160,
+        "totalApiRequests": 80,
+        "averageApiLatency": {
+          "value": 7927,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /blockedKeyword/getBlockedKeywords",
+        "totalApiDuration": 1315800,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 32895,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /tags/getQuerySuggestions",
+        "totalApiDuration": 121896940,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 6094847,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /user/loginv2",
+        "totalApiDuration": 409580,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 20479,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /chats/addQnA/:id",
+        "totalApiDuration": 62586860,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 3129343,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET unknown route",
+        "totalApiDuration": 94200,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 2355,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /category/getAllCategoryListForUser",
+        "totalApiDuration": 23265260,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 1163263,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /speak/saveVideos",
+        "totalApiDuration": 133297,
+        "totalApiRequests": 55,
+        "averageApiLatency": {
+          "value": 2423.58,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  },
+  "AskUs-GPT": {
+    "totalServiceDuration": 72598211720,
+    "totalServiceRequests": 29560,
+    "averageServiceLatency": {
+      "value": 2455961.15,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "d494e5fe9149b62efbe4575860e10a0f0cca1ba9c6e14a375cf5f41135ba8074"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "21.2.0"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /askus/api/gpt/getClassificationGPT",
+        "totalApiDuration": 5532870460,
+        "totalApiRequests": 6340,
+        "averageApiLatency": {
+          "value": 872692.5,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/gpt/getNewsFromGPT",
+        "totalApiDuration": 57002263380,
+        "totalApiRequests": 7340,
+        "averageApiLatency": {
+          "value": 7765975.94,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/gnews/getGNews",
+        "totalApiDuration": 7146132300,
+        "totalApiRequests": 15540,
+        "averageApiLatency": {
+          "value": 459854.07,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/gpt/getAdvancedClassificationGPT",
+        "totalApiDuration": 22773740,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 1138687,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/algolia/algoliaSearchQuery",
+        "totalApiDuration": 16486340,
+        "totalApiRequests": 60,
+        "averageApiLatency": {
+          "value": 274772.33,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/gpt/getFullContentGPT",
+        "totalApiDuration": 2817392400,
+        "totalApiRequests": 240,
+        "averageApiLatency": {
+          "value": 11739135,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/gpt/getAnsFromGPT",
+        "totalApiDuration": 60293100,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 3014655,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  },
+  "AskUs-FileUpload": {
+    "totalServiceDuration": 29359015140,
+    "totalServiceRequests": 6940,
+    "averageServiceLatency": {
+      "value": 4230405.64,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "b786966d8ca0bb71a554e96a058231986e14ceff456b1d6869d42709056cc56b"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "20.8.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /askus/api/image/downloadImageCreateS3Url",
+        "totalApiDuration": 29341115680,
+        "totalApiRequests": 6880,
+        "averageApiLatency": {
+          "value": 4264697.05,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /askus/api/audio/createS3ForAudio",
+        "totalApiDuration": 17899460,
+        "totalApiRequests": 60,
+        "averageApiLatency": {
+          "value": 298324.33,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  },
+  "AskUs-Sitemap": {
+    "totalServiceDuration": 1222381100,
+    "totalServiceRequests": 6740,
+    "averageServiceLatency": {
+      "value": 181362.18,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "fcae73651d148002b94f704182abcb0079324d13add1da0a7450be4da1b75ff0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "20.8.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /api/sitemap/sitemap",
+        "totalApiDuration": 1207735480,
+        "totalApiRequests": 6600,
+        "averageApiLatency": {
+          "value": 182990.22,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET static file",
+        "totalApiDuration": 14079880,
+        "totalApiRequests": 120,
+        "averageApiLatency": {
+          "value": 117332.33,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /*",
+        "totalApiDuration": 565740,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 28287,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  },
+  "AskUs-Admin-Api": {
+    "totalServiceDuration": 1470849840,
+    "totalServiceRequests": 4560,
+    "averageServiceLatency": {
+      "value": 322554.79,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "129e5a369b8cdf5d71de5b71a7b85365fe22b925041612fa54273247f9fc2be5"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "20.8.1"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "POST /api/admin/approveEnhancedImage/:id",
+        "totalApiDuration": 447057780,
+        "totalApiRequests": 140,
+        "averageApiLatency": {
+          "value": 3193269.86,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /api/admin/updateAsReviewed/:id",
+        "totalApiDuration": 77262400,
+        "totalApiRequests": 2240,
+        "averageApiLatency": {
+          "value": 34492.14,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /api/admin/enhanceImage/:id",
+        "totalApiDuration": 798228380,
+        "totalApiRequests": 100,
+        "averageApiLatency": {
+          "value": 7982283.8,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /api/admin/editNewsByAdmin/:id",
+        "totalApiDuration": 14095220,
+        "totalApiRequests": 140,
+        "averageApiLatency": {
+          "value": 100680.14,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /api/admin/unpublishNews/:id",
+        "totalApiDuration": 134206060,
+        "totalApiRequests": 1940,
+        "averageApiLatency": {
+          "value": 69178.38,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  },
+  "SW-News-Api": {
+    "totalServiceDuration": 1198880,
+    "totalServiceRequests": 80,
+    "averageServiceLatency": {
+      "value": 14986,
+      "unit": "microseconds"
+    },
+    "environment": "production",
+    "language": {
+      "name": "javascript"
+    },
+    "node": {
+      "name": "04db298ac32b19ccd3712e93f2a92039075a29a45d1cdcdb3a59d17b6dc5f944"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "20.8.0"
+    },
+    "version": "0.0.1",
+    "apiData": [
+      {
+        "apiUrl": "OPTIONS unknown route",
+        "totalApiDuration": 39240,
+        "totalApiRequests": 40,
+        "averageApiLatency": {
+          "value": 981,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "GET /api/sportsNews/:id",
+        "totalApiDuration": 478700,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 23935,
+          "unit": "microseconds"
+        }
+      },
+      {
+        "apiUrl": "POST /api/sportsNews/paginatedNews",
+        "totalApiDuration": 680940,
+        "totalApiRequests": 20,
+        "averageApiLatency": {
+          "value": 34047,
+          "unit": "microseconds"
+        }
+      }
+    ]
+  }
+}

@@ -5,14 +5,14 @@ const openai = new OpenAI()
 
 class GPTModel {
   async getGPTResponse2 (data, type) {
-    if(type == 'latency') {
+    if (type == 'latency') {
       const latencies = fs.readFileSync('services/elasticsearch/latencies.json', 'utf8')
       var completion = await openai.chat.completions.create({
         messages: [
           {
             role: 'system',
             content:
-              `You are a helpful chatbot that provides an accurate answer to the user's question using all possible resources.`
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
           },
           {
             role: 'user',
@@ -25,15 +25,14 @@ class GPTModel {
         temperature: 0,
         top_p: 1
       })
-    }
-    else if (type == 'traces') {
+    } else if (type == 'traces') {
       const traces = fs.readFileSync('services/elasticsearch/traceCleaned.json', 'utf8')
       var completion = await openai.chat.completions.create({
         messages: [
           {
             role: 'system',
             content:
-              `You are a helpful chatbot that provides an accurate answer to the user's question using all possible resources.`
+              'You are a helpful chatbot that provides an accurate answer to the user\'s question using all possible resources.'
           },
           {
             role: 'user',
@@ -47,7 +46,6 @@ class GPTModel {
         top_p: 1
       })
     }
-
 
     return completion.choices[0].message.content
   }

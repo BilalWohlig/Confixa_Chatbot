@@ -1,0 +1,1435 @@
+[
+  {
+    "_index": ".ds-logs-apm.error-default-2024.04.14-000020",
+    "_id": "Ah3IOY8Biri6cUz88sds",
+    "_score": 1,
+    "_source": {
+      "observer": {
+        "hostname": "1897471703a7",
+        "type": "apm-server",
+        "version": "8.13.2"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/Users/samaygada/.nvm/versions/node/v21.1.0/bin/node",
+          "/Users/samaygada/Desktop/SachAI/AskUs-api/index.js"
+        ],
+        "parent": {
+          "pid": 14629
+        },
+        "pid": 14633,
+        "title": "/Users/samaygada/.nvm/versions/node/v21.1.0/bin/node"
+      },
+      "@timestamp": "2024-05-02T14:50:14.533Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "admins-air-25.lan"
+        },
+        "environment": "development",
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "hostname": "admins-air-25.lan",
+        "os": {
+          "platform": "darwin"
+        },
+        "ip": [
+          "152.58.50.106"
+        ],
+        "name": "admins-air-25.lan",
+        "architecture": "arm64"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "UND_ERR_CONNECT_TIMEOUT",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 6869
+                },
+                "function": "onConnectTimeout"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 6825
+                },
+                "function": "<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/deps/undici/undici",
+                "filename": "node:internal/deps/undici/undici",
+                "line": {
+                  "number": 6857
+                },
+                "function": "Immediate.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/timers",
+                "filename": "node:internal/timers",
+                "line": {
+                  "number": 478
+                },
+                "function": "processImmediate"
+              }
+            ],
+            "handled": true,
+            "attributes": {
+              "name": "ConnectTimeoutError",
+              "message": "Connect Timeout Error"
+            },
+            "message": "Connect Timeout Error",
+            "type": "ConnectTimeoutError"
+          }
+        ],
+        "culprit": "onConnectTimeout (node:internal/deps/undici/undici)",
+        "id": "a8fa6d89abba6f373dc305bd453e62aa",
+        "grouping_key": "356ccc7e96e726b02068cb2eaada3f95",
+        "grouping_name": "Connect Timeout Error"
+      },
+      "message": "Connect Timeout Error",
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-05-02T14:50:21Z"
+      },
+      "timestamp": {
+        "us": 1714661414533000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.04.14-000020",
+    "_id": "nCgDJI8BgnFXhe0mxhbY",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "9234feea29a647e362af52cb838cdb5cdd6df0e3cb730b875a0ecbac8ea8e41d"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "3a3bc55f-59b5-4924-b537-801810c62cd7",
+          "name": "sachai-api-675fcd6b69-tdvn7"
+        }
+      },
+      "parent": {
+        "id": "613f9860609dcfba"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 24
+        },
+        "pid": 40,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "223.178.85.100"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 31,
+              "length": 31,
+              "received": 0,
+              "message": "request aborted",
+              "type": "request.aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "ec89181105780f75ac02a9f15cdbde6a",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/news/mynews/all",
+        "original": "/news/mynews/all",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/news/mynews/all"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "c1de50d46314",
+        "type": "apm-server",
+        "version": "8.13.2"
+      },
+      "trace": {
+        "id": "a8745157ccad248a716e6fb90e40aa38"
+      },
+      "@timestamp": "2024-04-28T09:22:49.399Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "9234feea29a647e362af52cb838cdb5cdd6df0e3cb730b875a0ecbac8ea8e41d"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.19.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "continent_name": "Asia",
+          "region_iso_code": "IN-TN",
+          "city_name": "Chennai",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 80.2209,
+            "lat": 12.8996
+          },
+          "region_name": "Tamil Nadu"
+        },
+        "ip": "223.178.85.100"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "14c4b323-f9c1-4f85-a4b8-87fb1862ca45"
+            ],
+            "Cf-Ray": [
+              "87b5fd718f680dbf-MRS"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "X-Request-Start": [
+              "t=1714296169.396"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Authorization": [
+              "[REDACTED]"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "223.178.85.100,172.71.186.50"
+            ],
+            "Content-Length": [
+              "31"
+            ],
+            "Cf-Connecting-Ip": [
+              "223.178.85.100"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.186.50"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-28T09:22:58Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "613f9860609dcfba",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "613f9860609dcfba"
+      },
+      "timestamp": {
+        "us": 1714296169399000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.04.14-000020",
+    "_id": "KBYDFY8BRC1UfXF8wT_Q",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "60f51f69740c49975e2cd2715fd17fc34ccc573f7357ee2e3d34b71be6fd63b8"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "e9a6eeac-d85c-409a-a84f-45ced2aea1c8",
+          "name": "sachai-api-55fdd79554-pd64v"
+        }
+      },
+      "parent": {
+        "id": "ceb4a71b09e3978b"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 23
+        },
+        "pid": 39,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "106.204.232.10"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 61,
+              "length": 61,
+              "received": 0,
+              "message": "request aborted",
+              "type": "request.aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "6119c0c92f78ddd2da383f5dfe1f00f6",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/ads/getAds",
+        "original": "/ads/getAds",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/ads/getAds"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "8a1faccc40e960c793ffe22f46d757eb"
+      },
+      "@timestamp": "2024-04-25T11:28:27.827Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "60f51f69740c49975e2cd2715fd17fc34ccc573f7357ee2e3d34b71be6fd63b8"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.19.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-HR",
+          "continent_name": "Asia",
+          "city_name": "Kaithal",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 76.4,
+            "lat": 29.8015
+          },
+          "region_name": "Haryana"
+        },
+        "ip": "106.204.232.10"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "0ed86fac-22a6-4143-8fd5-ddccccef76bb"
+            ],
+            "Cf-Ray": [
+              "879dfd5cb9a09ed0-CDG"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "X-Request-Start": [
+              "t=1714044507.825"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Authorization": [
+              "[REDACTED]"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "106.204.232.10,172.71.123.141"
+            ],
+            "Content-Length": [
+              "61"
+            ],
+            "Cf-Connecting-Ip": [
+              "106.204.232.10"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ],
+            "X-Envoy-External-Address": [
+              "172.71.123.141"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-25T11:28:38Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "ceb4a71b09e3978b",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "ceb4a71b09e3978b"
+      },
+      "timestamp": {
+        "us": 1714044507827000
+      }
+    }
+  },
+  {
+    "_index": ".ds-logs-apm.error-default-2024.04.14-000020",
+    "_id": "hhM-9o4BRC1UfXF8FPdE",
+    "_score": 1,
+    "_source": {
+      "container": {
+        "id": "75b60cce0e81be46fb2ec94fe9094a8a76feac3265aa59b5b9757b32e5330116"
+      },
+      "kubernetes": {
+        "pod": {
+          "uid": "9e7749b3-1220-4849-b600-99ef6b37074d",
+          "name": "sachai-api-794b89549d-nq2tc"
+        }
+      },
+      "parent": {
+        "id": "ef679653dc245b07"
+      },
+      "agent": {
+        "activation_method": "require",
+        "name": "nodejs",
+        "version": "3.51.0"
+      },
+      "process": {
+        "args": [
+          "/usr/local/bin/node",
+          "/app/index.js"
+        ],
+        "parent": {
+          "pid": 23
+        },
+        "pid": 39,
+        "title": "/usr/local/bin/node"
+      },
+      "source": {
+        "ip": "152.58.102.106"
+      },
+      "error": {
+        "exception": [
+          {
+            "code": "ECONNABORTED",
+            "stacktrace": [
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/raw-body/index.js",
+                "filename": "node_modules/raw-body/index.js",
+                "line": {
+                  "number": 245,
+                  "context": "    done(createError(400, 'request aborted', {"
+                },
+                "function": "onAborted",
+                "context": {
+                  "pre": [
+                    "    if (complete) return",
+                    ""
+                  ],
+                  "post": [
+                    "      code: 'ECONNABORTED',",
+                    "      expected: length,"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "<anonymous>",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:async_hooks",
+                "filename": "node:async_hooks",
+                "line": {
+                  "number": 346
+                },
+                "function": "run"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AsyncLocalStorageRunContextManager.js",
+                "line": {
+                  "number": 57,
+                  "context": "    return this._asyncLocalStorage.run(runContext, cb, ...args);"
+                },
+                "function": "with",
+                "context": {
+                  "pre": [
+                    "  with(runContext, fn, thisArg, ...args) {",
+                    "    const cb = thisArg == null ? fn : fn.bind(thisArg);"
+                  ],
+                  "post": [
+                    "  }",
+                    ""
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "/app/node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "filename": "node_modules/elastic-apm-node/lib/instrumentation/run-context/AbstractRunContextManager.js",
+                "line": {
+                  "number": 95,
+                  "context": "      return self.with(runContext, () => target.apply(this, arguments));"
+                },
+                "function": "wrapper",
+                "context": {
+                  "pre": [
+                    "    const self = this;",
+                    "    const wrapper = function () {"
+                  ],
+                  "post": [
+                    "    };",
+                    "    Object.defineProperty(wrapper, 'length', {"
+                  ]
+                }
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 515
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_incoming",
+                "filename": "node:_http_incoming",
+                "line": {
+                  "number": 224
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 109
+                },
+                "function": "_destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/streams/destroy",
+                "filename": "node:internal/streams/destroy",
+                "line": {
+                  "number": 71
+                },
+                "function": "destroy"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 793
+                },
+                "function": "abortIncoming"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:_http_server",
+                "filename": "node:_http_server",
+                "line": {
+                  "number": 787
+                },
+                "function": "socketOnClose"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:events",
+                "filename": "node:events",
+                "line": {
+                  "number": 527
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:domain",
+                "filename": "node:domain",
+                "line": {
+                  "number": 488
+                },
+                "function": "emit"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:net",
+                "filename": "node:net",
+                "line": {
+                  "number": 337
+                },
+                "function": "TCP.<anonymous>"
+              },
+              {
+                "exclude_from_grouping": false,
+                "library_frame": true,
+                "abs_path": "node:internal/async_hooks",
+                "filename": "node:internal/async_hooks",
+                "line": {
+                  "number": 130
+                },
+                "function": "callbackTrampoline"
+              }
+            ],
+            "module": "raw-body",
+            "handled": true,
+            "attributes": {
+              "expected": 31,
+              "length": 31,
+              "received": 0,
+              "type": "request.aborted",
+              "message": "request aborted"
+            },
+            "message": "request aborted",
+            "type": "BadRequestError"
+          }
+        ],
+        "culprit": "onAborted (node_modules/raw-body/index.js)",
+        "id": "d18fb5963f8059f9d30b9fd25e1f71dc",
+        "grouping_key": "a690e72ca38e7ea72cfb098dca09e0dc",
+        "grouping_name": "request aborted"
+      },
+      "message": "request aborted",
+      "url": {
+        "path": "/news/mynews/all",
+        "original": "/news/mynews/all",
+        "scheme": "http",
+        "domain": "dev-api.askus.news",
+        "full": "http://dev-api.askus.news/news/mynews/all"
+      },
+      "cloud": {
+        "availability_zone": "asia-south1-a",
+        "instance": {
+          "id": "4006560494320802300"
+        },
+        "provider": "gcp",
+        "machine": {
+          "type": "undefined"
+        },
+        "project": {
+          "name": "proj-newsshield-prod-infra",
+          "id": "788434229488"
+        },
+        "region": "asia-south1"
+      },
+      "observer": {
+        "hostname": "4db09917a66a",
+        "type": "apm-server",
+        "version": "8.12.2"
+      },
+      "trace": {
+        "id": "74b5c79a7a43ff4f2d475d43325c01a1"
+      },
+      "@timestamp": "2024-04-19T12:04:06.110Z",
+      "data_stream": {
+        "namespace": "default",
+        "type": "logs",
+        "dataset": "apm.error"
+      },
+      "service": {
+        "node": {
+          "name": "75b60cce0e81be46fb2ec94fe9094a8a76feac3265aa59b5b9757b32e5330116"
+        },
+        "environment": "production",
+        "framework": {
+          "name": "express",
+          "version": "4.19.2"
+        },
+        "name": "AskUs-Api",
+        "runtime": {
+          "name": "node",
+          "version": "21.1.0"
+        },
+        "language": {
+          "name": "javascript"
+        },
+        "version": "1.0.0"
+      },
+      "host": {
+        "os": {
+          "platform": "linux"
+        },
+        "ip": [
+          "34.93.205.65"
+        ],
+        "architecture": "x64"
+      },
+      "client": {
+        "geo": {
+          "region_iso_code": "IN-RJ",
+          "continent_name": "Asia",
+          "city_name": "Jaipur",
+          "country_iso_code": "IN",
+          "country_name": "India",
+          "location": {
+            "lon": 75.7105,
+            "lat": 26.9525
+          },
+          "region_name": "Rajasthan"
+        },
+        "ip": "152.58.102.106"
+      },
+      "http": {
+        "request": {
+          "headers": {
+            "Cf-Ipcountry": [
+              "IN"
+            ],
+            "Accept": [
+              "application/json"
+            ],
+            "X-Request-Id": [
+              "5b352ac1-31e1-4725-8b3b-75f249e6ceb8"
+            ],
+            "Cf-Ray": [
+              "876cc150b97d3a5c-FRA"
+            ],
+            "User-Agent": [
+              "Dart/3.3 (dart:io)"
+            ],
+            "X-Forwarded-Proto": [
+              "http"
+            ],
+            "X-Request-Start": [
+              "t=1713528246.108"
+            ],
+            "Host": [
+              "dev-api.askus.news"
+            ],
+            "Accept-Encoding": [
+              "gzip, br"
+            ],
+            "Authorization": [
+              "[REDACTED]"
+            ],
+            "Cdn-Loop": [
+              "cloudflare"
+            ],
+            "Cf-Visitor": [
+              "{\"scheme\":\"https\"}"
+            ],
+            "X-Forwarded-For": [
+              "152.58.102.106,162.158.95.211"
+            ],
+            "Content-Length": [
+              "31"
+            ],
+            "Cf-Connecting-Ip": [
+              "152.58.102.106"
+            ],
+            "X-Envoy-External-Address": [
+              "162.158.95.211"
+            ],
+            "Content-Type": [
+              "application/json; charset=utf-8"
+            ]
+          },
+          "method": "POST",
+          "body": {
+            "original": "[REDACTED]"
+          }
+        },
+        "response": {
+          "status_code": 400,
+          "finished": true,
+          "headers_sent": false
+        },
+        "version": "1.1"
+      },
+      "event": {
+        "agent_id_status": "missing",
+        "ingested": "2024-04-19T12:04:07Z"
+      },
+      "transaction": {
+        "name": "POST unknown route",
+        "id": "ef679653dc245b07",
+        "type": "request"
+      },
+      "user_agent": {
+        "original": "Dart/3.3 (dart:io)",
+        "name": "Other",
+        "device": {
+          "name": "Other"
+        }
+      },
+      "span": {
+        "id": "ef679653dc245b07"
+      },
+      "timestamp": {
+        "us": 1713528246110000
+      }
+    }
+  }
+]

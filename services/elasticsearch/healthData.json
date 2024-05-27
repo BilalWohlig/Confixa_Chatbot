@@ -1,0 +1,129 @@
+{
+  "status": "yellow",
+  "cluster_name": "433e629050d947eeb3563b2663c35bfc",
+  "indicators": {
+    "master_is_stable": {
+      "status": "green",
+      "symptom": "The cluster has a stable master node",
+      "details": {
+        "current_master": {
+          "node_id": "LSopQnfOSJ2uJepNz8jvLw",
+          "name": "instance-0000000012"
+        },
+        "recent_masters": [
+          {
+            "node_id": "LSopQnfOSJ2uJepNz8jvLw",
+            "name": "instance-0000000012"
+          }
+        ]
+      }
+    },
+    "repository_integrity": {
+      "status": "green",
+      "symptom": "All repositories are healthy.",
+      "details": {
+        "total_repositories": 1
+      }
+    },
+    "disk": {
+      "status": "green",
+      "symptom": "The cluster has enough available disk space.",
+      "details": {
+        "indices_with_readonly_block": 0,
+        "nodes_with_enough_disk_space": 3,
+        "nodes_with_unknown_disk_status": 0,
+        "nodes_over_high_watermark": 0,
+        "nodes_over_flood_stage_watermark": 0
+      }
+    },
+    "shards_capacity": {
+      "status": "green",
+      "symptom": "The cluster has enough room to add new shards.",
+      "details": {
+        "data": {
+          "max_shards_in_cluster": 2000
+        },
+        "frozen": {
+          "max_shards_in_cluster": 0
+        }
+      }
+    },
+    "shards_availability": {
+      "status": "yellow",
+      "symptom": "This cluster has 14 unavailable replica shards.",
+      "details": {
+        "started_replicas": 632,
+        "unassigned_primaries": 0,
+        "restarting_replicas": 0,
+        "creating_primaries": 0,
+        "initializing_replicas": 0,
+        "unassigned_replicas": 14,
+        "started_primaries": 646,
+        "restarting_primaries": 0,
+        "initializing_primaries": 0,
+        "creating_replicas": 0
+      },
+      "impacts": [
+        {
+          "id": "elasticsearch:health:shards_availability:impact:replica_unassigned",
+          "severity": 2,
+          "description": "Searches might be slower than usual. Fewer redundant copies of the data exist on 14 indices [.ds-metrics-apm.service_destination.1m-default-2024.04.24-000075, .ds-metrics-apm.service_destination.60m-default-2023.11.16-000006, .ds-metrics-apm.service_destination.60m-default-2024.04.21-000012, .ds-metrics-apm.service_summary.1m-default-2024.02.21-000056, .ds-metrics-apm.service_summary.60m-default-2023.10.17-000005, .ds-metrics-apm.service_summary.60m-default-2024.04.21-000012, .ds-metrics-apm.service_transaction.10m-default-2024.04.17-000031, .ds-metrics-apm.service_transaction.1m-default-2024.04.24-000075, .ds-metrics-apm.service_transaction.60m-default-2023.11.16-000006, .ds-metrics-apm.service_transaction.60m-default-2024.04.21-000012, ...].",
+          "impact_areas": [
+            "search"
+          ]
+        }
+      ],
+      "diagnosis": [
+        {
+          "id": "elasticsearch:health:shards_availability:diagnosis:explain_allocations",
+          "cause": "Elasticsearch isn't allowed to allocate some shards from these indices to any of the nodes in the cluster.",
+          "action": "Diagnose the issue by calling the allocation explain API for an index [GET _cluster/allocation/explain]. Choose a node to which you expect a shard to be allocated, find this node in the node-by-node explanation, and address the reasons which prevent Elasticsearch from allocating the shard.",
+          "help_url": "https://ela.st/diagnose-shards",
+          "affected_resources": {
+            "indices": [
+              ".ds-metrics-apm.service_destination.1m-default-2024.04.24-000075",
+              ".ds-metrics-apm.service_destination.60m-default-2023.11.16-000006",
+              ".ds-metrics-apm.service_destination.60m-default-2024.04.21-000012",
+              ".ds-metrics-apm.service_summary.1m-default-2024.02.21-000056",
+              ".ds-metrics-apm.service_summary.60m-default-2023.10.17-000005",
+              ".ds-metrics-apm.service_summary.60m-default-2024.04.21-000012",
+              ".ds-metrics-apm.service_transaction.10m-default-2024.04.17-000031",
+              ".ds-metrics-apm.service_transaction.1m-default-2024.04.24-000075",
+              ".ds-metrics-apm.service_transaction.60m-default-2023.11.16-000006",
+              ".ds-metrics-apm.service_transaction.60m-default-2024.04.21-000012",
+              ".ds-metrics-apm.transaction.10m-default-2023.11.22-000012",
+              ".ds-metrics-apm.transaction.1m-default-2024.04.17-000073",
+              ".ds-metrics-apm.transaction.60m-default-2024.04.21-000012",
+              ".ds-filebeat-8.13.2-2024.04.25-000001"
+            ]
+          }
+        }
+      ]
+    },
+    "data_stream_lifecycle": {
+      "status": "green",
+      "symptom": "Data streams are executing their lifecycles without issues",
+      "details": {
+        "stagnating_backing_indices_count": 0,
+        "total_backing_indices_in_error": 0
+      }
+    },
+    "slm": {
+      "status": "green",
+      "symptom": "Snapshot Lifecycle Management is running",
+      "details": {
+        "slm_status": "RUNNING",
+        "policies": 1
+      }
+    },
+    "ilm": {
+      "status": "green",
+      "symptom": "Index Lifecycle Management is running",
+      "details": {
+        "policies": 73,
+        "stagnating_indices": 0,
+        "ilm_status": "RUNNING"
+      }
+    }
+  }
+}
