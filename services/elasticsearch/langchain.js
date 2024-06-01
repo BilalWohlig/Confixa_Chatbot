@@ -1,6 +1,6 @@
 const __constants = require("../../config/constants");
 const textSplitter = require("langchain/text_splitter");
-const scrapper = require("langchain/document_loaders/web/cheerio");
+// const scrapper = require("langchain/document_loaders/web/cheerio");
 const memory = require("langchain/vectorstores/memory");
 const openai = require("@langchain/openai");
 const retrieverDoc = require("langchain/tools/retriever");
@@ -58,8 +58,8 @@ class Langchain {
       query: {
         range: {
           "@timestamp": {
-            gte: 0,
-            lte: "now",
+            gte: "now-1d/d",
+            lte: "now/d",
           },
         },
       },
@@ -581,13 +581,13 @@ class Langchain {
       // console.log("Retriever Createddd");
       if(Langchain.actualAgent == '') {
         const toolsData = await this.createTools()
-        console.log("Tools Createddd", toolsData);
+        // console.log("Tools Createddd", toolsData);
         const agent = await this.createAgent(toolsData);
-        console.log("Agent Createddddd", agent);
+        // console.log("Agent Createddddd", agent);
       }
-      console.log('item', Langchain.actualAgent)
+      // console.log('item', Langchain.actualAgent)
       const runningAgent = await this.runAgent(Langchain.actualAgent, userQuestion);
-      console.log("lalalala", runningAgent)
+      // console.log("lalalala", runningAgent)
       console.log("answer", runningAgent.output)
       return runningAgent;
     } catch (error) {

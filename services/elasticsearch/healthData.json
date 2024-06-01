@@ -50,15 +50,15 @@
     },
     "shards_availability": {
       "status": "yellow",
-      "symptom": "This cluster has 14 unavailable replica shards.",
+      "symptom": "This cluster has 13 unavailable replica shards.",
       "details": {
-        "started_replicas": 632,
+        "started_replicas": 680,
         "unassigned_primaries": 0,
         "restarting_replicas": 0,
         "creating_primaries": 0,
         "initializing_replicas": 0,
-        "unassigned_replicas": 14,
-        "started_primaries": 646,
+        "unassigned_replicas": 13,
+        "started_primaries": 693,
         "restarting_primaries": 0,
         "initializing_primaries": 0,
         "creating_replicas": 0
@@ -67,7 +67,7 @@
         {
           "id": "elasticsearch:health:shards_availability:impact:replica_unassigned",
           "severity": 2,
-          "description": "Searches might be slower than usual. Fewer redundant copies of the data exist on 14 indices [.ds-metrics-apm.service_destination.1m-default-2024.04.24-000075, .ds-metrics-apm.service_destination.60m-default-2023.11.16-000006, .ds-metrics-apm.service_destination.60m-default-2024.04.21-000012, .ds-metrics-apm.service_summary.1m-default-2024.02.21-000056, .ds-metrics-apm.service_summary.60m-default-2023.10.17-000005, .ds-metrics-apm.service_summary.60m-default-2024.04.21-000012, .ds-metrics-apm.service_transaction.10m-default-2024.04.17-000031, .ds-metrics-apm.service_transaction.1m-default-2024.04.24-000075, .ds-metrics-apm.service_transaction.60m-default-2023.11.16-000006, .ds-metrics-apm.service_transaction.60m-default-2024.04.21-000012, ...].",
+          "description": "Searches might be slower than usual. Fewer redundant copies of the data exist on 13 indices [.ds-metrics-apm.service_destination.1m-default-2024.04.24-000075, .ds-metrics-apm.service_destination.60m-default-2023.11.16-000006, .ds-metrics-apm.service_destination.60m-default-2024.04.21-000012, .ds-metrics-apm.service_summary.60m-default-2023.10.17-000005, .ds-metrics-apm.service_summary.60m-default-2024.04.21-000012, .ds-metrics-apm.service_transaction.10m-default-2024.04.17-000031, .ds-metrics-apm.service_transaction.1m-default-2024.04.24-000075, .ds-metrics-apm.service_transaction.60m-default-2023.11.16-000006, .ds-metrics-apm.service_transaction.60m-default-2024.04.21-000012, .ds-metrics-apm.transaction.10m-default-2023.11.22-000012, ...].",
           "impact_areas": [
             "search"
           ]
@@ -84,7 +84,6 @@
               ".ds-metrics-apm.service_destination.1m-default-2024.04.24-000075",
               ".ds-metrics-apm.service_destination.60m-default-2023.11.16-000006",
               ".ds-metrics-apm.service_destination.60m-default-2024.04.21-000012",
-              ".ds-metrics-apm.service_summary.1m-default-2024.02.21-000056",
               ".ds-metrics-apm.service_summary.60m-default-2023.10.17-000005",
               ".ds-metrics-apm.service_summary.60m-default-2024.04.21-000012",
               ".ds-metrics-apm.service_transaction.10m-default-2024.04.17-000031",

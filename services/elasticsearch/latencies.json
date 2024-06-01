@@ -1,178 +1,59 @@
 {
-  "GET /news/getOneBlogForWeb/:id": {
-<<<<<<< Updated upstream
-    "totalDuration": 49032500,
-    "totalRequests": 14620,
-    "averageLatency": 3
-  },
-  "GET /news/getThreeBlogsForEachCategoryInWeb/:id": {
-    "totalDuration": 4556660,
-    "totalRequests": 140,
-    "averageLatency": 33
-  },
-  "POST /news/sendAlgoliaEvents/:id": {
-    "totalDuration": 49739140,
-    "totalRequests": 4220,
-    "averageLatency": 12
-  },
-  "POST /oneSignal/openAppV2": {
-    "totalDuration": 10824480,
-    "totalRequests": 1000,
-    "averageLatency": 11
-  },
-  "GET /news/getOneNewsForWeb/:id": {
-    "totalDuration": 63611080,
-    "totalRequests": 14520,
-    "averageLatency": 4
-  },
-  "GET /user/userDetails": {
-    "totalDuration": 5585200,
-    "totalRequests": 720,
-    "averageLatency": 8
-  },
-  "POST /category/getAllCat": {
-    "totalDuration": 144714960,
-    "totalRequests": 33840,
-    "averageLatency": 4
+  "POST /askus/api/image/downloadImageCreateS3Url": {
+    "totalDuration": 8151693240,
+    "totalRequests": 2120,
+    "averageLatency": 3845,
+    "service": {
+      "name": "AskUs-FileUpload",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.1.0"
+      },
+      "version": "0.0.1"
+    }
   },
   "POST /askus/api/audio/createS3ForAudio": {
-    "totalDuration": 2690576100,
-    "totalRequests": 4380,
-    "averageLatency": 614
-  },
-  "POST /api/sitemap/sitemap": {
-    "totalDuration": 205995700,
-    "totalRequests": 2380,
-    "averageLatency": 87
-  },
-  "POST /askus/api/gpt/getAdvancedClassificationGPT": {
-    "totalDuration": 3088790520,
-    "totalRequests": 3080,
-    "averageLatency": 1003
-  },
-  "POST /api/admin/updateAsReviewed/:id": {
-    "totalDuration": 16660560,
-    "totalRequests": 1200,
-    "averageLatency": 14
-  },
-  "GET /chats/questionLimit": {
-    "totalDuration": 1679460,
-    "totalRequests": 540,
-    "averageLatency": 3
-  },
-  "GET /astrology/checkThenGetPredictionToday": {
-    "totalDuration": 19583820,
-    "totalRequests": 180,
-    "averageLatency": 109
-  },
-  "POST /api/admin/unpublishNews/:id": {
-    "totalDuration": 17095320,
-    "totalRequests": 360,
-    "averageLatency": 47
+    "totalDuration": 2749026620,
+    "totalRequests": 3780,
+    "averageLatency": 727,
+    "service": {
+      "name": "AskUs-FileUpload",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.1.0"
+      },
+      "version": "0.0.1"
+    }
   },
   "POST /askus/api/gpt/getNewsFromGPT": {
-    "totalDuration": 61672650220,
-    "totalRequests": 2580,
-    "averageLatency": 23904
+    "totalDuration": 31824607100,
+    "totalRequests": 2180,
+    "averageLatency": 14598,
+    "service": {
+      "name": "AskUs-GPT",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.1.0"
+      },
+      "version": "0.0.1"
+    }
   },
-  "POST /askus/api/translate/getTranslation": {
-    "totalDuration": 309060,
-    "totalRequests": 60,
-    "averageLatency": 5
-  },
-  "POST /askus/api/image/downloadImageCreateS3Url": {
-    "totalDuration": 9512220220,
-    "totalRequests": 2500,
-    "averageLatency": 3805
-  },
-  "GET /language/getLanguages": {
-    "totalDuration": 7956600,
-    "totalRequests": 1480,
-    "averageLatency": 5
-  },
-  "POST /askus/api/image/createS3ForReplicate": {
-    "totalDuration": 6600456400,
-    "totalRequests": 1840,
-    "averageLatency": 3587
-  },
-  "GET /config/getConfig": {
-    "totalDuration": 1358040,
-    "totalRequests": 360,
-    "averageLatency": 4
-  },
-  "GET unknown route": {
-    "totalDuration": 444180,
-    "totalRequests": 780,
-    "averageLatency": 1
-  },
-  "POST /news/mynews/all": {
-    "totalDuration": 61075600,
-    "totalRequests": 880,
-    "averageLatency": 69
-  },
-  "POST /askus/api/algolia/algoliaSearchQuery": {
-    "totalDuration": 25052740,
-    "totalRequests": 700,
-    "averageLatency": 36
-  },
-  "GET /chats/getChatsPerUser/:id": {
-    "totalDuration": 1181400,
-    "totalRequests": 360,
-    "averageLatency": 3
-  },
-  "POST /chats/chatsList": {
-    "totalDuration": 756360,
-    "totalRequests": 120,
-    "averageLatency": 6
-  },
-  "POST /chats/deleteChat/:id": {
-    "totalDuration": 698820,
-    "totalRequests": 60,
-    "averageLatency": 12
-  },
-  "POST /news/categoryNews/:id": {
-    "totalDuration": 5795560,
-    "totalRequests": 280,
-    "averageLatency": 21
-  },
-  "POST /askus/api/gpt/getFullContentGPT": {
-    "totalDuration": 8123842260,
-    "totalRequests": 300,
-    "averageLatency": 27079
-  },
-  "POST /api/admin/editNewsByAdmin/:id": {
-    "totalDuration": 1351620,
-    "totalRequests": 60,
-    "averageLatency": 23
-  },
-  "POST /news/getCategoryWiseNewsForWeb": {
-    "totalDuration": 2687760,
-    "totalRequests": 240,
-    "averageLatency": 11
-  },
-  "POST /tags/getQuerySuggestions": {
-    "totalDuration": 3843660,
-    "totalRequests": 180,
-    "averageLatency": 21
-  },
-  "POST /bookmark/addBookmark/:id": {
-    "totalDuration": 840900,
-    "totalRequests": 60,
-    "averageLatency": 14
-  },
-  "GET static file": {
-    "totalDuration": 1136580,
-    "totalRequests": 60,
-    "averageLatency": 19
-  },
-  "POST /news/getAllBlogsForWeb": {
-    "totalDuration": 685980,
-    "totalRequests": 100,
-    "averageLatency": 7
-=======
-    "totalDuration": 583149420,
-    "totalRequests": 46980,
-    "averageLatency": 12,
+  "GET /": {
+    "totalDuration": 3147765,
+    "totalRequests": 3163,
+    "averageLatency": 1,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",
@@ -181,14 +62,303 @@
       },
       "runtime": {
         "name": "node",
-        "version": "16.20.2"
+        "version": "21.1.0"
       },
       "version": "1.0.0"
     }
   },
-  "GET /news/getOneNewsForWeb/:id": {
-    "totalDuration": 643961720,
-    "totalRequests": 45960,
+  "POST /category/getAllCat": {
+    "totalDuration": 91965760,
+    "totalRequests": 15680,
+    "averageLatency": 5.87,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /news/getThreeBlogsForEachCategoryInWeb/:id": {
+    "totalDuration": 169601660,
+    "totalRequests": 3460,
+    "averageLatency": 49,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /chats/questionLimitV2": {
+    "totalDuration": 1184660,
+    "totalRequests": 300,
+    "averageLatency": 3.95,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /discontinueReason/findForDonor": {
+    "totalDuration": 245675,
+    "totalRequests": 21,
+    "averageLatency": 12,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/getAll": {
+    "totalDuration": 9754585,
+    "totalRequests": 39,
+    "averageLatency": 250,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST unknown route": {
+    "totalDuration": 7752328,
+    "totalRequests": 3944,
+    "averageLatency": 1.97,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "GET unknown route": {
+    "totalDuration": 103308492470,
+    "totalRequests": 4186,
+    "averageLatency": 24680,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/donationCount": {
+    "totalDuration": 153929,
+    "totalRequests": 23,
+    "averageLatency": 6.69,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/getOneDonorAndCampDonation": {
+    "totalDuration": 427883,
+    "totalRequests": 21,
+    "averageLatency": 20,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /askus/api/gpt/removeCombinedNews": {
+    "totalDuration": 1829229600,
+    "totalRequests": 3040,
+    "averageLatency": 602,
+    "service": {
+      "name": "AskUs-GPT",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.1.0"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /api/sitemap/sitemap": {
+    "totalDuration": 221250600,
+    "totalRequests": 2520,
+    "averageLatency": 88,
+    "service": {
+      "name": "AskUs-Sitemap",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "20.8.1"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "GET /config/getConfig": {
+    "totalDuration": 1077760,
+    "totalRequests": 320,
+    "averageLatency": 3.37,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /news/getAllBlogsForWeb": {
+    "totalDuration": 26196040,
+    "totalRequests": 3640,
+    "averageLatency": 7.2,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /user/userDetailsV2": {
+    "totalDuration": 2796520,
+    "totalRequests": 280,
+    "averageLatency": 9.99,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "GET /language/getLanguages": {
+    "totalDuration": 18501380,
+    "totalRequests": 3580,
+    "averageLatency": 5.17,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /news/categoryNews/:id": {
+    "totalDuration": 3573640,
+    "totalRequests": 120,
+    "averageLatency": 30,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /ads/getAds": {
+    "totalDuration": 921340,
+    "totalRequests": 260,
+    "averageLatency": 3.54,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /news/sendAlgoliaEvents/:id": {
+    "totalDuration": 44397420,
+    "totalRequests": 3220,
     "averageLatency": 14,
     "service": {
       "name": "AskUs-Api",
@@ -198,392 +368,460 @@
       },
       "runtime": {
         "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /askus/api/gpt/getClassificationGPT": {
-    "totalDuration": 5532870460,
-    "totalRequests": 6340,
-    "averageLatency": 873,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/image/downloadImageCreateS3Url": {
-    "totalDuration": 29341115680,
-    "totalRequests": 6880,
-    "averageLatency": 4265,
-    "service": {
-      "name": "AskUs-FileUpload",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /api/sitemap/sitemap": {
-    "totalDuration": 1207735480,
-    "totalRequests": 6600,
-    "averageLatency": 183,
-    "service": {
-      "name": "AskUs-Sitemap",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /category/getAllCat": {
-    "totalDuration": 65492600,
-    "totalRequests": 2440,
-    "averageLatency": 27,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /askus/api/gpt/getNewsFromGPT": {
-    "totalDuration": 57002263380,
-    "totalRequests": 7340,
-    "averageLatency": 7766,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/gnews/getGNews": {
-    "totalDuration": 7146132300,
-    "totalRequests": 15540,
-    "averageLatency": 460,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "GET /oneSignal/openApp": {
-    "totalDuration": 6947300,
-    "totalRequests": 380,
-    "averageLatency": 18,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /api/admin/approveEnhancedImage/:id": {
-    "totalDuration": 447057780,
-    "totalRequests": 140,
-    "averageLatency": 3193,
-    "service": {
-      "name": "AskUs-Admin-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /news/getAllBlogsForWeb": {
-    "totalDuration": 56721640,
-    "totalRequests": 1560,
-    "averageLatency": 36,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /language/getLanguages": {
-    "totalDuration": 140378000,
-    "totalRequests": 4400,
-    "averageLatency": 32,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /news/getThreeBlogsForEachCategoryInWeb/:id": {
-    "totalDuration": 295606840,
-    "totalRequests": 1480,
-    "averageLatency": 200,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /api/admin/updateAsReviewed/:id": {
-    "totalDuration": 77262400,
-    "totalRequests": 2240,
-    "averageLatency": 34,
-    "service": {
-      "name": "AskUs-Admin-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "GET /topic/getEnabledTopics": {
-    "totalDuration": 1611920,
-    "totalRequests": 240,
-    "averageLatency": 6.72,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /user/userDetails": {
-    "totalDuration": 6605580,
-    "totalRequests": 500,
-    "averageLatency": 13,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /api/admin/enhanceImage/:id": {
-    "totalDuration": 798228380,
-    "totalRequests": 100,
-    "averageLatency": 7982,
-    "service": {
-      "name": "AskUs-Admin-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /news/mynews/all": {
-    "totalDuration": 44231120,
-    "totalRequests": 560,
-    "averageLatency": 79,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /api/admin/editNewsByAdmin/:id": {
-    "totalDuration": 14095220,
-    "totalRequests": 140,
-    "averageLatency": 101,
-    "service": {
-      "name": "AskUs-Admin-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "GET /user/chooseLanguage/:id": {
-    "totalDuration": 2491960,
-    "totalRequests": 200,
-    "averageLatency": 12,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /user/addPlayerIdToUser": {
-    "totalDuration": 73380,
-    "totalRequests": 60,
-    "averageLatency": 1.22,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /news/categoryNews/:id": {
-    "totalDuration": 3688900,
-    "totalRequests": 60,
-    "averageLatency": 61,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "21.2.0"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /api/admin/unpublishNews/:id": {
-    "totalDuration": 134206060,
-    "totalRequests": 1940,
-    "averageLatency": 69,
-    "service": {
-      "name": "AskUs-Admin-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /askus/api/audio/createS3ForAudio": {
-    "totalDuration": 17899460,
-    "totalRequests": 60,
-    "averageLatency": 298,
-    "service": {
-      "name": "AskUs-FileUpload",
-      "environment": "uat",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
         "version": "21.1.0"
       },
-      "version": "0.0.1"
+      "version": "1.0.0"
     }
   },
   "POST /askus/api/gpt/getAdvancedClassificationGPT": {
-    "totalDuration": 22773740,
-    "totalRequests": 20,
-    "averageLatency": 1139,
+    "totalDuration": 1585559580,
+    "totalRequests": 2020,
+    "averageLatency": 785,
     "service": {
       "name": "AskUs-GPT",
-      "environment": "uat",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.1.0"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /askus/api/image/createS3ForReplicate": {
+    "totalDuration": 8488548520,
+    "totalRequests": 1880,
+    "averageLatency": 4515,
+    "service": {
+      "name": "AskUs-FileUpload",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.1.0"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /api/admin/updateAsReviewed/:id": {
+    "totalDuration": 13793700,
+    "totalRequests": 860,
+    "averageLatency": 16,
+    "service": {
+      "name": "AskUs-Admin-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.2.0"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /camp/findByDateWithSearch": {
+    "totalDuration": 6553576,
+    "totalRequests": 24,
+    "averageLatency": 273,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/searchDonorBasedOnMobileNo": {
+    "totalDuration": 346618,
+    "totalRequests": 6,
+    "averageLatency": 58,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /camp/CampByDate": {
+    "totalDuration": 11469776,
+    "totalRequests": 48,
+    "averageLatency": 239,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/editSave": {
+    "totalDuration": 53502,
+    "totalRequests": 2,
+    "averageLatency": 27,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "GET /api/healthCheck/getPing": {
+    "totalDuration": 2688260,
+    "totalRequests": 3340,
+    "averageLatency": 0.8,
+    "service": {
+      "name": "AskUs-Admin-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.2.0"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /member/login": {
+    "totalDuration": 279089,
+    "totalRequests": 15,
+    "averageLatency": 19,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/getAllEntry": {
+    "totalDuration": 11436014,
+    "totalRequests": 18,
+    "averageLatency": 635,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "GET /venue/:id": {
+    "totalDuration": 2289712,
+    "totalRequests": 80,
+    "averageLatency": 29,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "GET /hospital/:id": {
+    "totalDuration": 1124536,
+    "totalRequests": 72,
+    "averageLatency": 16,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "GET /camp/:id": {
+    "totalDuration": 4071856,
+    "totalRequests": 80,
+    "averageLatency": 51,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/getLastBottle": {
+    "totalDuration": 2461508,
+    "totalRequests": 156,
+    "averageLatency": 16,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /count/countDonorByHosptial": {
+    "totalDuration": 396183,
+    "totalRequests": 41,
+    "averageLatency": 9.66,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /camp/findCampHospital": {
+    "totalDuration": 174695,
+    "totalRequests": 25,
+    "averageLatency": 6.99,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /unusedBottle/getAllByHospital": {
+    "totalDuration": 348503,
+    "totalRequests": 41,
+    "averageLatency": 8.5,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/countDonor": {
+    "totalDuration": 5341140,
+    "totalRequests": 44,
+    "averageLatency": 121,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/totalEntryAllForEntry": {
+    "totalDuration": 4071420,
+    "totalRequests": 4,
+    "averageLatency": 1018,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/addCampAckNo": {
+    "totalDuration": 220922,
+    "totalRequests": 6,
+    "averageLatency": 37,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/addCampGift": {
+    "totalDuration": 175610,
+    "totalRequests": 6,
+    "averageLatency": 29,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/totalEntryAll": {
+    "totalDuration": 15876084,
+    "totalRequests": 12,
+    "averageLatency": 1323,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/totalVerifiedWithAllHospital": {
+    "totalDuration": 18604016,
+    "totalRequests": 16,
+    "averageLatency": 1163,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /donor/saveDonor": {
+    "totalDuration": 385020,
+    "totalRequests": 4,
+    "averageLatency": 96,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/findForPrint": {
+    "totalDuration": 53628,
+    "totalRequests": 4,
+    "averageLatency": 13,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /api/admin/unpublishNews/:id": {
+    "totalDuration": 14873080,
+    "totalRequests": 520,
+    "averageLatency": 29,
+    "service": {
+      "name": "AskUs-Admin-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "22.2.0"
+      },
+      "version": "0.0.1"
+    }
+  },
+  "POST /oneSignal/openAppV2": {
+    "totalDuration": 3668800,
+    "totalRequests": 400,
+    "averageLatency": 9.17,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
       "language": {
         "name": "javascript"
       },
@@ -591,13 +829,13 @@
         "name": "node",
         "version": "21.1.0"
       },
-      "version": "0.0.1"
+      "version": "1.0.0"
     }
   },
-  "POST /bookmark/addBookmark/:id": {
-    "totalDuration": 264940,
-    "totalRequests": 20,
-    "averageLatency": 13,
+  "GET /news/getOneNewsForWeb/:id": {
+    "totalDuration": 21319620,
+    "totalRequests": 3900,
+    "averageLatency": 5.47,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",
@@ -606,15 +844,15 @@
       },
       "runtime": {
         "name": "node",
-        "version": "16.20.2"
+        "version": "21.1.0"
       },
       "version": "1.0.0"
     }
   },
-  "POST /bookmark/getBookmarkData": {
-    "totalDuration": 412140,
-    "totalRequests": 20,
-    "averageLatency": 21,
+  "GET /news/getOneBlogForWeb/:id": {
+    "totalDuration": 23276180,
+    "totalRequests": 4780,
+    "averageLatency": 4.87,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",
@@ -623,15 +861,66 @@
       },
       "runtime": {
         "name": "node",
-        "version": "16.20.2"
+        "version": "21.1.0"
       },
       "version": "1.0.0"
     }
   },
-  "POST /news/sendAlgoliaEvents/:id": {
-    "totalDuration": 10902800,
-    "totalRequests": 240,
-    "averageLatency": 45,
+  "GET /campDonation/hospitalDonor/:hospital/:campNumber/:venue": {
+    "totalDuration": 811006,
+    "totalRequests": 2,
+    "averageLatency": 406,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/getAllVerifiedCampReportHospital": {
+    "totalDuration": 3227646,
+    "totalRequests": 2,
+    "averageLatency": 1614,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /count/countEntry": {
+    "totalDuration": 344807,
+    "totalRequests": 25,
+    "averageLatency": 14,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /news/getCategoryWiseNewsForWeb": {
+    "totalDuration": 1558940,
+    "totalRequests": 100,
+    "averageLatency": 16,
     "service": {
       "name": "AskUs-Api",
       "environment": "production",
@@ -640,15 +929,32 @@
       },
       "runtime": {
         "name": "node",
-        "version": "16.20.2"
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /news/mynews/all": {
+    "totalDuration": 34751480,
+    "totalRequests": 520,
+    "averageLatency": 67,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
       },
       "version": "1.0.0"
     }
   },
   "POST /askus/api/algolia/algoliaSearchQuery": {
-    "totalDuration": 16486340,
-    "totalRequests": 60,
-    "averageLatency": 275,
+    "totalDuration": 11882440,
+    "totalRequests": 440,
+    "averageLatency": 27,
     "service": {
       "name": "AskUs-GPT",
       "environment": "production",
@@ -657,31 +963,133 @@
       },
       "runtime": {
         "name": "node",
-        "version": "21.2.0"
+        "version": "22.1.0"
       },
       "version": "0.0.1"
     }
   },
-  "GET static file": {
-    "totalDuration": 14079880,
-    "totalRequests": 120,
-    "averageLatency": 117,
+  "GET /topic/getEnabledTopics/:id": {
+    "totalDuration": 1009680,
+    "totalRequests": 320,
+    "averageLatency": 3.16,
     "service": {
-      "name": "AskUs-Sitemap",
+      "name": "AskUs-Api",
       "environment": "production",
       "language": {
         "name": "javascript"
       },
       "runtime": {
         "name": "node",
-        "version": "20.8.1"
+        "version": "21.1.0"
       },
-      "version": "0.0.1"
+      "version": "1.0.0"
+    }
+  },
+  "GET /chats/getChatsPerUser/:id": {
+    "totalDuration": 294320,
+    "totalRequests": 80,
+    "averageLatency": 3.68,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /campDonation/getAllVerifiedCampReportWithoutVenue": {
+    "totalDuration": 11165690,
+    "totalRequests": 6,
+    "averageLatency": 1861,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/deleteDonorAckno": {
+    "totalDuration": 56574,
+    "totalRequests": 2,
+    "averageLatency": 28,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
     }
   },
   "GET /chats/questionLimit": {
-    "totalDuration": 2604920,
-    "totalRequests": 200,
+    "totalDuration": 155480,
+    "totalRequests": 40,
+    "averageLatency": 3.89,
+    "service": {
+      "name": "AskUs-Api",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "21.1.0"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "POST /campDonation/getAllVerifiedCampReport": {
+    "totalDuration": 6021116,
+    "totalRequests": 4,
+    "averageLatency": 1505,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /campDonation/totalGifted": {
+    "totalDuration": 3571710,
+    "totalRequests": 2,
+    "averageLatency": 1786,
+    "service": {
+      "name": "TMM-API",
+      "environment": "production",
+      "language": {
+        "name": "javascript"
+      },
+      "runtime": {
+        "name": "node",
+        "version": "14.21.3"
+      },
+      "version": "1.0.1"
+    }
+  },
+  "POST /user/loginv2": {
+    "totalDuration": 257260,
+    "totalRequests": 20,
     "averageLatency": 13,
     "service": {
       "name": "AskUs-Api",
@@ -691,248 +1099,43 @@
       },
       "runtime": {
         "name": "node",
-        "version": "16.20.2"
+        "version": "21.1.0"
       },
       "version": "1.0.0"
     }
   },
-  "POST /askus/api/gpt/getFullContentGPT": {
-    "totalDuration": 2817392400,
-    "totalRequests": 240,
-    "averageLatency": 11739,
+  "POST /campDonation/correctCountInCount": {
+    "totalDuration": 1851391,
+    "totalRequests": 1,
+    "averageLatency": 1851,
     "service": {
-      "name": "AskUs-GPT",
+      "name": "TMM-API",
       "environment": "production",
       "language": {
         "name": "javascript"
       },
       "runtime": {
         "name": "node",
-        "version": "21.2.0"
+        "version": "14.21.3"
       },
-      "version": "0.0.1"
+      "version": "1.0.1"
     }
   },
-  "GET /*": {
-    "totalDuration": 565740,
-    "totalRequests": 20,
-    "averageLatency": 28,
+  "GET /campDonation/excelDonor/:accessLevel/:venue/:campNumber": {
+    "totalDuration": 634878,
+    "totalRequests": 2,
+    "averageLatency": 317,
     "service": {
-      "name": "AskUs-Sitemap",
+      "name": "TMM-API",
       "environment": "production",
       "language": {
         "name": "javascript"
       },
       "runtime": {
         "name": "node",
-        "version": "20.8.1"
+        "version": "14.21.3"
       },
-      "version": "0.0.1"
+      "version": "1.0.1"
     }
-  },
-  "GET /chats/getChatsPerUser/:id": {
-    "totalDuration": 634160,
-    "totalRequests": 80,
-    "averageLatency": 7.93,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /blockedKeyword/getBlockedKeywords": {
-    "totalDuration": 1315800,
-    "totalRequests": 40,
-    "averageLatency": 33,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /tags/getQuerySuggestions": {
-    "totalDuration": 121896940,
-    "totalRequests": 20,
-    "averageLatency": 6095,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /user/loginv2": {
-    "totalDuration": 409580,
-    "totalRequests": 20,
-    "averageLatency": 20,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "POST /askus/api/gpt/getAnsFromGPT": {
-    "totalDuration": 60293100,
-    "totalRequests": 20,
-    "averageLatency": 3015,
-    "service": {
-      "name": "AskUs-GPT",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.1"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /chats/addQnA/:id": {
-    "totalDuration": 62586860,
-    "totalRequests": 20,
-    "averageLatency": 3129,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "OPTIONS unknown route": {
-    "totalDuration": 39240,
-    "totalRequests": 40,
-    "averageLatency": 0.98,
-    "service": {
-      "name": "SW-News-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.0"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "GET unknown route": {
-    "totalDuration": 94200,
-    "totalRequests": 40,
-    "averageLatency": 2.35,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /category/getAllCategoryListForUser": {
-    "totalDuration": 23265260,
-    "totalRequests": 20,
-    "averageLatency": 1163,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
-  },
-  "GET /api/sportsNews/:id": {
-    "totalDuration": 478700,
-    "totalRequests": 20,
-    "averageLatency": 24,
-    "service": {
-      "name": "SW-News-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.0"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /api/sportsNews/paginatedNews": {
-    "totalDuration": 680940,
-    "totalRequests": 20,
-    "averageLatency": 34,
-    "service": {
-      "name": "SW-News-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "20.8.0"
-      },
-      "version": "0.0.1"
-    }
-  },
-  "POST /speak/saveVideos": {
-    "totalDuration": 133297,
-    "totalRequests": 55,
-    "averageLatency": 2.42,
-    "service": {
-      "name": "AskUs-Api",
-      "environment": "production",
-      "language": {
-        "name": "javascript"
-      },
-      "runtime": {
-        "name": "node",
-        "version": "16.20.2"
-      },
-      "version": "1.0.0"
-    }
->>>>>>> Stashed changes
   }
 }
